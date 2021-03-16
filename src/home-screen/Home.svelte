@@ -3,16 +3,18 @@
 </script>
 
 <div class="background-color">
-	<div>
-		<h3>HELLO</h3>
-		<h1>I'm Mateusz</h1>
-		<h4>Lorem ipsum dolor sit amet</h4>
+	<div class="row">
+		<div class="col-12 col-md-3">hello</div>
+		<div class="col-12 col-md-9">
+			<ManBehindTheDesk />
+		</div>
 	</div>
-	<ManBehindTheDesk />
 </div>
 
 <style>
 	.background-color {
 		background-color: #3f3d56;
+		max-height: 100vh;
+		overflow: hidden;
 	}
 </style>

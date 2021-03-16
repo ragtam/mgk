@@ -1,16 +1,18 @@
 <script>
 	import Home from './home-screen/Home.svelte';
+	import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 </script>
 
-<main>
+<div class="container-fluid">
 	<Home />
 	<h1>Hello</h1>
+	<button type="button" class="btn btn-primary">Primary</button>
 	<div style="height: 1000px">asdf</div>
 	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
-</main>
+</div>
 
 <style>
-	main {
+	/* main {
 		text-align: center;
 		padding: 1em;
 		max-width: 240px;
@@ -22,11 +24,5 @@
 		text-transform: uppercase;
 		font-size: 4em;
 		font-weight: 100;
-	}
-
-	@media (min-width: 640px) {
-		main {
-			max-width: none;
-		}
-	}
+	} */
 </style>
