@@ -3,15 +3,14 @@
 
 	setTimeout(() => {
 		var rellax = new Rellax('.rellax');
-	}, 100);
+	}, 0);
 </script>
 
 <svg width="1134" height="854" viewBox="0 0 1134 854" fill="none" xmlns="http://www.w3.org/2000/svg">
 	<g clip-path="url(#clip0)">
 		<path class="rellax" data-rellax-speed="-4" d="M0 11.5H1134V733.5H0V11.5Z" fill="#3F3D56" />
 		<path
-			id="svg__moon"
-			class="rellax"
+			class="moon rellax"
 			data-rellax-speed="-7"
 			d="M645.183 189.075C677.114 189.075 703 163.185 703 131.249C703 99.3124 677.114 73.4224 645.183 73.4224C613.251 73.4224 587.366 99.3124 587.366 131.249C587.366 163.185 613.251 189.075 645.183 189.075Z"
 			fill="#F2F2F2"
@@ -35,14 +34,14 @@
 		<path
 			class="rellax"
 			data-rellax-speed="-4"
-			d="M1134 -14H48.8472H0V707.5H1134V34.8554V-14ZM71.4627 68.7602H477.672V651.843H71.4627V68.7602ZM1062.54 651.843H654.448V68.7602H1062.54V651.843Z"
+			d="M1134 -16H48.8472H0V731H1134V32.8554V-16ZM71.4627 66.7602H477.672V605H71.4627V66.7602ZM1062.54 605H654.448V66.7602H1062.54V605Z"
 			fill="#3F3D56"
 		/>
 		<path
 			class="rellax"
 			data-rellax-speed="-4"
 			opacity="0.1"
-			d="M1134 12H0V733.603H1134V12ZM71.4627 67.7602H477.672V650.843H71.4627V67.7602ZM1062.54 650.843H654.448V67.7602H1062.54V650.843Z"
+			d="M1134 12H0V733.603H1134V12ZM71.4627 67.7602H477.672V610.5H71.4627V67.7602ZM1062.54 610.5H654.448V67.7602H1062.54V610.5Z"
 			fill="black"
 		/>
 		<path
@@ -396,6 +395,3 @@
 		</clipPath>
 	</defs>
 </svg>
-
-<style>
-</style>
