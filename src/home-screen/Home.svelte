@@ -1,11 +1,15 @@
 <script>
 	import ManBehindTheDesk from './Man-Behind-The-Desk.svelte';
+
+	setTimeout(() => {
+		var rellax = new Rellax('.rellax');
+	}, 0);
 </script>
 
 <div class="background-color">
 	<div class="row test">
 		<div class="col-12 col-lg-5 d-flex align-items-center min-height--half-screen">
-			<div class="container">
+			<div class="rellax container" data-rellax-speed="-6">
 				<h3 class="text-uppercase text-muted">Hello</h3>
 				<h1 class="fs-1 text-white">I'm Mateusz</h1>
 				<h3 class="text-white">Front End Developer working with Angular and Vue.</h3>
@@ -27,11 +31,6 @@
 
 	.min-height--half-screen {
 		min-height: 50vh;
-	}
-
-	.margin-x {
-		margin: 0em 2em;
-		width: 100%;
 	}
 
 	.test {
