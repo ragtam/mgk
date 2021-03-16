@@ -3,7 +3,7 @@
 	import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 </script>
 
-<div class="container-fluid">
+<div class="">
 	<Home />
 	<h1>Hello</h1>
 	<button type="button" class="btn btn-primary">Primary</button>

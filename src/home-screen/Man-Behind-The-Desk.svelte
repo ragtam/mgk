@@ -395,9 +395,3 @@
 		</clipPath>
 	</defs>
 </svg>
-
-<style>
-	svg {
-		margin: 6em 6em 0em 6em;
-	}
-</style>
