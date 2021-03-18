@@ -3,9 +3,13 @@
 
 	import ManBehindTheDesk from './Man-Behind-The-Desk.svelte';
 
-	setTimeout(() => {
-		var rellax = new Rellax('.rellax');
-	}, 0);
+	setUpParallaxEffect();
+
+	function setUpParallaxEffect() {
+		setTimeout(() => {
+			new Rellax('.rellax');
+		}, 0);
+	}
 </script>
 
 <div class="home">
@@ -36,6 +40,7 @@
 		position: absolute;
 		left: 0;
 		margin-left: 2rem;
+		margin-right: 2rem;
 		align-self: center;
 	}
 
@@ -46,7 +51,7 @@
 		left: 0;
 		right: 0;
 		margin: 0 auto;
-		margin-bottom: 2rem;
+		margin-bottom: 4rem;
 
 		animation: animate-mouse-icon 1s linear 1s infinite alternate;
 	}
