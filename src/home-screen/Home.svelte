@@ -13,7 +13,7 @@
 </script>
 
 <div class="home">
-	<div class="leading-text rellax" data-rellax-speed="-3">
+	<div class="leading-text rellax align-self-start align-self-lg-center my-4" data-rellax-speed="-3">
 		<h1 class="display-4 text-muted">Hello</h1>
 		<h1 class="display-1 text-white">I'm Mateusz</h1>
 		<h1 class="display-6 text-secondary">Front End Developer struggling with CSS.</h1>
@@ -41,7 +41,6 @@
 		left: 0;
 		margin-left: 2rem;
 		margin-right: 2rem;
-		align-self: center;
 	}
 
 	.mouse-icon {
@@ -53,7 +52,7 @@
 		margin: 0 auto;
 		margin-bottom: 4rem;
 
-		animation: animate-mouse-icon 1s linear 1s infinite alternate;
+		animation: animate-mouse-icon 0.8s linear 1s infinite alternate;
 	}
 
 	@keyframes animate-mouse-icon {
