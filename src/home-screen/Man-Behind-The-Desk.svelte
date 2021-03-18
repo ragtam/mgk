@@ -6,7 +6,7 @@
 	}, 0);
 </script>
 
-<svg viewBox="0 0 1134 854" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg style="max-height: 100vh;" viewBox="0 0 1134 854" fill="none" xmlns="http://www.w3.org/2000/svg">
 	<g clip-path="url(#clip0)">
 		<path class="rellax" data-rellax-speed="-5" d="M0 11.5H1134V733.5H0V11.5Z" fill="#3F3D56" />
 		<path
