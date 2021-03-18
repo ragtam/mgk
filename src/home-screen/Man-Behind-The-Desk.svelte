@@ -1,11 +1,3 @@
-<script>
-	import Rellax from 'rellax';
-
-	setTimeout(() => {
-		var rellax = new Rellax('.rellax');
-	}, 0);
-</script>
-
 <svg style="max-height: 100vh;" viewBox="0 0 1134 854" fill="none" xmlns="http://www.w3.org/2000/svg">
 	<g clip-path="url(#clip0)">
 		<path class="rellax" data-rellax-speed="-5" d="M0 11.5H1134V733.5H0V11.5Z" fill="#3F3D56" />
@@ -339,14 +331,14 @@
 		<path
 			id="svg__man"
 			class="rellax"
-			data-rellax-speed="-2"
+			data-rellax-speed="-2.5"
 			d="M570.057 659.387L544.601 788.686H557.328L581.724 661.508L570.057 659.387Z"
 			fill="#2F2E41"
 		/>
 		<path
 			id="svg__man"
 			class="rellax"
-			data-rellax-speed="-2"
+			data-rellax-speed="-2.5"
 			d="M651.728 669.986L667.638 818.361H678.245L668.698 665.746L651.728 669.986Z"
 			fill="#2F2E41"
 		/>
@@ -361,7 +353,7 @@
 		<path
 			id="svg__chair"
 			class="rellax"
-			data-rellax-speed="-2"
+			data-rellax-speed="-2.5"
 			d="M552.025 645.61C552.025 645.61 535.054 532.209 582.784 529.03C630.514 525.85 698.397 529.03 698.397 529.03C698.397 529.03 737.642 525.85 725.975 645.61C725.975 645.61 736.581 680.584 641.121 677.405C545.661 674.225 552.025 645.61 552.025 645.61Z"
 			fill="#4C4970"
 		/>
