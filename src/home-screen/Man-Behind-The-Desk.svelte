@@ -389,11 +389,11 @@
 </svg>
 
 <style>
-	svg {
+	/* svg {
 		width: auto;
 		height: auto;
 
 		max-height: 85vh;
 		min-height: 50vh;
-	}
+	} */
 </style>

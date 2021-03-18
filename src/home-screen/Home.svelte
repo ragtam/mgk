@@ -12,55 +12,35 @@
 	}
 </script>
 
-<div class="home">
-	<div class="leading-text rellax align-self-start align-self-lg-center my-4" data-rellax-speed="-3">
-		<h1 class="display-4 text-muted">Hello</h1>
-		<h1 class="display-1 text-white">I'm Mateusz</h1>
-		<h1 class="display-6 text-secondary">Front End Developer struggling with CSS.</h1>
+<div class="home row">
+	<div class="col-12 col-lg-4 d-flex align-items-center min-height-50vh">
+		<div class="mx-5 position-absolute">
+			<div class="rellax" data-rellax-speed="-3">
+				<h1 class="display-4 text-muted rellax" data-rellax-speed="-3">Hello</h1>
+				<h1 class="display-1 text-white rellax" data-rellax-speed="-3">I'm Mateusz</h1>
+				<h1 class="display-6 text-secondary rellax" data-rellax-speed="-3">Front End Developer struggling with CSS.</h1>
+			</div>
+		</div>
 	</div>
-	<img class="mouse-icon" src="/assets/icons/mouse.svg" alt="" width="32" height="32" />
-	<div class="image-container">
-		<ManBehindTheDesk />
+	<div class="col-12 col-lg-8 d-flex justify-content-end">
+		<div class="align-self-end">
+			123
+			<!-- <ManBehindTheDesk /> -->
+		</div>
 	</div>
 </div>
 
 <style>
 	.home {
-		display: flex;
 		height: 100vh;
-		justify-content: end;
 		background-color: #3f3d56;
 	}
 
-	.image-container {
-		align-self: end;
-	}
+	/* .min-height-50vh {
+		min-height: 50vh;
+	} */
 
-	.leading-text {
+	.position-absolute {
 		position: absolute;
-		left: 0;
-		margin-left: 2rem;
-		margin-right: 2rem;
-	}
-
-	.mouse-icon {
-		color: white;
-		position: absolute;
-		align-self: flex-end;
-		left: 0;
-		right: 0;
-		margin: 0 auto;
-		margin-bottom: 4rem;
-
-		animation: animate-mouse-icon 0.8s linear 1s infinite alternate;
-	}
-
-	@keyframes animate-mouse-icon {
-		from {
-			transform: scale(1);
-		}
-		to {
-			transform: scale(1.2);
-		}
 	}
 </style>
