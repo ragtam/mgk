@@ -12,7 +12,7 @@
 	}
 </script>
 
-<div class="home row">
+<div class="home row overflow-hidden">
 	<div class="col-12 col-lg-4 d-flex align-items-center min-height-50vh">
 		<div class="mx-5 position-absolute">
 			<div class="rellax" data-rellax-speed="-3">
@@ -22,10 +22,9 @@
 			</div>
 		</div>
 	</div>
-	<div class="col-12 col-lg-8 d-flex justify-content-end">
+	<div class="col-12 col-lg-8 d-flex justify-content-end max-height-50vh">
 		<div class="align-self-end">
-			123
-			<!-- <ManBehindTheDesk /> -->
+			<ManBehindTheDesk />
 		</div>
 	</div>
 </div>
@@ -36,9 +35,9 @@
 		background-color: #3f3d56;
 	}
 
-	/* .min-height-50vh {
+	.min-height-50vh {
 		min-height: 50vh;
-	} */
+	}
 
 	.position-absolute {
 		position: absolute;
