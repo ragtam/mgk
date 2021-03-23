@@ -14,6 +14,7 @@
 			fill="#b8baba"
 		/>
 		<path
+			id="svg__wall"
 			class="rellax"
 			data-rellax-speed="-4"
 			d="M1134 12H0v721.603h1134V12zM71.463 67.76h406.209V610.5H71.462V67.76zM1062.54 610.5H654.448V67.76h408.092V610.5z"
