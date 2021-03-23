@@ -1,28 +1,115 @@
+<script>
+	import anime from 'animejs/lib/anime.es.js';
+
+	setTimeout(() => {
+		var tl = anime.timeline({
+			easing: 'easeInSine',
+			duration: 400,
+			direction: 'reverse',
+		});
+
+		tl.add(
+			{
+				targets: '.flower',
+				opacity: 0,
+			},
+			'-=200'
+		);
+
+		tl.add(
+			{
+				targets: '.tablet',
+				opacity: 0,
+			},
+			'-=200'
+		);
+
+		tl.add({
+			targets: '.man',
+			opacity: 0,
+		});
+
+		tl.add(
+			{
+				targets: '.equipment',
+				easing: 'easeInBack',
+				translateX: 1000,
+			},
+			'-=200'
+		);
+
+		tl.add(
+			{
+				targets: '.chair',
+				easing: 'easeInBack',
+				translateX: -1000,
+			},
+			'-=200'
+		);
+
+		tl.add(
+			{
+				targets: '.desk',
+				easing: 'easeInBack',
+				translateX: -1000,
+			},
+			'-=200'
+		);
+
+		// tl.add({
+		// 	targets: '#svg__desk',
+		// 	translateX: -250,
+		// });
+
+		// tl.add({
+		// 	targets: '.svg__building',
+		// 	translateX: -250,
+		// });
+
+		// tl.add({
+		// 	targets: '.moon',
+		// 	translateX: -250,
+		// });
+
+		// tl.add({
+		// 	targets: '.svg__background',
+		// 	translateX: -250,
+		// });
+
+		// anime({
+		// 	targets: '.moon',
+		// 	translateX: -250,
+		// 	duration: 800,
+		// 	direction: 'reverse',
+		// });
+	}, 0);
+</script>
+
 <svg viewBox="0 0 1134 854" fill="none" xmlns="http://www.w3.org/2000/svg">
 	<g clip-path="url(#clip0)">
 		<path class="rellax" data-rellax-speed="-5" d="M0 11.5h1134v722H0v-722z" fill="#3F3D56" />
 		<path
-			class="moon rellax"
+			class="moon rellax svg__background"
 			data-rellax-speed="-6"
 			d="M645.183 189.075c31.931 0 57.817-25.89 57.817-57.826 0-31.937-25.886-57.827-57.817-57.827-31.932 0-57.817 25.89-57.817 57.827 0 31.936 25.885 57.826 57.817 57.826z"
 			fill="#F2F2F2"
 		/>
 		<path
 			id="svg__building"
-			class="rellax"
+			class="rellax svg__building"
 			data-rellax-speed="-5"
 			opacity=".3"
 			d="M423.864 271.717V206H236.773v65.717h-58.466V348.7H43V651h441V271.717h-60.136zM176.636 620.958H73.068v-22.531h103.568v22.531zm0-69.472H73.068v-22.532h103.568v22.532zm0-69.473H73.068v-22.532h103.568v22.532zm0-69.473H73.068v-22.532h103.568v22.532zm110.251 189.641H226.75v-67.594h60.137v67.594zm0-108.902H226.75v-67.595h60.137v67.595zm0-108.903H226.75v-67.595h60.137v67.595zm153.682 217.805h-60.137v-67.594h60.137v67.594zm0-108.902h-60.137v-67.595h60.137v67.595zm0-108.903h-60.137v-67.595h60.137v67.595zM656 287.616V649h443V360.966H963.079v-73.35h-58.731V225H716.409v62.616H656zm308.757 311.292H1068.8v21.468H964.757v-21.468zm0-66.195H1068.8v21.469H964.757v-21.469zm0-66.194H1068.8v21.468H964.757v-21.468zm0-66.194H1068.8v21.468H964.757v-21.468zm-110.75 137.756h60.409v64.404h-60.409v-64.404zm0-103.764h60.409v64.405h-60.409v-64.405zm0-103.764h60.409v64.405h-60.409v-64.405zM699.629 538.081h60.409v64.404h-60.409v-64.404zm0-103.764h60.409v64.405h-60.409v-64.405zm0-103.764h60.409v64.405h-60.409v-64.405z"
 			fill="#6C63FF"
 		/>
 		<path
-			class="rellax"
+			class="rellax svg__background"
 			data-rellax-speed="-4"
 			d="M1134-16H0v747h1134V-16zM71.463 66.76h406.209V605H71.462V66.76zM1062.54 605H654.448V66.76h408.092V605z"
 			fill="#3F3D56"
 		/>
 		<path
-			class="rellax"
+			class="rellax svg__background"
 			data-rellax-speed="-4"
 			opacity=".1"
 			d="M1134 12H0v721.603h1134V12zM71.463 67.76h406.209V610.5H71.462V67.76zM1062.54 610.5H654.448V67.76h408.092V610.5z"
@@ -30,14 +117,14 @@
 		/>
 		<path
 			id="svg__desk"
-			class="rellax"
+			class="rellax desk"
 			data-rellax-speed="-3"
 			d="M995.242 760.105c0 32.829-143.371 93.895-323.969 93.895C490.676 854 342 796.72 342 763.891c0-32.828 148.676-28.774 329.273-28.774 180.598 0 323.969-7.84 323.969 24.988z"
 			fill="#3F3D56"
 		/>
 		<path
 			id="svg__desk"
-			class="rellax"
+			class="rellax desk"
 			data-rellax-speed="-3"
 			opacity=".1"
 			d="M995.242 760.105c0 32.829-143.371 93.895-323.969 93.895C490.676 854 342 796.72 342 763.891c0-32.828 148.676-28.774 329.273-28.774 180.598 0 323.969-7.84 323.969 24.988z"
@@ -45,21 +132,21 @@
 		/>
 		<path
 			id="svg__desk"
-			class="rellax"
+			class="rellax desk"
 			data-rellax-speed="-3"
 			d="M669 822.954c180.597 0 327-26.613 327-59.441 0-32.829-146.403-59.441-327-59.441s-327 26.612-327 59.441c0 32.828 146.403 59.441 327 59.441z"
 			fill="#3F3D56"
 		/>
 		<path
 			id="svg__desk"
-			class="rellax"
+			class="rellax desk"
 			data-rellax-speed="-3"
 			d="M792.797 561.355v158.972l26.612 43.336 2.026 3.297h105.006l2.121-205.605H792.797z"
 			fill="#2F2E41"
 		/>
 		<path
 			id="svg__desk"
-			class="rellax"
+			class="rellax desk"
 			data-rellax-speed="-3"
 			opacity=".1"
 			d="M792.797 561.355v158.972l26.612 43.336 1.633-202.308h-28.245z"
@@ -67,14 +154,14 @@
 		/>
 		<path
 			id="svg__desk"
-			class="rellax"
+			class="rellax desk"
 			data-rellax-speed="-3"
 			d="M539.297 557.115v158.973l-26.612 43.336-2.026 3.296H405.652l-2.121-205.605h135.766z"
 			fill="#2F2E41"
 		/>
 		<path
 			id="svg__desk"
-			class="rellax"
+			class="rellax desk"
 			data-rellax-speed="-3"
 			opacity=".1"
 			d="M539.297 557.115v158.973l-26.612 43.336-1.634-202.309h28.246z"
@@ -82,14 +169,14 @@
 		/>
 		<path
 			id="svg__desk"
-			class="rellax"
+			class="rellax desk"
 			data-rellax-speed="-3"
 			d="M960.382 553.935v9.539H389.743v-13.777l53.033-27.556h470.937l46.669 31.794z"
 			fill="#2F2E41"
 		/>
 		<path
 			id="svg__desk"
-			class="rellax"
+			class="rellax desk"
 			data-rellax-speed="-3"
 			opacity=".1"
 			d="M960.382 553.935v9.539H389.743v-13.777l570.639 4.238zM471.414 601.628h-25.456l-10.607-7.419h47.73l-11.667 7.419zM471.414 632.362h-25.456l-10.607-7.419h47.73l-11.667 7.419zM471.414 675.815h-25.456l-10.607-7.419h47.73l-11.667 7.419zM471.414 719.267h-25.456l-10.607-7.418h47.73l-11.667 7.418zM860.68 605.867h25.456l10.606-7.419h-47.73l11.668 7.419zM860.68 636.601h25.456l10.606-7.418h-47.73l11.668 7.418zM860.68 680.054h25.456l10.606-7.418h-47.73l11.668 7.418zM860.68 723.507h25.456l10.606-7.419h-47.73l11.668 7.419z"
@@ -97,14 +184,14 @@
 		/>
 		<path
 			id="svg__desk"
-			class="rellax"
+			class="rellax equipment"
 			data-rellax-speed="-3"
 			d="M745.552 495.62l-3.538 22.57s-17.418 9.246-5.171 9.518c12.247.272 69.943 0 69.943 0s11.159 0-6.531-9.789l-3.538-23.659-51.165 1.36z"
 			fill="#3F3D56"
 		/>
 		<path
 			id="svg__desk"
-			class="rellax"
+			class="rellax equipment"
 			data-rellax-speed="-3"
 			opacity=".1"
 			d="M734.379 527.463a48.198 48.198 0 017.635-5.049l3.538-22.571 51.165.048 3.538 22.251a46.46 46.46 0 018.175 5.375c2.273-.518 4.755-2.443-8.175-9.599l-3.538-23.658-51.165 1.36-3.538 22.57s-14.636 7.771-7.635 9.273z"
@@ -112,43 +199,49 @@
 		/>
 		<path
 			id="svg__desk"
-			class="rellax"
+			class="rellax equipment"
 			data-rellax-speed="-3"
 			d="M878.015 338.305H663.71c-4.476 0-8.105 3.626-8.105 8.098v144.246c0 4.472 3.629 8.098 8.105 8.098h214.305c4.476 0 8.104-3.626 8.104-8.098V346.403c0-4.472-3.628-8.098-8.104-8.098z"
 			fill="#3F3D56"
 		/>
-		<path id="svg__desk" class="rellax" data-rellax-speed="-3" d="M878.363 346.871H663.361v120.195h215.002V346.871z" fill="#1F1E2C" />
 		<path
 			id="svg__desk"
-			class="rellax"
+			class="rellax equipment"
+			data-rellax-speed="-3"
+			d="M878.363 346.871H663.361v120.195h215.002V346.871z"
+			fill="#1F1E2C"
+		/>
+		<path
+			id="svg__desk"
+			class="rellax equipment"
 			data-rellax-speed="-3"
 			d="M770.862 344.423a1.36 1.36 0 100-2.719 1.36 1.36 0 100 2.719z"
 			fill="#F2F2F2"
 		/>
 		<path
 			id="svg__desk"
-			class="rellax"
+			class="rellax equipment"
 			data-rellax-speed="-3"
 			d="M886.119 476.584v14.065a8.082 8.082 0 01-2.373 5.726 8.107 8.107 0 01-5.731 2.372H663.71a8.108 8.108 0 01-7.488-4.999 8.083 8.083 0 01-.617-3.099v-14.065h230.514z"
 			fill="#3F3D56"
 		/>
 		<path
 			id="svg__desk"
-			class="rellax"
+			class="rellax equipment"
 			data-rellax-speed="-3"
 			d="M770.862 492.9a5.168 5.168 0 005.171-5.166 5.169 5.169 0 00-5.171-5.167 5.169 5.169 0 00-5.171 5.167 5.168 5.168 0 005.171 5.166z"
 			fill="#F2F2F2"
 		/>
 		<path
 			id="svg__desk"
-			class="rellax"
+			class="rellax equipment"
 			data-rellax-speed="-3"
 			d="M762.804 542.392v2.72H616.385v-2.175l.202-.545 3.609-9.789h139.615l2.993 9.789zM819.151 539.73c-.267 1.14-1.274 2.342-3.549 3.479-8.164 4.079-24.766-1.088-24.766-1.088s-12.791-2.176-12.791-7.886c.359-.246.734-.469 1.121-.667 3.433-1.814 14.814-6.292 34.995.19a8.411 8.411 0 013.836 2.512 4.005 4.005 0 011.154 3.46z"
 			fill="#3F3D56"
 		/>
 		<path
 			id="svg__desk"
-			class="rellax"
+			class="rellax equipment"
 			data-rellax-speed="-3"
 			opacity=".1"
 			d="M819.151 539.73c-9.993 3.827-18.901 4.112-28.043-2.232-4.61-3.198-8.798-3.989-11.942-3.93 3.433-1.814 14.814-6.292 34.995.19a8.411 8.411 0 013.836 2.512 4.005 4.005 0 011.154 3.46z"
@@ -156,14 +249,14 @@
 		/>
 		<path
 			id="svg__desk"
-			class="rellax"
+			class="rellax equipment"
 			data-rellax-speed="-3"
 			d="M806.621 537.498c1.954 0 3.538-.487 3.538-1.088 0-.601-1.584-1.088-3.538-1.088-1.954 0-3.538.487-3.538 1.088 0 .601 1.584 1.088 3.538 1.088z"
 			fill="#F2F2F2"
 		/>
 		<path
 			id="svg__desk"
-			class="rellax"
+			class="rellax equipment"
 			data-rellax-speed="-3"
 			opacity=".1"
 			d="M762.804 542.392v2.72H616.385v-2.175l.202-.545h146.217z"
@@ -171,21 +264,21 @@
 		/>
 		<path
 			id="svg__man"
-			class="rellax"
+			class="rellax man"
 			data-rellax-speed="-3"
 			d="M641.066 375.007c16.007 0 28.984-12.967 28.984-28.961 0-15.995-12.977-28.961-28.984-28.961-16.008 0-28.984 12.966-28.984 28.961 0 15.994 12.976 28.961 28.984 28.961z"
 			fill="#FFB9B9"
 		/>
 		<path
 			id="svg__man"
-			class="rellax"
+			class="rellax man"
 			data-rellax-speed="-3"
 			d="M619.709 360.526v45.728h47.29s-6.102-38.107-3.051-49.539l-44.239 3.811z"
 			fill="#FFB9B9"
 		/>
 		<path
 			id="svg__man"
-			class="rellax"
+			class="rellax man"
 			data-rellax-speed="-3"
 			xmlns="http://www.w3.org/2000/svg"
 			d="M713.526 422.259s-45.001-22.102-45.001-23.626c0-1.525-4.577-11.432-7.628-11.432s-28.984-8.384-43.476 3.81l-1.525 9.908-55.681 36.582 15.255 55.636s9.916 10.67 6.865 18.291 2.288 46.49 2.288 46.49l119.75-3.811v-51.825s3.814-12.194 6.102-16.004c2.289-3.811 0-15.243 0-15.243l18.306-22.864s-2.288-21.34-15.255-25.912z"
@@ -193,7 +286,7 @@
 		/>
 		<path
 			id="svg__man"
-			class="rellax"
+			class="rellax man"
 			data-rellax-speed="-3"
 			opacity=".1"
 			d="M562.122 456.173l3.433-18.672s-19.832 86.121-17.543 96.029c2.288 9.907 19.068 25.15 21.356 25.912 2.289.762 23.645-65.543 23.645-65.543l-30.891-37.726z"
@@ -201,14 +294,14 @@
 		/>
 		<path
 			id="svg__man"
-			class="rellax"
+			class="rellax man"
 			data-rellax-speed="-3"
 			d="M573.182 435.215l-12.967 2.286s-19.831 86.121-17.543 96.029c2.289 9.907 19.069 25.15 21.357 25.912 2.288.762 23.645-65.543 23.645-65.543l-14.492-58.684z"
 			fill="#D0CDE1"
 		/>
 		<path
 			id="svg__man"
-			class="rellax"
+			class="rellax man"
 			data-rellax-speed="-3"
 			opacity=".1"
 			d="M717.721 460.746l6.484-12.575s9.153 86.121 3.051 94.504c-6.102 8.384-30.24 11.521-30.24 11.521l-.27-62.584 20.975-30.866z"
@@ -216,76 +309,88 @@
 		/>
 		<path
 			id="svg__man"
-			class="rellax"
+			class="rellax man"
 			data-rellax-speed="-3"
 			d="M718.866 438.263l9.915 9.908s9.153 86.121 3.051 94.504c-6.102 8.384-30.239 11.521-30.239 11.521l-.27-62.584 17.543-53.349z"
 			fill="#D0CDE1"
 		/>
 		<path
 			id="svg__man--legs"
-			class="rellax"
+			class="rellax man"
 			data-rellax-speed="-3"
 			d="M570.894 569.35s-22.12-8.384-25.933 7.621c-3.814 16.005 9.152 87.645 9.152 87.645s8.391 54.111 13.73 55.635c5.339 1.525 28.984 2.287 32.798-4.572C604.454 708.819 584.5 585.5 584.5 585.5L683 592s-10.662 106.15-13.713 111.484c-3.051 5.335-3.051 23.626 0 23.626s36.612-1.524 38.9-6.097c2.288-4.572 15.255-107.46 15.255-107.46s10.678-35.82-1.526-33.534c-12.203 2.287-151.022-10.669-151.022-10.669z"
 			fill="#3F3D56"
 		/>
 		<path
 			id="svg__man--foot"
-			class="rellax"
+			class="rellax man"
 			data-rellax-speed="-3"
 			d="M701.323 717.965s7.627-5.335 11.441 0c3.813 5.335 5.339 11.432-11.441 20.577-16.781 9.146-29.747 6.86-29.747 5.335v-22.101l29.747-3.811zM569.368 715.679s-7.627-5.335-11.441 0c-3.814 5.335-5.339 11.432 11.441 20.577 16.781 9.146 29.747 6.859 29.747 5.335v-22.102l-29.747-3.81z"
 			fill="#201F2E"
 		/>
 		<path
 			id="svg__man"
-			class="rellax"
+			class="rellax man"
 			data-rellax-speed="-3"
 			d="M641.254 309.529a24.517 24.517 0 00-8.513 1.212 32.957 32.957 0 00-6.065 3.206l-12.796 7.951a5.998 5.998 0 00-2.652 2.244 5.98 5.98 0 00-.96 3.337l-1.599 11.965c-.403 3.02-.775 6.249.578 8.979 1.129 2.279 3.282 3.838 5.053 5.664a20.795 20.795 0 015.484 10.647c.915 4.996.329 11.012 4.286 14.2 2.142 1.727 5.062 2.053 7.809 2.214a116.66 116.66 0 0022.508-.866 8.962 8.962 0 003.401-.952c1.345-.795 2.192-2.198 2.983-3.545 2.858-4.861 5.803-10.032 5.772-15.67-.015-2.789-.729-5.784.611-8.23a32.156 32.156 0 012.302-2.988c1.659-2.329 1.982-5.323 2.252-8.17.864-9.093-.039-16.013-6.746-22.418-6.261-5.979-15.169-8.725-23.708-8.78z"
 			fill="#2F2E41"
 		/>
 		<path
 			id="svg__man"
-			class="rellax"
+			class="rellax chair"
 			data-rellax-speed="-2.5"
 			d="M570.057 659.387l-25.456 129.299h12.727l24.396-127.178-11.667-2.121zM651.728 669.986l15.91 148.375h10.607l-9.547-152.615-16.97 4.24z"
 			fill="#2F2E41"
 		/>
 		<path
 			id="svg__chair-leg--front"
-			class="rellax"
+			class="rellax chair"
 			data-rellax-speed="-3"
 			d="M697 578.978L719.219 764H729.8l-21.161-189L697 578.978zM610 588l-3 156h8l6-156h-11z"
 			fill="#2F2E41"
 		/>
 		<path
 			id="svg__chair"
-			class="rellax"
+			class="rellax chair"
 			data-rellax-speed="-2.5"
 			d="M552.025 645.61s-16.971-113.401 30.759-116.58c47.73-3.18 115.613 0 115.613 0s39.245-3.18 27.578 116.58c0 0 10.606 34.974-84.854 31.795-95.46-3.18-89.096-31.795-89.096-31.795z"
 			fill="#4C4970"
 		/>
 		<path
 			id="svg__flower"
-			class="rellax"
+			class="rellax flower"
 			data-rellax-speed="-3"
 			d="M986.906 691.919c0 19.775-11.765 26.679-26.278 26.679-14.514 0-26.279-6.904-26.279-26.679s26.279-44.932 26.279-44.932 26.278 25.157 26.278 44.932z"
 			fill="#0BA357"
 		/>
 		<path
 			id="svg__flower"
-			class="rellax"
+			class="rellax flower"
 			data-rellax-speed="-3"
 			d="M959.94 699.024l11.2-20.475-11.158 17.878.121-7.441 7.719-14.813-7.687 12.844.217-13.384 8.266-11.793-8.232 9.689.137-24.542-.818 31.097-8.371-12.802 8.269 15.426-.782 14.947-.024-.397-9.689-13.526 9.659 14.928-.097 1.869-.018.028.009.154-1.987 19.947h2.654l.319-1.612 9.635-14.892-9.612 13.419.27-16.549z"
 			fill="#3F3D56"
 		/>
 		<path
 			id="svg__flower-pot"
-			class="rellax"
+			class="rellax flower"
 			data-rellax-speed="-3"
 			d="M977.411 761.495h-31.329l-8.097-45.725h45.762l-6.336 45.725z"
 			fill="#2F2E41"
 		/>
-		<path id="svg__desk" class="rellax" data-rellax-speed="-3" d="M517.057 452.363h-65.173v76.348h65.173v-76.348z" fill="#3F3D56" />
-		<path id="svg__desk" class="rellax" data-rellax-speed="-3" d="M506.944 464.21h-44.947v52.654h44.947V464.21z" fill="#1F1E2C" />
+		<path
+			id="svg__desk"
+			class="rellax tablet"
+			data-rellax-speed="-3"
+			d="M517.057 452.363h-65.173v76.348h65.173v-76.348z"
+			fill="#3F3D56"
+		/>
+		<path
+			id="svg__desk"
+			class="rellax tablet"
+			data-rellax-speed="-3"
+			d="M506.944 464.21h-44.947v52.654h44.947V464.21z"
+			fill="#1F1E2C"
+		/>
 	</g>
 	<defs>
 		<clipPath id="clip0">

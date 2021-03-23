@@ -6,6 +6,7 @@
 
 <div class="overflow-x-hidden">
 	<Home />
+
 	<h1>Next section</h1>
 	<div class="row">
 		<i class="bi-alarm" />
