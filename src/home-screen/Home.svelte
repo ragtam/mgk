@@ -32,7 +32,7 @@
 <style>
 	.home {
 		height: 100vh;
-		background-color: #3f3d56;
+		background-color: #e8bd3b;
 	}
 
 	.min-height-50vh {

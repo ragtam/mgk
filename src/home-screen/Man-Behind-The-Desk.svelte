@@ -1,119 +1,23 @@
-<script>
-	import anime from 'animejs/lib/anime.es.js';
-
-	setTimeout(() => {
-		var tl = anime.timeline({
-			easing: 'easeInSine',
-			duration: 400,
-			direction: 'reverse',
-		});
-
-		tl.add(
-			{
-				targets: '.flower',
-				opacity: 0,
-			},
-			'-=200'
-		);
-
-		tl.add(
-			{
-				targets: '.tablet',
-				opacity: 0,
-			},
-			'-=200'
-		);
-
-		tl.add({
-			targets: '.man',
-			opacity: 0,
-		});
-
-		tl.add(
-			{
-				targets: '.equipment',
-				easing: 'easeInBack',
-				translateX: 1000,
-			},
-			'-=200'
-		);
-
-		tl.add(
-			{
-				targets: '.chair',
-				easing: 'easeInBack',
-				translateX: -1000,
-			},
-			'-=200'
-		);
-
-		tl.add(
-			{
-				targets: '.desk',
-				easing: 'easeInBack',
-				translateX: -1000,
-			},
-			'-=200'
-		);
-
-		// tl.add({
-		// 	targets: '#svg__desk',
-		// 	translateX: -250,
-		// });
-
-		// tl.add({
-		// 	targets: '.svg__building',
-		// 	translateX: -250,
-		// });
-
-		// tl.add({
-		// 	targets: '.moon',
-		// 	translateX: -250,
-		// });
-
-		// tl.add({
-		// 	targets: '.svg__background',
-		// 	translateX: -250,
-		// });
-
-		// anime({
-		// 	targets: '.moon',
-		// 	translateX: -250,
-		// 	duration: 800,
-		// 	direction: 'reverse',
-		// });
-	}, 0);
-</script>
-
-<svg viewBox="0 0 1134 854" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 1134 854" fill="none">
 	<g clip-path="url(#clip0)">
-		<path class="rellax" data-rellax-speed="-5" d="M0 11.5h1134v722H0v-722z" fill="#3F3D56" />
 		<path
-			class="moon rellax svg__background"
+			class="moon rellax"
 			data-rellax-speed="-6"
 			d="M645.183 189.075c31.931 0 57.817-25.89 57.817-57.826 0-31.937-25.886-57.827-57.817-57.827-31.932 0-57.817 25.89-57.817 57.827 0 31.936 25.885 57.826 57.817 57.826z"
 			fill="#F2F2F2"
 		/>
 		<path
 			id="svg__building"
-			class="rellax svg__building"
+			class="rellax"
 			data-rellax-speed="-5"
-			opacity=".3"
 			d="M423.864 271.717V206H236.773v65.717h-58.466V348.7H43V651h441V271.717h-60.136zM176.636 620.958H73.068v-22.531h103.568v22.531zm0-69.472H73.068v-22.532h103.568v22.532zm0-69.473H73.068v-22.532h103.568v22.532zm0-69.473H73.068v-22.532h103.568v22.532zm110.251 189.641H226.75v-67.594h60.137v67.594zm0-108.902H226.75v-67.595h60.137v67.595zm0-108.903H226.75v-67.595h60.137v67.595zm153.682 217.805h-60.137v-67.594h60.137v67.594zm0-108.902h-60.137v-67.595h60.137v67.595zm0-108.903h-60.137v-67.595h60.137v67.595zM656 287.616V649h443V360.966H963.079v-73.35h-58.731V225H716.409v62.616H656zm308.757 311.292H1068.8v21.468H964.757v-21.468zm0-66.195H1068.8v21.469H964.757v-21.469zm0-66.194H1068.8v21.468H964.757v-21.468zm0-66.194H1068.8v21.468H964.757v-21.468zm-110.75 137.756h60.409v64.404h-60.409v-64.404zm0-103.764h60.409v64.405h-60.409v-64.405zm0-103.764h60.409v64.405h-60.409v-64.405zM699.629 538.081h60.409v64.404h-60.409v-64.404zm0-103.764h60.409v64.405h-60.409v-64.405zm0-103.764h60.409v64.405h-60.409v-64.405z"
-			fill="#6C63FF"
+			fill="#b8baba"
 		/>
 		<path
-			class="rellax svg__background"
+			class="rellax"
 			data-rellax-speed="-4"
-			d="M1134-16H0v747h1134V-16zM71.463 66.76h406.209V605H71.462V66.76zM1062.54 605H654.448V66.76h408.092V605z"
-			fill="#3F3D56"
-		/>
-		<path
-			class="rellax svg__background"
-			data-rellax-speed="-4"
-			opacity=".1"
 			d="M1134 12H0v721.603h1134V12zM71.463 67.76h406.209V610.5H71.462V67.76zM1062.54 610.5H654.448V67.76h408.092V610.5z"
-			fill="#000"
+			fill="#a5a5a5"
 		/>
 		<path
 			id="svg__desk"
@@ -215,22 +119,8 @@
 			id="svg__desk"
 			class="rellax equipment"
 			data-rellax-speed="-3"
-			d="M770.862 344.423a1.36 1.36 0 100-2.719 1.36 1.36 0 100 2.719z"
-			fill="#F2F2F2"
-		/>
-		<path
-			id="svg__desk"
-			class="rellax equipment"
-			data-rellax-speed="-3"
 			d="M886.119 476.584v14.065a8.082 8.082 0 01-2.373 5.726 8.107 8.107 0 01-5.731 2.372H663.71a8.108 8.108 0 01-7.488-4.999 8.083 8.083 0 01-.617-3.099v-14.065h230.514z"
 			fill="#3F3D56"
-		/>
-		<path
-			id="svg__desk"
-			class="rellax equipment"
-			data-rellax-speed="-3"
-			d="M770.862 492.9a5.168 5.168 0 005.171-5.166 5.169 5.169 0 00-5.171-5.167 5.169 5.169 0 00-5.171 5.167 5.168 5.168 0 005.171 5.166z"
-			fill="#F2F2F2"
 		/>
 		<path
 			id="svg__desk"
@@ -282,7 +172,7 @@
 			data-rellax-speed="-3"
 			xmlns="http://www.w3.org/2000/svg"
 			d="M713.526 422.259s-45.001-22.102-45.001-23.626c0-1.525-4.577-11.432-7.628-11.432s-28.984-8.384-43.476 3.81l-1.525 9.908-55.681 36.582 15.255 55.636s9.916 10.67 6.865 18.291 2.288 46.49 2.288 46.49l119.75-3.811v-51.825s3.814-12.194 6.102-16.004c2.289-3.811 0-15.243 0-15.243l18.306-22.864s-2.288-21.34-15.255-25.912z"
-			fill="#D0CDE1"
+			fill="#DB4C46"
 		/>
 		<path
 			id="svg__man"
@@ -297,7 +187,7 @@
 			class="rellax man"
 			data-rellax-speed="-3"
 			d="M573.182 435.215l-12.967 2.286s-19.831 86.121-17.543 96.029c2.289 9.907 19.069 25.15 21.357 25.912 2.288.762 23.645-65.543 23.645-65.543l-14.492-58.684z"
-			fill="#D0CDE1"
+			fill="#DB4C46"
 		/>
 		<path
 			id="svg__man"
@@ -312,7 +202,7 @@
 			class="rellax man"
 			data-rellax-speed="-3"
 			d="M718.866 438.263l9.915 9.908s9.153 86.121 3.051 94.504c-6.102 8.384-30.239 11.521-30.239 11.521l-.27-62.584 17.543-53.349z"
-			fill="#D0CDE1"
+			fill="#DB4C46"
 		/>
 		<path
 			id="svg__man--legs"
@@ -361,7 +251,7 @@
 			class="rellax flower"
 			data-rellax-speed="-3"
 			d="M986.906 691.919c0 19.775-11.765 26.679-26.278 26.679-14.514 0-26.279-6.904-26.279-26.679s26.279-44.932 26.279-44.932 26.278 25.157 26.278 44.932z"
-			fill="#0BA357"
+			fill="#80DE19"
 		/>
 		<path
 			id="svg__flower"
@@ -376,20 +266,6 @@
 			data-rellax-speed="-3"
 			d="M977.411 761.495h-31.329l-8.097-45.725h45.762l-6.336 45.725z"
 			fill="#2F2E41"
-		/>
-		<path
-			id="svg__desk"
-			class="rellax tablet"
-			data-rellax-speed="-3"
-			d="M517.057 452.363h-65.173v76.348h65.173v-76.348z"
-			fill="#3F3D56"
-		/>
-		<path
-			id="svg__desk"
-			class="rellax tablet"
-			data-rellax-speed="-3"
-			d="M506.944 464.21h-44.947v52.654h44.947V464.21z"
-			fill="#1F1E2C"
 		/>
 	</g>
 	<defs>

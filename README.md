@@ -4,6 +4,13 @@ _Looking for a shareable component template? Go here --> [sveltejs/component-tem
 
 https://www.schemecolor.com/retro-sunset.php
 
+yellow: #E8BD3B
+orange: #E87927
+red light: #DB4C46
+red: #AF3736
+blue: #4F315B
+dark blue: #3D1C49
+
 # svelte app
 
 This is a project template for [Svelte](https://svelte.dev) apps. It lives at https://github.com/sveltejs/template.
