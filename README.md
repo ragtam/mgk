@@ -11,6 +11,8 @@ red: #AF3736
 blue: #4F315B
 dark blue: #3D1C49
 
+https://dribbble.com/shots/12240165-GTA-5-Game-UI-Design
+
 # svelte app
 
 This is a project template for [Svelte](https://svelte.dev) apps. It lives at https://github.com/sveltejs/template.

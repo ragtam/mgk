@@ -28,19 +28,19 @@ export function animateOnEntry() {
     );
     t.add(
         {
-            targets: '#image',
-            translateX: ['200', '0'],
+            targets: '#text',
             opacity: [0, 1],
-            easing: 'spring(1, 80, 10, 0)',
         },
         '-=900'
     );
     t.add(
         {
-            targets: '#text',
+            targets: '#image',
+            translateX: ['200', '0'],
             opacity: [0, 1],
+            easing: 'spring(1, 80, 10, 0)',
         },
-        '-=1100'
+        '-=600'
     );
 }
 

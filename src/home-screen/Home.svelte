@@ -2,6 +2,8 @@
 	import ManBehindTheDesk from './Man-Behind-The-Desk.svelte';
 	import { animateOnEntry, setUpParallaxEffect, setUpScrollAnimation } from './home.js';
 
+	let colors = ['#E8BD3B', '#E87927', '#DB4C46', '#AF3736', '#4F315B', '#3D1C49'];
+
 	setTimeout(() => {
 		animateOnEntry();
 		setUpParallaxEffect();
@@ -13,12 +15,9 @@
 	<div class="background-overlay" />
 
 	<div class="intro-overlay">
-		<div style="background-color: #E8BD3B" />
-		<div style="background-color: #E87927" />
-		<div style="background-color: #DB4C46" />
-		<div style="background-color: #AF3736" />
-		<div style="background-color: #4F315B" />
-		<div style="background-color: #3D1C49" />
+		{#each colors as color}
+			<div style="background-color: {color}" />
+		{/each}
 	</div>
 
 	<div class="overlay" />
