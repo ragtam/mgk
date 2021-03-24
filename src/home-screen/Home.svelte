@@ -12,14 +12,14 @@
 <div class="home row overflow-hidden gx-0">
 	<div class="background-overlay" />
 
-	<section class="intro-overlay">
+	<div class="intro-overlay">
 		<div style="background-color: #E8BD3B" />
 		<div style="background-color: #E87927" />
 		<div style="background-color: #DB4C46" />
 		<div style="background-color: #AF3736" />
 		<div style="background-color: #4F315B" />
 		<div style="background-color: #3D1C49" />
-	</section>
+	</div>
 
 	<div class="overlay" />
 	<div class="sentinel" />
