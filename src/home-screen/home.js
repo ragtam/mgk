@@ -28,13 +28,6 @@ export function animateOnEntry() {
     );
     t.add(
         {
-            targets: '#text',
-            opacity: [0, 1],
-        },
-        '-=900'
-    );
-    t.add(
-        {
             targets: '#image',
             translateX: ['200', '0'],
             opacity: [0, 1],
@@ -62,6 +55,10 @@ export function setUpScrollAnimation() {
             entries.forEach((entry) => {
                 if (!entry.isIntersecting) {
                     overlayAnimation.play();
+                    const scrollIndicator = document.querySelector('.scroll-indicator')
+                    if (scrollIndicator) {
+                        scrollIndicator.remove()
+                    }
                 } else {
                     overlayAnimation.seek(0);
                 }
@@ -73,4 +70,13 @@ export function setUpScrollAnimation() {
     const target = document.querySelector('.sentinel');
 
     observer.observe(target);
+}
+
+export function animateScrollIndicator() {
+    anime({
+        targets: '.scroll-indicator i',
+        translateY: -20,
+        loop: true,
+        easing: 'easeInOutSine'
+      });
 }

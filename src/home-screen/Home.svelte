@@ -1,6 +1,6 @@
 <script>
 	import ManBehindTheDesk from './Man-Behind-The-Desk.svelte';
-	import { animateOnEntry, setUpParallaxEffect, setUpScrollAnimation } from './home.js';
+	import { animateOnEntry, setUpParallaxEffect, setUpScrollAnimation, animateScrollIndicator } from './home.js';
 
 	let colors = ['#E8BD3B', '#E87927', '#DB4C46', '#AF3736', '#4F315B', '#3D1C49'];
 
@@ -8,6 +8,7 @@
 		animateOnEntry();
 		setUpParallaxEffect();
 		setUpScrollAnimation();
+		animateScrollIndicator();
 	}, 0);
 </script>
 
@@ -29,6 +30,9 @@
 				<h1 class="display-1 text-white rellax">I'm Mateusz</h1>
 				<h1 class="display-6 text-secondary rellax">Front End Developer struggling with CSS.</h1>
 			</div>
+		</div>
+		<div class="scroll-indicator">
+			<i class="bi bi-mouse" />
 		</div>
 	</div>
 	<div id="image" class="col-12 col-lg-8 d-flex justify-content-end position-relative">
@@ -78,5 +82,17 @@
 	.position-absolute {
 		position: absolute;
 		z-index: 1;
+	}
+
+	.scroll-indicator {
+		position: absolute;
+		display: flex;
+		align-self: end;
+		justify-content: center;
+		width: 100%;
+	}
+
+	.scroll-indicator i {
+		font-size: 2rem;
 	}
 </style>
