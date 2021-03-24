@@ -5,9 +5,45 @@
 	import ManBehindTheDesk from './Man-Behind-The-Desk.svelte';
 
 	setTimeout(() => {
+		setUpInitialAnimationEffect();
 		setUpParallaxEffect();
 		setUpBackgroundColorChangeOnScroll();
 	}, 0);
+
+	function setUpInitialAnimationEffect() {
+		const t = anime.timeline({
+			easing: 'easeOutExpo',
+			duration: 750,
+		});
+		t.add({
+			targets: '.intro-overlay div',
+			opacity: 1,
+			delay: anime.stagger(100),
+		});
+		t.add(
+			{
+				targets: '.background-overlay',
+				opacity: 1,
+			},
+			'-=400'
+		);
+		t.add(
+			{
+				targets: '.intro-overlay div',
+				opacity: 0,
+				delay: anime.stagger(100),
+			},
+			'-=900'
+		);
+		t.add(
+			{
+				targets: '.image',
+				translateX: ['100%', '0'],
+				easing: 'spring(1, 80, 10, 0)',
+			},
+			'-=900'
+		);
+	}
 
 	function setUpParallaxEffect() {
 		setTimeout(() => {
@@ -44,6 +80,17 @@
 </script>
 
 <div class="home row overflow-hidden gx-0">
+	<div class="background-overlay" />
+
+	<section class="intro-overlay">
+		<div style="background-color: #E8BD3B" />
+		<div style="background-color: #E87927" />
+		<div style="background-color: #DB4C46" />
+		<div style="background-color: #AF3736" />
+		<div style="background-color: #4F315B" />
+		<div style="background-color: #3D1C49" />
+	</section>
+
 	<div class="overlay" />
 	<div class="sentinel" />
 	<div class="col-12 col-lg-4 d-flex align-items-center min-height-50vh">
@@ -55,7 +102,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="col-12 col-lg-8 d-flex justify-content-end max-height-50vh position-relative">
+	<div class="col-12 col-lg-8 d-flex justify-content-end max-height-50vh position-relative image">
 		<div class="align-self-end">
 			<ManBehindTheDesk />
 		</div>
@@ -63,6 +110,29 @@
 </div>
 
 <style>
+	.background-overlay {
+		position: absolute;
+		width: 100%;
+		height: 100vh;
+		background-color: #e8bd3b;
+		opacity: 0;
+	}
+
+	.intro-overlay {
+		position: absolute;
+		display: grid;
+		grid-template-columns: repeat(6, auto);
+	}
+
+	.intro-overlay div {
+		height: 100vh;
+		transition: background-color 1s;
+		opacity: 0;
+	}
+
+	.image {
+	}
+
 	.overlay {
 		position: absolute;
 		height: 100vh;
@@ -73,7 +143,6 @@
 
 	.home {
 		height: 100vh;
-		background-color: #e8bd3b;
 	}
 
 	.min-height-50vh {
