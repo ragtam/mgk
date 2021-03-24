@@ -73,10 +73,20 @@ export function setUpScrollAnimation() {
 }
 
 export function animateScrollIndicator() {
+
     anime({
         targets: '.scroll-indicator i',
-        translateY: -20,
-        loop: true,
-        easing: 'easeInOutSine'
-      });
+        opacity: [0, 1],
+        delay: 1000
+    }).finished.then( () => {
+        anime({
+            targets: '.scroll-indicator i',
+            translateY: -20,
+            loop: true,
+            easing: 'easeInOutSine'
+          });
+    })
+
+
+
 }
