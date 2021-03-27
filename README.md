@@ -1,6 +1,4 @@
-_Looking for a shareable component template? Go here --> [sveltejs/component-template](https://github.com/sveltejs/component-template)_
-
----
+# retro sunset color scheme
 
 https://www.schemecolor.com/retro-sunset.php
 
@@ -11,7 +9,10 @@ red: #AF3736
 blue: #4F315B
 dark blue: #3D1C49
 
+# inspiration
+
 https://dribbble.com/shots/12240165-GTA-5-Game-UI-Design
+https://dribbble.com/shots/15348313-Header-Exploration-Courier-Delivery-Services
 
 # svelte app
 
@@ -112,3 +113,5 @@ Then, from within your project folder:
 npm run build
 surge public my-project.surge.sh
 ```
+
+_Looking for a shareable component template? Go here --> [sveltejs/component-template](https://github.com/sveltejs/component-template)_
