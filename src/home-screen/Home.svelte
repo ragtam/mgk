@@ -1,8 +1,7 @@
 <script>
 	import ManBehindTheDesk from './Man-Behind-The-Desk.svelte';
 	import { animateOnEntry, setUpParallaxEffect, setUpScrollAnimation, animateScrollIndicator } from './home.js';
-
-	let colors = ['#E8BD3B', '#E87927', '#DB4C46', '#AF3736', '#4F315B', '#3D1C49'];
+	import ColorfulStrap from '../utils/colorful-strap.svelte';
 
 	setTimeout(() => {
 		animateOnEntry();
@@ -15,10 +14,8 @@
 <div class="home row overflow-hidden gx-0">
 	<div class="background-overlay" />
 
-	<div class="intro-overlay">
-		{#each colors as color}
-			<div style="background-color: {color}" />
-		{/each}
+	<div class="colorful-strap">
+		<ColorfulStrap />
 	</div>
 
 	<div class="overlay" />
@@ -43,23 +40,15 @@
 </div>
 
 <style>
+	.colorful-strap {
+		position: absolute;
+	}
+
 	.background-overlay {
 		position: absolute;
 		width: 100%;
 		height: 100vh;
 		background-color: #e8bd3b;
-		opacity: 0;
-	}
-
-	.intro-overlay {
-		position: absolute;
-		display: grid;
-		grid-template-columns: repeat(6, auto);
-	}
-
-	.intro-overlay div {
-		height: 100vh;
-		transition: background-color 1s;
 		opacity: 0;
 	}
 

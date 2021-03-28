@@ -1,5 +1,16 @@
+<script>
+	import ColorfulStrap from '../utils/colorful-strap.svelte';
+</script>
+
 <div>
-	<div class="sticky">sticky header</div>
+	<section class="sticky">
+		<ColorfulStrap height="1rem" />
+		<section class="project-header">
+			<h1 class="display-2">
+				<span class="fw-light">My</span><span class="fw-bold">Projects</span>
+			</h1>
+		</section>
+	</section>
 	<div class="scroll">
 		<div class="scrollable-item">a</div>
 		<div class="scrollable-item">b</div>
@@ -13,7 +24,6 @@
 	.sticky {
 		position: sticky;
 		top: 0;
-		background-color: #e8bd3b;
 		height: 100vh;
 	}
 
@@ -26,6 +36,5 @@
 
 	.scrollable-item {
 		height: 60vh;
-		background-color: #db4c46;
 	}
 </style>

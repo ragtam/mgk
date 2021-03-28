@@ -7,7 +7,7 @@ export function animateOnEntry() {
         duration: 750,
     });
     t.add({
-        targets: '.intro-overlay div',
+        targets: '.home .intro-overlay div',
         opacity: 1,
         delay: anime.stagger(100),
     });
@@ -20,7 +20,7 @@ export function animateOnEntry() {
     );
     t.add(
         {
-            targets: '.intro-overlay div',
+            targets: '.home .intro-overlay div',
             opacity: 0,
             delay: anime.stagger(100),
         },
