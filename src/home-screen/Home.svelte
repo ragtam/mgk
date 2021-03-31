@@ -15,7 +15,7 @@
 	<div class="background-overlay" />
 
 	<div class="colorful-strap">
-		<ColorfulStrap />
+		<ColorfulStrap opacity="0" />
 	</div>
 
 	<div class="overlay" />
@@ -42,6 +42,7 @@
 <style>
 	.colorful-strap {
 		position: absolute;
+		height: 100vh;
 	}
 
 	.background-overlay {
@@ -62,6 +63,7 @@
 
 	.home {
 		height: 100vh;
+		position: relative;
 	}
 
 	.min-height-50vh {

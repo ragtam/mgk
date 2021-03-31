@@ -8,7 +8,7 @@ export function animateOnEntry() {
     });
     t.add({
         targets: '.home .intro-overlay div',
-        opacity: 1,
+        opacity: [0, 1],
         delay: anime.stagger(100),
     });
     t.add(
