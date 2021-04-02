@@ -2,7 +2,10 @@
 	<div class="sticky-header">
 		<h1 class="display-5 text-end">Hackathon B-Hack</h1>
 	</div>
-	<div class="project-item__content">some image and description</div>
+	<div class="project-item__content">
+		<img src="assets/hackathon.jpg" />
+		some image and description
+	</div>
 </section>
 
 <style>
@@ -19,5 +22,8 @@
 	}
 
 	.project-item__content {
+		position: relative;
+		height: 70vh;
+		padding: 3rem;
 	}
 </style>

@@ -5,8 +5,8 @@
 </script>
 
 <div>
-	<section class="project-list__header--sticky">
-		<section style="height: 1rem">
+	<section class="project-list__header--sticky pb-2 mb-5">
+		<section style="height: 1rem; z-index: 2">
 			<ColorfulStrap opacity="1" />
 		</section>
 		<section class="project-header">
@@ -38,10 +38,9 @@
 
 	.scroll {
 		position: relative;
-		margin-left: 1rem;
 	}
 
 	.scrollable-item {
-		height: 90vh;
+		/* height: 90vh; */
 	}
 </style>
