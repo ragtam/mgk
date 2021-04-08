@@ -3,8 +3,9 @@
 		<h1 class="display-5 text-end">Hackathon B-Hack</h1>
 	</div>
 	<div class="project-item__content">
-		<img src="assets/hackathon.jpg" />
-		some image and description
+		<div class="content-image">
+			<img src="assets/hackathon.jpg" />
+		</div>
 	</div>
 </section>
 
@@ -25,5 +26,16 @@
 		position: relative;
 		height: 70vh;
 		padding: 3rem;
+	}
+
+	.content-image {
+		height: 100%;
+		max-width: 50vw;
+		overflow: hidden;
+	}
+
+	.content-image > img {
+		height: 100%;
+		transform: translateX(-25%) rotateZ(-45deg);
 	}
 </style>
