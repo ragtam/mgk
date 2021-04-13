@@ -14,8 +14,8 @@
 		</div>
 	</section>
 	<section class="bg-color" style="margin-top: -6vh; display: flex; justify-content: center; padding: 10vh 0">
-		<div style="max-width: 50%">
-			<PortfolioFolder />
+		<div style="max-width: 50%; height: 20vh;">
+			<!-- <PortfolioFolder /> -->
 		</div>
 	</section>
 	<div class="scroll">
