@@ -1,10 +1,18 @@
-<section class="project-item">
-	<div class="sticky-header">
-		<h1 class="display-5 text-end">Hackathon B-Hack</h1>
-	</div>
+<section class="project-item pt-5">
+	<!-- <div class="bg-parent">
+		<div class="bg-stripes">
+			<div style="background-color: #FFBB00" />
+			<div style="background-color: #FF5A00" />
+			<div style="background-color: #FF002C" />
+			<div style="background-color: #AF00D0" />
+			<div style="background-color: #6300BA" />
+		</div>
+	</div> -->
+
+	<h1 class="display-5 text-end pt-5">Hackathon B-Hack</h1>
 	<div class="project-item__container row">
 		<div class="row project-item__content">
-			<div class="col-12 col-md-7 d-flex">
+			<div class="col-12 col-md-7 d-flex px-5">
 				<img class="align-self-center" style="width: 100%" src="/assets/hackathon.jpg" alt="" />
 			</div>
 			<div class="col-12 col-md-5">
@@ -24,7 +32,7 @@
 
 <style>
 	.project-item {
-		height: 100%;
+		height: 90vh;
 		background-color: #f9f1e4;
 	}
 
@@ -37,12 +45,27 @@
 
 	.project-item__container {
 		position: relative;
-		background-image: url('/assets/project-item-bottom.svg');
+		/* background-image: url('/assets/project-item-bottom.svg');
 		background-repeat: no-repeat;
-		background-position: right bottom;
+		background-position: right bottom; */
 	}
 
 	.project-item__content {
 		min-height: 80vh;
+	}
+
+	.bg-parent {
+		position: absolute;
+		overflow: hidden;
+		height: 100%;
+		width: 10rem;
+		top: 0;
+	}
+
+	.bg-stripes {
+		display: grid;
+		grid-template-columns: repeat(5, auto);
+		width: 100%;
+		height: 100%;
 	}
 </style>

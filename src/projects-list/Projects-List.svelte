@@ -1,5 +1,4 @@
 <script>
-	import PortfolioFolder from './Portfolio-Folder.svelte';
 	import ProjectItem from './project-item/Project-Item.svelte';
 </script>
 
@@ -21,6 +20,10 @@
 	<div class="scroll">
 		<div class="scrollable-item">
 			<ProjectItem />
+		</div>
+		<div class="bg-footer">
+			<!-- svelte-ignore a11y-missing-attribute -->
+			<img src="/assets/project-item-bottom.svg" />
 		</div>
 		<div class="scrollable-item">
 			<ProjectItem />
@@ -47,7 +50,14 @@
 		position: relative;
 	}
 
-	.scrollable-item {
-		/* height: 90vh; */
+	.bg-footer {
+		display: flex;
+		align-items: flex-end;
+		z-index: 1;
+		height: 0px;
+		overflow-y: visible;
+		width: 100%;
+		position: sticky;
+		top: 100vh;
 	}
 </style>
