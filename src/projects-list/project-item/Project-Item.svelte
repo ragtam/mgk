@@ -32,7 +32,6 @@
 
 <style>
 	.project-item {
-		height: 90vh;
 		background-color: #f9f1e4;
 	}
 
