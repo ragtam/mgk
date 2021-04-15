@@ -26,14 +26,20 @@
 		<img src="/assets/project-item-bottom.svg" />
 	</div> -->
 
-	<div class="scrollable-item" style="z-index: 3; bottom: 2rem">
-		<ProjectItem />
+	<div class="scrollable-item" style="z-index: 3; bottom: 1.6rem">
+		<div class="test">
+			<ProjectItem />
+		</div>
 	</div>
-	<div class="scrollable-item" style="z-index: 2; bottom: 1.5rem">
-		<ProjectItem />
+	<div class="scrollable-item" style="z-index: 2; bottom: .8rem">
+		<div class="test">
+			<ProjectItem />
+		</div>
 	</div>
 	<div class="scrollable-item" style="z-index: 1;">
-		<ProjectItem />
+		<div class="test">
+			<ProjectItem />
+		</div>
 	</div>
 </div>
 
@@ -51,14 +57,18 @@
 </svg>
 
 <style>
+	.test {
+		clip-path: url(#svgPath);
+	}
+
 	.scrollable-item {
 		bottom: 0;
 		display: flex;
 		height: 100vh;
 		position: sticky;
 		width: 100%;
-		box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-		clip-path: url(#svgPath);
+		/* box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+		filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));
 	}
 
 	.bg-color {
@@ -70,16 +80,5 @@
 		top: 0rem;
 		z-index: 100;
 		color: white;
-	}
-
-	.bg-footer {
-		display: flex;
-		align-items: flex-end;
-		z-index: 100;
-		height: 0px;
-		overflow-y: visible;
-		width: 100%;
-		position: sticky;
-		top: 100vh;
 	}
 </style>
