@@ -2,7 +2,7 @@
 	import ProjectItem from './project-item/Project-Item.svelte';
 </script>
 
-<div class="bg-color">
+<div>
 	<section class="project-list__header--sticky">
 		<div class="row">
 			<div class="col-12 bg-color" style="height: 3vh" />
@@ -41,6 +41,8 @@
 			<ProjectItem />
 		</div>
 	</div>
+
+	<div class="list-footer" />
 </div>
 
 <svg width="0" height="0" viewBox="0 0 478 374" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -57,6 +59,14 @@
 </svg>
 
 <style>
+	.list-footer {
+		position: sticky;
+		bottom: 0;
+		height: 30vh;
+		margin-top: -30vh;
+		background-image: url('/assets/vhs-plastic.jpg');
+	}
+
 	.test {
 		clip-path: url(#svgPath);
 	}
