@@ -3,80 +3,37 @@
 </script>
 
 <div>
-	<section class="project-list__header--sticky">
-		<div class="row">
-			<div class="col-12 bg-color vhs-material" style="height: 3vh" />
-		</div>
-		<div class="row">
-			<div class="col-5 bg-color vhs-material" style="height: 6vh">My Projects</div>
-			<div class="col-1 bg-color vhs-material" style="height: 6vh; clip-path: polygon(0% 0%,0% 100%,100% 0%);" />
-		</div>
-	</section>
-
-	<div class="scrollable-item" style="z-index: 3; bottom: 18px">
-		<div class="scrollable-item__clip-path">
+	<div class="scrollable-item" style="z-index: 3; bottom: 3rem; height: calc(100vh - 3rem); transform: rotateZ(1deg)">
+		<div class="scrollable-item__clip-path" style="background-color: #f9f1e4;">
 			<ProjectItem />
 		</div>
 	</div>
-	<div class="scrollable-item" style="z-index: 2; bottom: 10px">
-		<div class="scrollable-item__clip-path">
+	<div class="scrollable-item" style="z-index: 2; bottom: 2rem; height: calc(100vh - 2rem); transform: rotateZ(0deg)">
+		<div class="scrollable-item__clip-path" style="background-color: #FF5A00">
 			<ProjectItem />
 		</div>
 	</div>
-	<div class="scrollable-item" style="z-index: 1;">
-		<div class="scrollable-item__clip-path">
+	<div class="scrollable-item" style="z-index: 1; bottom: 1rem; height: calc(100vh - 1rem); transform: rotateZ(-1deg)">
+		<div class="scrollable-item__clip-path" style="background-color: #FFBB00">
 			<ProjectItem />
 		</div>
 	</div>
-
-	<div class="list-footer vhs-material" />
 </div>
 
-<svg width="0" height="0" viewBox="0 0 478 374" fill="none" xmlns="http://www.w3.org/2000/svg">
-	<defs>
-		<clipPath id="svgPath" clipPathUnits="objectBoundingBox">
-			<path
-				transform="scale(0.00235, 0.00254)"
-				d="M0 0H478V319.343C478 319.343 314.381 319.343 283.463 319.343C252.545 319.343 242.435 371.266 220.646 373.159C198.856 375.051 0 373.159 0 373.159V0Z"
-				fill="#FFFFFF"
-				stroke="#000000"
-			/>
-		</clipPath>
-	</defs>
-</svg>
-
 <style>
-	.list-footer {
-		position: sticky;
-		bottom: 0;
-		height: 100vh;
-	}
-
-	.vhs-material {
-		background-image: url('/assets/vhs-plastic.jpg');
-	}
-
-	.scrollable-item__clip-path {
-		clip-path: url(#svgPath);
-	}
+	/* .project-list {
+		position: relative;
+	} */
 
 	.scrollable-item {
 		bottom: 0;
 		display: flex;
-		height: 100vh;
 		position: sticky;
 		width: 100%;
-		filter: drop-shadow(-1px 6px 3px rgba(131, 131, 129, 0.5));
+		box-shadow: 6px 6px 5px 5px rgb(0 0 0 / 20%);
 	}
 
-	.bg-color {
-		background-color: #2e2e2e;
-	}
-
-	.project-list__header--sticky {
-		position: sticky;
-		top: 0rem;
-		z-index: 100;
-		color: white;
+	.scrollable-item__clip-path {
+		clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 0% 5%, 38% 5%, 40% 0%);
 	}
 </style>

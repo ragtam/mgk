@@ -1,5 +1,5 @@
-<section class="project-item pt-5">
-	<div style="position: absolute;width: 100%;height: 100%;">
+<section class="project-item">
+	<div style="position: absolute;width: 100%;height: 100%">
 		<div style="height: 100%;" class="row">
 			<div class="col-1 col-sm-1 offset-sm-1" style="padding-right: 0">
 				<div class="bg-stripes">
@@ -38,7 +38,7 @@
 
 <style>
 	.project-item {
-		background-color: #f9f1e4;
+		height: 100%;
 	}
 
 	.project-item__content {

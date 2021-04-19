@@ -5,8 +5,8 @@
 	import ProjectsList from './projects-list/Projects-List.svelte';
 </script>
 
-<div>
-	<Home />
+<div class="bg-plastic">
+	<!-- <Home /> -->
 
 	<ProjectsList />
 
@@ -19,3 +19,10 @@
 	<div style="height: 1000px">asdf</div>
 	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
 </div>
+
+<style>
+	.bg-plastic {
+		background-image: url('/assets/vhs-plastic.jpg');
+		background-attachment: fixed;
+	}
+</style>
