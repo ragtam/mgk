@@ -1,13 +1,14 @@
 <script>
-	import Home from './home-screen/Home.svelte';
 	import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 	import '../node_modules/bootstrap-icons/font/bootstrap-icons.css';
 	import ProjectsList from './projects-list/Projects-List.svelte';
+	import HomeScreenNew from './home-screen-new/Home-Screen-New.svelte';
 </script>
 
 <div class="bg-plastic">
-	<!-- <Home /> -->
+	<HomeScreenNew />
 
+	<div style="min-height: 30vh;">My Projects</div>
 	<ProjectsList />
 
 	<h1>Next section</h1>
