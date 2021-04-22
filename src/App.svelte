@@ -5,7 +5,7 @@
 	import HomeScreenNew from './home-screen-new/Home-Screen-New.svelte';
 </script>
 
-<div class="bg-dark">
+<div>
 	<HomeScreenNew />
 
 	<div style="min-height: 30vh;">My Projects</div>
