@@ -30,7 +30,7 @@
 		display: flex;
 		position: sticky;
 		width: 100%;
-		box-shadow: 6px 6px 5px 5px rgb(0 0 0 / 20%);
+		box-shadow: 7px 10px 5px 5px rgb(0 0 0 / 20%);
 	}
 
 	.scrollable-item__clip-path {

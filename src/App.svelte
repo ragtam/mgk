@@ -5,7 +5,7 @@
 	import HomeScreenNew from './home-screen-new/Home-Screen-New.svelte';
 </script>
 
-<div class="bg-plastic">
+<div class="bg-dark">
 	<HomeScreenNew />
 
 	<div style="min-height: 30vh;">My Projects</div>
@@ -22,8 +22,9 @@
 </div>
 
 <style>
-	.bg-plastic {
-		background-image: url('/assets/vhs-plastic.jpg');
-		background-attachment: fixed;
+	.bg-dark {
+		/* background-image: url('/assets/vhs-plastic.jpg');
+		background-attachment: fixed; */
+		background-color: #2e2e2e;
 	}
 </style>
