@@ -25,12 +25,12 @@
 				</div>
 			</div>
 			<div class="row g-0 mt-5">
-				<div class="col-12 col-sm-6">
+				<div class="col-9 col-sm-9 col-md-10">
 					<h3 class="h1" style="margin-bottom: -0.5rem;">My name is</h3>
 					<h1 class="display-1 mb-0 fw-bolder">Mateusz</h1>
 				</div>
-				<div class="col-12 col-sm-6 d-flex justify-content-center">
-					<img src="/assets/avatar.jfif" style="height: 20vh" alt="avatar" />
+				<div class="col-3 col-sm-3 col-md-2 d-flex justify-content-center">
+					<img src="/assets/avatar.jfif" style="max-width: 100%; height: auto;" alt="avatar" />
 				</div>
 			</div>
 		</div>
