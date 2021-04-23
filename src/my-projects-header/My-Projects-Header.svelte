@@ -51,8 +51,9 @@
 
 	.my-projects-header .main-text {
 		position: sticky;
-		top: 0;
+		top: 1rem;
 		color: #333333;
+		/* -webkit-text-stroke: 1px #d9003a; */
 		font-weight: bolder;
 		text-transform: uppercase;
 	}
@@ -64,7 +65,8 @@
 		height: 100%;
 		top: 0;
 		left: 0;
-		color: #d9003a;
+		color: #595959;
+		-webkit-text-stroke: 1px #000000;
 		overflow: hidden;
 	}
 </style>
