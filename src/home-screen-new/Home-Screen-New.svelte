@@ -119,7 +119,7 @@
 	.home-screen {
 		height: 100vh;
 		justify-content: center;
-		box-shadow: 6px 6px 5px 5px rgb(0 0 0 / 20%);
+		box-shadow: 8px 7px 10px 9px rgb(0 0 0 / 26%);
 		position: relative;
 		overflow-y: hidden;
 	}

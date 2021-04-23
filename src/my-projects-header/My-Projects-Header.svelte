@@ -4,25 +4,19 @@
 
 	onMount(() => {
 		setTimeout(() => {
-			var animationTimeline = anime.timeline({
-				duration: 1000,
-				autoplay: false,
-			});
-			// animationTimeline.add({
-			// 	targets: '.secondary-background',
-			// 	translateX: ['-100%', '0'],
-			// });
-			animationTimeline.add({
+			var animation = anime({
 				targets: '.my-projects-header .secondary-text',
 				width: ['0', '100%'],
 				easing: 'easeOutInBounce',
+				duration: 1000,
+				autoplay: false,
 			});
 
 			const observer = new IntersectionObserver(
 				(entries, observer) => {
 					entries.forEach((entry) => {
 						if (entry.isIntersecting) {
-							animationTimeline.play();
+							animation.play();
 							observer.unobserve(entry.target);
 						}
 					});
@@ -37,7 +31,6 @@
 </script>
 
 <div class="my-projects-header">
-	<div class="secondary-background" />
 	<h1 class="main-text display-1">
 		<div class="secondary-text">My Projects</div>
 		My Projects
@@ -46,6 +39,8 @@
 
 <style>
 	.my-projects-header {
+		z-index: -1;
+		background-color: #2e2e2e;
 		min-height: 50vh;
 		display: flex;
 		justify-content: center;
@@ -55,15 +50,14 @@
 	}
 
 	.my-projects-header .main-text {
-		position: relative;
-		color: #2e2e2e;
-		-webkit-text-stroke: 1px #d9003a;
+		position: sticky;
+		top: 0;
+		color: #333333;
 		font-weight: bolder;
 		text-transform: uppercase;
 	}
 
 	.my-projects-header .secondary-text {
-		content: 'My Projects';
 		white-space: nowrap;
 		position: absolute;
 		width: 0;
@@ -71,18 +65,6 @@
 		top: 0;
 		left: 0;
 		color: #d9003a;
-		-webkit-text-stroke: 1px #d9003a;
-		text-shadow: -0.001em -0.001em 1px rgba(255, 255, 255, 0.15);
 		overflow: hidden;
-	}
-
-	.secondary-background {
-		position: absolute;
-		transform: translateX(0);
-		width: 100%;
-		height: 100%;
-		top: 0;
-		left: 0;
-		background-color: #2e2e2e;
 	}
 </style>
