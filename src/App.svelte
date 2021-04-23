@@ -1,11 +1,15 @@
 <script>
-	import Home from './home-screen/Home.svelte';
 	import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 	import '../node_modules/bootstrap-icons/font/bootstrap-icons.css';
+	import ProjectsList from './projects-list/Projects-List.svelte';
+	import HomeScreenNew from './home-screen-new/Home-Screen-New.svelte';
 </script>
 
-<div class="overflow-x-hidden">
-	<Home />
+<div>
+	<HomeScreenNew />
+
+	<div style="min-height: 30vh;">My Projects</div>
+	<ProjectsList />
 
 	<h1>Next section</h1>
 	<div class="row">
@@ -18,7 +22,9 @@
 </div>
 
 <style>
-	.overflow-x-hidden {
-		overflow-x: hidden;
+	.bg-dark {
+		/* background-image: url('/assets/vhs-plastic.jpg');
+		background-attachment: fixed; */
+		background-color: #2e2e2e;
 	}
 </style>

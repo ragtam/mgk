@@ -52,6 +52,7 @@ export default {
 			targets: [
 			  { src: './node_modules/bootstrap-icons/font/fonts/bootstrap-icons.woff', dest: 'public/build/fonts' },
 			  { src: './node_modules/bootstrap-icons/font/fonts/bootstrap-icons.woff2', dest: 'public/build/fonts' },
+			  { src: './src/assets', dest: 'public' }
 			]
 		  }),
 
