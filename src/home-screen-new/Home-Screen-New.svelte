@@ -35,7 +35,7 @@
 		<div />
 		<div />
 	</div>
-	<div class="frame mt-4 mt-md-0 rellax" data-rellax-speed="2">
+	<div class="frame mt-3 mt-md-0 rellax" data-rellax-speed="2">
 		<div class="container">
 			<div class="row g-0 mt-3">
 				<div class="dots-in-line">
