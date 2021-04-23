@@ -1,10 +1,27 @@
 <script>
 	import { onMount } from 'svelte';
 	import Rellax from 'rellax';
+	import anime from 'animejs/lib/anime.es.js';
 
 	onMount(() => {
 		setTimeout(() => {
 			const r = new Rellax('.rellax');
+
+			const t = anime.timeline({
+				easing: 'easeOutExpo',
+				duration: 750,
+			});
+			t.add({
+				targets: '.horizontal-stripes div',
+				translateX: ['-100vw', '0'],
+				delay: anime.stagger(150, { direction: 'reverse' }),
+			}).add(
+				{
+					targets: '.frame',
+					translateY: ['-100vh', '0'],
+				},
+				'-=800'
+			);
 		});
 	});
 </script>
