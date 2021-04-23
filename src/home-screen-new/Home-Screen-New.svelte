@@ -1,12 +1,23 @@
+<script>
+	import { onMount } from 'svelte';
+	import Rellax from 'rellax';
+
+	onMount(() => {
+		setTimeout(() => {
+			const r = new Rellax('.rellax');
+		});
+	});
+</script>
+
 <div class="home-screen bg-color">
-	<div class="horizontal-stripes">
+	<div class="horizontal-stripes rellax" data-rellax-speed="-3">
 		<div style="background-color: #FEB603" />
 		<div style="background-color: #FC3B00" />
 		<div style="background-color: #FC0000" />
 		<div style="background-color: #D9003A" />
 		<div style="background-color: #810140" />
 	</div>
-	<div class="frame">
+	<div class="frame rellax" data-rellax-speed="2">
 		<div class="container">
 			<div class="row g-0 mt-3">
 				<div class="dots-in-line">
@@ -25,14 +36,19 @@
 				</div>
 			</div>
 			<div class="row g-0 mt-5">
-				<div class="col-9 col-sm-9 col-md-10">
+				<div class="col-8 col-sm-8 col-md-9 col-lg-10">
 					<h3 class="h1" style="margin-bottom: -0.5rem;">My name is</h3>
 					<h1 class="display-1 mb-0 fw-bolder">Mateusz</h1>
+					<p>Front-end developer with .NET background.</p>
 				</div>
-				<div class="col-3 col-sm-3 col-md-2 d-flex justify-content-center">
-					<img src="/assets/avatar.jfif" style="max-width: 100%; height: auto;" alt="avatar" />
+				<div class="col-4 col-sm-4 col-md-3 col-lg-2 d-flex justify-content-center">
+					<img src="/assets/avatar.jfif" style="max-width: 100%; height: auto; object-fit: cover;" alt="avatar" />
 				</div>
 			</div>
+		</div>
+		<div class="container frame__footer d-flex justify-content-end">
+			<div>ANGULAR</div>
+			<div>VUE</div>
 		</div>
 	</div>
 </div>
@@ -65,8 +81,10 @@
 	}
 
 	.frame {
+		display: grid;
+		align-content: space-between;
 		width: 80vw;
-		height: 90vh;
+		height: 85vh;
 		/* border: 8px solid white;
 		border-radius: 20px; */
 		position: relative;
@@ -88,5 +106,20 @@
 
 		display: grid;
 		grid-template-rows: repeat(5, auto);
+	}
+
+	.frame__footer {
+		margin-bottom: 1.5rem;
+	}
+
+	.frame__footer > div {
+		margin-left: 0.2rem;
+		padding: 1.2rem;
+		border-radius: 1.2rem;
+		line-height: 0;
+		font-size: small;
+		font-weight: bold;
+		display: inline-block;
+		border: 0.13rem solid black;
 	}
 </style>

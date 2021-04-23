@@ -3,12 +3,12 @@
 	import { animateOnEntry, setUpParallaxEffect, setUpScrollAnimation, animateScrollIndicator } from './home.js';
 	import ColorfulStrap from '../utils/colorful-strap.svelte';
 
-	setTimeout(() => {
-		animateOnEntry();
-		setUpParallaxEffect();
-		setUpScrollAnimation();
-		animateScrollIndicator();
-	}, 0);
+	// setTimeout(() => {
+	// 	animateOnEntry();
+	// 	setUpParallaxEffect();
+	// 	setUpScrollAnimation();
+	// 	animateScrollIndicator();
+	// }, 0);
 </script>
 
 <div class="home row overflow-hidden gx-0">
