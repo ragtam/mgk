@@ -4,26 +4,29 @@
 	import anime from 'animejs/lib/anime.es.js';
 
 	onMount(() => {
-		setTimeout(() => {
-			const r = new Rellax('.rellax');
+		const r = new Rellax('.rellax');
 
-			const t = anime.timeline({
-				duration: 750,
-			});
-			t.add({
-				targets: '.horizontal-stripes div',
+		const t = anime.timeline({
+			duration: 750,
+			autoplay: false,
+		});
+		t.add({
+			targets: '.horizontal-stripes div',
+			easing: 'easeOutExpo',
+			translateX: ['-100vw', '0'],
+			delay: anime.stagger(150, { direction: 'reverse' }),
+		}).add(
+			{
+				targets: '.frame',
 				easing: 'easeOutExpo',
 				translateX: ['-100vw', '0'],
-				delay: anime.stagger(150, { direction: 'reverse' }),
-			}).add(
-				{
-					targets: '.frame',
-					easing: 'easeOutBounce',
-					translateY: ['-100vh', '0'],
-				},
-				'-=800'
-			);
-		});
+			},
+			'-=800'
+		);
+
+		setTimeout(() => {
+			t.play();
+		}, 500);
 	});
 </script>
 

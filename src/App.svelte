@@ -3,12 +3,14 @@
 	import '../node_modules/bootstrap-icons/font/bootstrap-icons.css';
 	import ProjectsList from './projects-list/Projects-List.svelte';
 	import HomeScreenNew from './home-screen-new/Home-Screen-New.svelte';
+	import MyProjectsHeader from './my-projects-header/My-Projects-Header.svelte';
 </script>
 
 <div>
 	<HomeScreenNew />
 
-	<div style="min-height: 30vh;">My Projects</div>
+	<MyProjectsHeader />
+
 	<ProjectsList />
 
 	<h1>Next section</h1>

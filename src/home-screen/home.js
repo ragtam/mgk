@@ -60,7 +60,7 @@ export function setUpScrollAnimation() {
                         scrollIndicator.remove()
                     }
                 } else {
-                    overlayAnimation.seek(0);
+                    // overlayAnimation.seek(0);
                 }
             });
         },
