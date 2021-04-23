@@ -8,16 +8,17 @@
 			const r = new Rellax('.rellax');
 
 			const t = anime.timeline({
-				easing: 'easeOutExpo',
 				duration: 750,
 			});
 			t.add({
 				targets: '.horizontal-stripes div',
+				easing: 'easeOutExpo',
 				translateX: ['-100vw', '0'],
 				delay: anime.stagger(150, { direction: 'reverse' }),
 			}).add(
 				{
 					targets: '.frame',
+					easing: 'easeOutBounce',
 					translateY: ['-100vh', '0'],
 				},
 				'-=800'
@@ -26,40 +27,40 @@
 	});
 </script>
 
-<div class="home-screen bg-color">
+<div class="home-screen d-flex align-items-xs-start align-items-sm-start align-items-md-center bg-color">
 	<div class="horizontal-stripes rellax" data-rellax-speed="-3">
-		<div style="background-color: #FEB603" />
-		<div style="background-color: #FC3B00" />
-		<div style="background-color: #FC0000" />
-		<div style="background-color: #D9003A" />
-		<div style="background-color: #810140" />
+		<div />
+		<div />
+		<div />
+		<div />
+		<div />
 	</div>
-	<div class="frame rellax" data-rellax-speed="2">
+	<div class="frame mt-4 mt-md-0 rellax" data-rellax-speed="2">
 		<div class="container">
 			<div class="row g-0 mt-3">
 				<div class="dots-in-line">
-					<div style="background-color: #F73333" />
-					<div style="background-color: #F7C334" />
-					<div style="background-color: #ACF735" />
+					<div />
+					<div />
+					<div />
 				</div>
 			</div>
 			<div class="d-flex g-0 mt-3 justify-content-between">
 				<div>
 					<h1 class="display-5">Hello</h1>
 				</div>
-				<div>
-					<button class="btn rounded-circle"><i class="bi bi-github" style="font-size: 1.5rem" /></button>
-					<button class="btn rounded-circle"><i class="bi bi-linkedin" style="font-size: 1.5rem" /></button>
+				<div class="platforms">
+					<button class="btn rounded-circle"><i class="bi bi-github" /></button>
+					<button class="btn rounded-circle"><i class="bi bi-linkedin" /></button>
 				</div>
 			</div>
-			<div class="row g-0 mt-5">
+			<div class="row g-0 mt-5 introduction-text">
 				<div class="col-8 col-sm-8 col-md-9 col-lg-10">
-					<h3 class="h1" style="margin-bottom: -0.5rem;">My name is</h3>
+					<h1 class="h1">My name is</h1>
 					<h1 class="display-1 mb-0 fw-bolder">Mateusz</h1>
 					<p>Front-end developer with .NET background.</p>
 				</div>
 				<div class="col-4 col-sm-4 col-md-3 col-lg-2 d-flex justify-content-center">
-					<img src="/assets/avatar.jfif" style="max-width: 100%; height: auto; object-fit: cover;" alt="avatar" />
+					<img src="/assets/avatar.jfif" alt="avatar" />
 				</div>
 			</div>
 		</div>
@@ -73,7 +74,6 @@
 <style>
 	.dots-in-line {
 		display: inline-block;
-		/* margin-left: 0.75rem; */
 	}
 
 	.dots-in-line > div {
@@ -83,14 +83,38 @@
 		border-radius: 50%;
 	}
 
+	.dots-in-line > div:nth-child(1) {
+		background-color: #f73333;
+	}
+
+	.dots-in-line > div:nth-child(2) {
+		background-color: #f7c334;
+	}
+
+	.dots-in-line > div:nth-child(3) {
+		background-color: #acf735;
+	}
+
+	.platforms > button {
+		font-size: 1.5rem;
+	}
+
+	.introduction-text > div > h1:nth-child(1) {
+		margin-bottom: -0.5rem;
+	}
+
+	.introduction-text img {
+		max-width: 100%;
+		height: auto;
+		object-fit: cover;
+	}
+
 	.bg-color {
 		background-color: #fffbe5;
 	}
 
 	.home-screen {
 		height: 100vh;
-		display: flex;
-		align-items: center;
 		justify-content: center;
 		box-shadow: 6px 6px 5px 5px rgb(0 0 0 / 20%);
 		position: relative;
@@ -101,13 +125,13 @@
 		display: grid;
 		align-content: space-between;
 		width: 80vw;
-		height: 85vh;
+		height: 87vh;
 		/* border: 8px solid white;
 		border-radius: 20px; */
 		position: relative;
 		box-shadow: 7px 10px 5px 5px rgb(0 0 0 / 20%);
 
-		/* background: rgba(255, 255, 255, 0.1); */
+		background: rgba(46, 46, 46, 0.1);
 		box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
 		/* backdrop-filter: blur(2px);
 		-webkit-backdrop-filter: blur(2px); */
@@ -120,9 +144,28 @@
 		height: 30vh;
 		position: absolute;
 		top: 50vh;
-
 		display: grid;
 		grid-template-rows: repeat(5, auto);
+	}
+
+	.horizontal-stripes > div:nth-child(1) {
+		background-color: #feb603;
+	}
+
+	.horizontal-stripes > div:nth-child(2) {
+		background-color: #fc3b00;
+	}
+
+	.horizontal-stripes > div:nth-child(3) {
+		background-color: #fc0000;
+	}
+
+	.horizontal-stripes > div:nth-child(4) {
+		background-color: #d9003a;
+	}
+
+	.horizontal-stripes > div:nth-child(5) {
+		background-color: #810140;
 	}
 
 	.frame__footer {
