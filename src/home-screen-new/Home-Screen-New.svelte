@@ -8,29 +8,66 @@
 	onMount(() => {
 		const r = new Rellax('.rellax');
 
-		const t = anime.timeline({
-			duration: 750,
-			autoplay: false,
-		});
-		t.add({
-			targets: '.horizontal-stripes div',
-			easing: 'easeOutExpo',
-			translateX: ['-100vw', '0'],
-			delay: anime.stagger(150, { direction: 'reverse' }),
-		}).add(
-			{
-				targets: '.frame',
-				easing: 'easeOutExpo',
-				translateX: ['-100vw', '0'],
+		const entryAnimation = getEntryAnimation();
+		const backgroundOpacityAnimation = getBackgroundOpacityAnimation();
+
+		const observer = new IntersectionObserver(
+			(entries) => {
+				entries.forEach((entry) => {
+					if (!entry.isIntersecting) {
+						console.log('is not intersectiong');
+						backgroundOpacityAnimation.play();
+					} else {
+						console.log('is not intersectiong');
+						backgroundOpacityAnimation.seek(0);
+					}
+				});
 			},
-			'-=800'
+			{ threshold: 0.9 }
 		);
+
+		const target = document.querySelector('.frame__background--transitional');
 
 		setTimeout(() => {
 			isSectionVisible = true;
-			t.play();
+			entryAnimation.play();
+			entryAnimation.finished.then(() => {
+				observer.observe(target);
+			});
 		}, 500);
 	});
+
+	function getEntryAnimation() {
+		const timeline = anime.timeline({
+			duration: 750,
+			autoplay: false,
+		});
+		timeline
+			.add({
+				targets: '.horizontal-stripes div',
+				easing: 'easeOutExpo',
+				translateX: ['-100vw', '0'],
+				delay: anime.stagger(150, { direction: 'reverse' }),
+			})
+			.add(
+				{
+					targets: '.frame',
+					easing: 'easeOutExpo',
+					translateX: ['-100vw', '0'],
+				},
+				'-=800'
+			);
+		return timeline;
+	}
+
+	function getBackgroundOpacityAnimation() {
+		return anime({
+			targets: '.frame__background--transitional',
+			opacity: 1,
+			duration: 1000,
+			autoplay: false,
+		});
+	}
 </script>
 
 <div class="home-screen d-flex align-items-xs-start align-items-sm-start align-items-md-center bg-color">
@@ -42,7 +79,9 @@
 		<div />
 	</div>
 	<div class="frame mt-3 mt-md-0 rellax {isSectionVisible ? 'home-screen--visible' : 'home-screen--hidden'}" data-rellax-speed="2">
-		<div class="container">
+		<div class="frame__background--transitional" />
+
+		<div class="container position-relative">
 			<div class="row g-0 mt-3">
 				<div class="dots-in-line">
 					<div />
@@ -70,7 +109,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="container frame__footer d-flex justify-content-end">
+		<div class="container frame__footer d-flex justify-content-end position-relative">
 			<div>ANGULAR</div>
 			<div>VUE</div>
 		</div>
@@ -151,6 +190,15 @@
 		-webkit-backdrop-filter: blur(2px); */
 		border-radius: 20px;
 		/* border: 1px solid rgba(255, 255, 255, 0.18); */
+	}
+
+	.frame__background--transitional {
+		opacity: 0;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(255, 251, 229, 0.9);
+		border-radius: 20px;
 	}
 
 	.horizontal-stripes {
