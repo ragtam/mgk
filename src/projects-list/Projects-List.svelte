@@ -5,17 +5,23 @@
 <div class="projects-list">
 	<div class="scrollable-item">
 		<div class="scrollable-item__clip-path">
-			<ProjectItem />
+			<ProjectItem>
+				<div slot="header">Hackathon B-hack</div>
+			</ProjectItem>
 		</div>
 	</div>
 	<div class="scrollable-item">
 		<div class="scrollable-item__clip-path">
-			<ProjectItem />
+			<ProjectItem>
+				<div slot="header">Date Faker</div>
+			</ProjectItem>
 		</div>
 	</div>
 	<div class="scrollable-item">
 		<div class="scrollable-item__clip-path">
-			<ProjectItem />
+			<ProjectItem>
+				<div slot="header">YT Player Angular</div>
+			</ProjectItem>
 		</div>
 	</div>
 </div>

@@ -13,7 +13,7 @@
 		</div>
 	</div>
 
-	<h1 class="display-5 text-end pt-5 col-12 col-sm-11">Hackathon B-Hack</h1>
+	<h1 class="display-5 text-end pt-5 col-12 col-sm-11"><slot name="header"></slot></h1>
 	<div class="row project-item__content">
 		<div class="col-12 col-md-7 d-flex px-5">
 			<div class="row">

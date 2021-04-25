@@ -53,7 +53,8 @@ export default {
 			  { src: './node_modules/bootstrap-icons/font/fonts/bootstrap-icons.woff', dest: 'public/build/fonts' },
 			  { src: './node_modules/bootstrap-icons/font/fonts/bootstrap-icons.woff2', dest: 'public/build/fonts' },
 			  { src: './src/assets', dest: 'public' }
-			]
+			],
+			copyOnce: true
 		  }),
 
 		// If you have external dependencies installed from

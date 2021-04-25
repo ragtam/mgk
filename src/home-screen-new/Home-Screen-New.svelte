@@ -9,27 +9,28 @@
 		const r = new Rellax('.rellax');
 
 		const entryAnimation = getEntryAnimation();
-		const backgroundOpacityAnimation = getBackgroundOpacityAnimation();
+		const backgroundOpacityAnimationIn = getBackgroundOpacityAnimationIn();
+		const backgroundOpacityAnimationOut = getBackgroundOpacityAnimationOut();
 
 		const observer = new IntersectionObserver(
 			(entries) => {
 				entries.forEach((entry) => {
 					if (!entry.isIntersecting) {
-						console.log('is not intersectiong');
-						backgroundOpacityAnimation.play();
+						backgroundOpacityAnimationIn.play();
 					} else {
-						console.log('is not intersectiong');
-						backgroundOpacityAnimation.seek(0);
+						backgroundOpacityAnimationOut.play();
 					}
 				});
 			},
-			{ threshold: 0.9 }
+			{ threshold: 1 }
 		);
 
 		const target = document.querySelector('.frame__background--transitional');
 
 		setTimeout(() => {
 			isSectionVisible = true;
+		}, 500);
+		setTimeout(() => {
 			entryAnimation.play();
 			entryAnimation.finished.then(() => {
 				observer.observe(target);
@@ -60,11 +61,22 @@
 		return timeline;
 	}
 
-	function getBackgroundOpacityAnimation() {
+	function getBackgroundOpacityAnimationIn() {
 		return anime({
 			targets: '.frame__background--transitional',
-			opacity: 1,
+			opacity: [0, 1],
+			duration: 200,
+			easing: 'linear',
+			autoplay: false,
+		});
+	}
+
+	function getBackgroundOpacityAnimationOut() {
+		return anime({
+			targets: '.frame__background--transitional',
+			opacity: [1, 0],
 			duration: 1000,
+			easing: 'linear',
 			autoplay: false,
 		});
 	}
@@ -190,6 +202,7 @@
 		-webkit-backdrop-filter: blur(2px); */
 		border-radius: 20px;
 		/* border: 1px solid rgba(255, 255, 255, 0.18); */
+		transform: translateX(-100vw);
 	}
 
 	.frame__background--transitional {
@@ -197,7 +210,7 @@
 		position: absolute;
 		width: 100%;
 		height: 100%;
-		background-color: rgba(255, 251, 229, 0.9);
+		background-color: rgba(255, 251, 229, 0.7);
 		border-radius: 20px;
 	}
 
@@ -208,6 +221,10 @@
 		top: 50vh;
 		display: grid;
 		grid-template-rows: repeat(5, auto);
+	}
+
+	.horizontal-stripes div {
+		transform: translateX(-100vw);
 	}
 
 	.horizontal-stripes > div:nth-child(1) {

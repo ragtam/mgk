@@ -5,20 +5,20 @@
 	let isSectionVisible = false;
 
 	onMount(() => {
-		const animation = getAnimationDefinition();
+		const animationIn = getAnimationIn();
 		const willChangeObserver = getWillChangeObserver();
-		const animationObserver = getAnimationObserver(animation);
+		const animationObserver = getAnimationObserver(animationIn);
 		const target = getElementToObserve();
 		animationObserver.observe(target);
 		willChangeObserver.observe(target);
 	});
 
-	function getAnimationDefinition() {
+	function getAnimationIn() {
 		return anime({
 			targets: '.my-projects-header .secondary-text',
-			width: ['0', '100%'],
+			width: '100%',
 			easing: 'easeOutInBounce',
-			duration: 1000,
+			duration: 2000,
 			autoplay: false,
 		});
 	}
@@ -48,7 +48,7 @@
 					}
 				});
 			},
-			{ threshold: 0.8 }
+			{ threshold: 0.7 }
 		);
 	}
 
@@ -68,7 +68,7 @@
 	.my-projects-header {
 		z-index: -1;
 		background-color: #2e2e2e;
-		min-height: 50vh;
+		min-height: 80vh;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -80,7 +80,7 @@
 		position: sticky;
 		top: 1.3rem;
 		color: #333333;
-		-webkit-text-stroke: 1px black;
+		-webkit-text-stroke: 1px #262626;
 		font-weight: bolder;
 		text-transform: uppercase;
 	}
@@ -92,7 +92,7 @@
 		height: 100%;
 		top: 0;
 		left: 0;
-		color: #595959;
+		color: #4d4d4d;
 		-webkit-text-stroke: 1px #feb603;
 		overflow: hidden;
 		border-right: 3px solid #feb603;

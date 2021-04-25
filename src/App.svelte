@@ -13,13 +13,6 @@
 
 	<ProjectsList />
 
-	<h1>Next section</h1>
-	<div class="row">
-		<i class="bi-alarm" />
-		<i class="bi-alarm" style="font-size: 2rem; color: cornflowerblue;" />
-	</div>
-
-	<div style="height: 1000px">asdf</div>
 	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
 </div>
 
