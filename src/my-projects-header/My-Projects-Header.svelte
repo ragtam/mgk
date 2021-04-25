@@ -5,14 +5,12 @@
 	let isSectionVisible = false;
 
 	onMount(() => {
-		setTimeout(() => {
-			const animation = getAnimationDefinition();
-			const willChangeObserver = getWillChangeObserver();
-			const animationObserver = getAnimationObserver(animation);
-			const target = getElementToObserve();
-			animationObserver.observe(target);
-			willChangeObserver.observe(target);
-		});
+		const animation = getAnimationDefinition();
+		const willChangeObserver = getWillChangeObserver();
+		const animationObserver = getAnimationObserver(animation);
+		const target = getElementToObserve();
+		animationObserver.observe(target);
+		willChangeObserver.observe(target);
 	});
 
 	function getAnimationDefinition() {

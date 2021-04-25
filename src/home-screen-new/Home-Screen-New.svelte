@@ -3,6 +3,8 @@
 	import Rellax from 'rellax';
 	import anime from 'animejs/lib/anime.es.js';
 
+	let isSectionVisible = false;
+
 	onMount(() => {
 		const r = new Rellax('.rellax');
 
@@ -25,20 +27,21 @@
 		);
 
 		setTimeout(() => {
+			isSectionVisible = true;
 			t.play();
 		}, 500);
 	});
 </script>
 
 <div class="home-screen d-flex align-items-xs-start align-items-sm-start align-items-md-center bg-color">
-	<div class="horizontal-stripes rellax" data-rellax-speed="-3">
+	<div class="horizontal-stripes rellax {isSectionVisible ? 'home-screen--visible' : 'home-screen--hidden'}" data-rellax-speed="-3">
 		<div />
 		<div />
 		<div />
 		<div />
 		<div />
 	</div>
-	<div class="frame mt-3 mt-md-0 rellax" data-rellax-speed="2">
+	<div class="frame mt-3 mt-md-0 rellax {isSectionVisible ? 'home-screen--visible' : 'home-screen--hidden'}" data-rellax-speed="2">
 		<div class="container">
 			<div class="row g-0 mt-3">
 				<div class="dots-in-line">
@@ -75,6 +78,14 @@
 </div>
 
 <style>
+	.home-screen--visible {
+		visibility: visible;
+	}
+
+	.home-screen--hidden {
+		visibility: hidden;
+	}
+
 	.dots-in-line {
 		display: inline-block;
 	}
@@ -134,7 +145,7 @@
 		position: relative;
 		box-shadow: 7px 10px 5px 5px rgb(0 0 0 / 20%);
 
-		background: rgba(46, 46, 46, 0.1);
+		background: rgba(255, 251, 229, 0.1);
 		box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
 		/* backdrop-filter: blur(2px);
 		-webkit-backdrop-filter: blur(2px); */
