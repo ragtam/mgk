@@ -1,7 +1,29 @@
+<script>
+	import { onMount } from 'svelte';
+	import Rellax from 'rellax';
+
+	let rellax;
+
+	onMount(() => {
+		const sectionObserver = new IntersectionObserver((entries) => {
+			entries.forEach((entry) => {
+				if (entry.isIntersecting) {
+					rellax = new Rellax('.rellaxx');
+				} else {
+					rellax.destroy();
+				}
+			});
+		});
+
+		const sectionElement = document.querySelector('.my-project');
+		sectionObserver.observe(sectionElement);
+	});
+</script>
+
 <div class="my-project">
 	<div class="row">
-		<div class="col-4 section-left">
-			<div class="col-12 col-sm-8 offset-sm-1 d-flex justify-content-between align-self-top pt-5 mt-5">
+		<div class="col-4 section-left rellaxx" data-rellax-speed="-2">
+			<div class="col-12 col-sm-8 offset-sm-1 d-flex justify-content-between align-self-top">
 				<p class="text-muted font-weight-bold text-uppercase">| tech stack</p>
 				<ul class="text-dark ">
 					<li>Vue</li>
@@ -10,13 +32,13 @@
 					<li>Storybook</li>
 				</ul>
 			</div>
-			<div class="col-11 offset-1  d-flex flex-column align-self-top pt-5 mt-5">
+			<div class="col-11 offset-1  d-flex flex-column align-self-top">
 				<p class="text-muted font-weight-bold text-uppercase">| name</p>
 				<h6 class="display-2" style="color: #f83d46;">Hackathon</h6>
 			</div>
 		</div>
-		<div class="col-4 d-flex align-items-center">
-			<div class="vhs-tape mx-0 mx-lg-5">
+		<div class="col-4 d-flex align-items-end">
+			<div class="vhs-tape mx-0 mx-lg-5 rellaxx" data-rellax-speed="2">
 				<div class="container">
 					<h1 class="h5 font-weight-bold text-uppercase mt-5 pb-0 mb-0 text-center">Hackathon B-Hack</h1>
 					<h1 class="display-3 text-center mb-5">Barbórka 4.0</h1>
@@ -30,8 +52,8 @@
 				</div>
 			</div>
 		</div>
-		<div class="col-4 section-right">
-			<div class="col-12 col-sm-8 offset-sm-1 d-flex justify-content-between align-self-top pt-5 mt-5">
+		<div class="col-4 section-right rellaxx" data-rellax-speed="-2">
+			<div class="col-12 col-sm-8 offset-sm-1 d-flex justify-content-between align-self-top">
 				<p class="text-muted font-weight-bold text-uppercase">| date</p>
 				<p class="text-dark">11.2021</p>
 			</div>
