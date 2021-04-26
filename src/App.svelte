@@ -4,12 +4,15 @@
 	import ProjectsList from './projects-list/Projects-List.svelte';
 	import HomeScreenNew from './home-screen-new/Home-Screen-New.svelte';
 	import MyProjectsHeader from './my-projects-header/My-Projects-Header.svelte';
+	import MyProject from './my-projects/My-Project.svelte';
 </script>
 
 <div>
 	<HomeScreenNew />
 
 	<MyProjectsHeader />
+
+	<MyProject />
 
 	<ProjectsList />
 
