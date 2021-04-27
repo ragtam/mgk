@@ -20,9 +20,7 @@
 </div>
 
 <style>
-	.bg-dark {
-		/* background-image: url('/assets/vhs-plastic.jpg');
-		background-attachment: fixed; */
+	/* .bg-dark {
 		background-color: #2e2e2e;
-	}
+	} */
 </style>

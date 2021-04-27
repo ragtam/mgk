@@ -8,7 +8,9 @@
 		const sectionObserver = new IntersectionObserver((entries) => {
 			entries.forEach((entry) => {
 				if (entry.isIntersecting) {
-					rellax = new Rellax('.rellaxx');
+					rellax = new Rellax('.rellaxx', {
+						breakpoints: [576, 768, 1201],
+					});
 				} else {
 					rellax.destroy();
 				}
@@ -22,23 +24,28 @@
 
 <div class="my-project">
 	<div class="row">
-		<div class="col-4 section-left rellaxx" data-rellax-speed="-2">
-			<div class="col-12 col-sm-8 offset-sm-1 d-flex justify-content-between align-self-top">
+		<div
+			class="col-12 col-sm-4 order-1 order-sm-1 section-left rellaxx"
+			data-rellax-speed="-2"
+			data-rellax-mobile-speed="0"
+			data-rellax-xs-speed="0"
+		>
+			<div class="col-12 col-sm-8 offset-sm-1 order-2 order-sm-1 d-flex justify-content-between align-self-top">
 				<p class="text-muted font-weight-bold text-uppercase">| tech stack</p>
-				<ul class="text-dark ">
+				<ul class="text-dark text-right text-sm-left">
 					<li>Vue</li>
 					<li>Nuxt</li>
 					<li>Vuetify</li>
 					<li>Storybook</li>
 				</ul>
 			</div>
-			<div class="col-11 offset-1  d-flex flex-column align-self-top">
-				<p class="text-muted font-weight-bold text-uppercase">| name</p>
-				<h6 class="display-2" style="color: #f83d46;">Hackathon</h6>
+			<div class="col-12 col-sm-11 offset-sm-1 order-1 order-sm-2 d-flex flex-column align-self-top mt-3 mt-sm-0">
+				<p class="text-muted font-weight-bold text-uppercase mb-0">| name</p>
+				<h6 class="display-2 pt-0" style="color: #f83d46;">Hackathon</h6>
 			</div>
 		</div>
-		<div class="col-4 d-flex align-items-end">
-			<div class="vhs-tape mx-0 mx-lg-5 rellaxx" data-rellax-speed="2">
+		<div class="col-12 col-sm-4 order-3 order-sm-2 d-flex align-items-end">
+			<div class="vhs-tape mx-0 mx-lg-5 rellaxx" data-rellax-speed="2" data-rellax-mobile-speed="0" data-rellax-xs-speed="0">
 				<div class="container">
 					<h1 class="h5 font-weight-bold text-uppercase mt-5 pb-0 mb-0 text-center">Hackathon B-Hack</h1>
 					<h1 class="display-3 text-center mb-5">Barbórka 4.0</h1>
@@ -52,15 +59,17 @@
 				</div>
 			</div>
 		</div>
-		<div class="col-4 section-right rellaxx" data-rellax-speed="-2">
+		<div
+			class="col-12 col-sm-4 order-2 order-sm-3 section-right rellaxx"
+			data-rellax-speed="-2"
+			data-rellax-mobile-speed="0"
+			data-rellax-xs-speed="0"
+		>
 			<div class="col-12 col-sm-8 offset-sm-1 d-flex justify-content-between align-self-top">
 				<p class="text-muted font-weight-bold text-uppercase">| date</p>
-				<p class="text-dark">11.2021</p>
+				<p class="text-dark text-sm-left">11.2021</p>
 			</div>
-			<div class="col-11 offset-1 d-flex flex-column align-self-top pt-5 mt-5">
-				<!-- <p class="text-muted font-weight-bold text-uppercase">NAME/</p>
-				<h6 class="display-2" style="color: #f83d46;">Hackathon B-Hack</h6> -->
-			</div>
+			<div class="col-11 offset-1 d-flex flex-column align-self-top pt-5 mt-5" />
 		</div>
 	</div>
 </div>
