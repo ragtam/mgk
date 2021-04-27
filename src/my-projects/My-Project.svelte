@@ -24,6 +24,9 @@
 
 <div class="my-project">
 	<div class="row">
+		<div class="position-absolute background-section">
+			<div class="col-2 offset-10 col-sm-5 offset-sm-7" />
+		</div>
 		<div
 			class="col-12 col-sm-4 order-1 order-sm-1 section-left rellaxx"
 			data-rellax-speed="-2"
@@ -40,7 +43,7 @@
 				</ul>
 			</div>
 			<div class="col-12 col-sm-11 offset-sm-1 order-1 order-sm-2 d-flex flex-column align-self-top mt-3 mt-sm-0">
-				<p class="text-muted font-weight-bold text-uppercase mb-0">| name</p>
+				<p class="text-muted font-weight-bold text-uppercase mb-0">| type</p>
 				<h6 class="display-2 pt-0" style="color: #f83d46;">Hackathon</h6>
 			</div>
 		</div>
@@ -81,18 +84,8 @@
 		background-color: #f0ede6;
 	}
 
-	.my-project > div {
+	.my-project > div:nth-child(1) {
 		height: 100vh;
-	}
-
-	.my-project::before {
-		content: '';
-		position: absolute;
-		bottom: 0;
-		right: 0;
-		width: 43%;
-		height: 60%;
-		background: linear-gradient(180deg, #f83d46 20%, #4a4a4a 0%);
 	}
 
 	.vhs-tape {
@@ -110,5 +103,17 @@
 
 	.my-project ul {
 		list-style-type: none;
+	}
+
+	.background-section {
+		width: 100%;
+		height: 60vh;
+		right: 0;
+		bottom: 0;
+	}
+
+	.background-section > div {
+		background: linear-gradient(180deg, #f83d46 20%, #4a4a4a 0%);
+		height: 100%;
 	}
 </style>

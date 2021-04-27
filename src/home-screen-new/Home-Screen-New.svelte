@@ -124,10 +124,10 @@
 			</div>
 			<div class="row g-0 mt-5 introduction-text">
 				<div class="col-8 col-sm-8 col-md-9 col-lg-10">
-					<h1 class="h1 font-weight-light d-none d-sm-block">My name is</h1>
-					<h1 class="display-1 mb-0 font-weight-bold d-none d-sm-block">Mateusz</h1>
+					<h1 class="h2 font-weight-light d-none d-sm-block">My name is</h1>
+					<h1 class="display-1 mb-0 d-none d-sm-block">Mateusz</h1>
 					<h1 class="h3 font-weight-light d-block d-sm-none">My name is</h1>
-					<h1 class="display-4 mb-0 font-weight-bold d-block d-sm-none">Mateusz</h1>
+					<h1 class="display-4 mb-0 d-block d-sm-none">Mateusz</h1>
 					<p>Front-end developer with .NET background.</p>
 				</div>
 				<div class="col-4 col-sm-4 col-md-3 col-lg-2 d-flex justify-content-center">
