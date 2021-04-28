@@ -172,7 +172,7 @@
 	}
 
 	:global([backgroundCssRef='first-project-background']) {
-		background: linear-gradient(180deg, #f83d46 20%, #4a4a4a 0%);
+		background: linear-gradient(180deg, #f83d46 20%, #a1998c 0%);
 	}
 
 	:global([mainCssRef='first-project-color']) {

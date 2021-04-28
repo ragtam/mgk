@@ -44,7 +44,7 @@
 		<div class="col-12 col-sm-4 order-3 order-sm-2 d-flex align-items-center">
 			<div
 				class="vhs-tape mx-0 mb-5 mt-1 mx-lg-5 {parallaxClassName}"
-				data-rellax-speed="6"
+				data-rellax-speed="-5"
 				data-rellax-mobile-speed="3"
 				data-rellax-xs-speed="3"
 				data-rellax-percentage="0.5"
