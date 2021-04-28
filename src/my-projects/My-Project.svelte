@@ -29,14 +29,7 @@
 <div {mainCssRef} class="my-project">
 	<div class="row no-gutters">
 		<div class="position-absolute background-section">
-			<div
-				{backgroundCssRef}
-				class="col-2 offset-10 col-sm-5 offset-sm-7 {parallaxClassName}"
-				data-rellax-speed="-1"
-				data-rellax-mobile-speed="0.8"
-				data-rellax-xs-speed="0.8"
-				data-rellax-percentage="0.5"
-			/>
+			<div {backgroundCssRef} class="col-2 offset-10 col-sm-5 offset-sm-7" />
 		</div>
 		<div
 			class="col-12 col-sm-4 order-1 order-sm-1 section-left {parallaxClassName}"
@@ -52,8 +45,8 @@
 			<div
 				class="vhs-tape mx-0 mb-5 mt-1 mx-lg-5 {parallaxClassName}"
 				data-rellax-speed="6"
-				data-rellax-mobile-speed="0"
-				data-rellax-xs-speed="0"
+				data-rellax-mobile-speed="3"
+				data-rellax-xs-speed="3"
 				data-rellax-percentage="0.5"
 			>
 				<slot name="card" />

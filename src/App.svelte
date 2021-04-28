@@ -120,14 +120,14 @@
 
 		<MyProjectRight slot="right">
 			<p class="text-muted font-weight-bold text-uppercase">| date</p>
-			<p class="text-light text-sm-left">11.2021</p>
+			<p class="text-sm-left">11.2021</p>
 		</MyProjectRight>
 	</MyProject>
 
 	<MyProject parallaxClassName="yt-player-parallax" mainCssRef="yt-player-color" backgroundCssRef="yt-player-background">
 		<MyProjectTopLeft slot="top-left">
 			<p class="text-muted font-weight-bold text-uppercase">| tech stack</p>
-			<ul class="text-light text-right text-sm-left">
+			<ul class="text-right text-sm-left">
 				<li>Angular</li>
 				<li>Typescript</li>
 			</ul>
@@ -135,8 +135,8 @@
 
 		<MyProjectBottomLeft slot="bottom-left">
 			<p class="text-muted font-weight-bold text-uppercase mb-0">| type</p>
-			<h6 class="display-2 pt-0 d-none d-sm-block" style="color: #03ab7a;">NPM Package</h6>
-			<h6 class="display-4 pt-0 d-block d-sm-none" style="color: #03ab7a;">NPM Package</h6>
+			<h6 class="display-2 pt-0 d-none d-sm-block" style="color: #f83d46;">NPM Package</h6>
+			<h6 class="display-4 pt-0 d-block d-sm-none" style="color: #f83d46;">NPM Package</h6>
 		</MyProjectBottomLeft>
 
 		<MyProjectCard slot="card">
@@ -144,18 +144,18 @@
 			<h1 class="display-3 text-center mb-5 d-none d-sm-block">Yt-Player-Angular</h1>
 			<h1 class="display-4 text-center mb-1 mb-sm-5 d-block d-sm-none">Yt-Player-Angular</h1>
 
-			<p class="col-10 pt-0 pt-sm-3 text-right text-light">
+			<p class="col-10 pt-0 pt-sm-3 text-right">
 				Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to
 				twinkle. By the same illusion which lifts the horizon of.
 			</p>
-			<button class="btn btn-secondary mt-0 mb-5 mt-sm-3 col-8 offset-1" style="background-color: #03ab7a" type="button"
+			<button class="btn btn-secondary mt-0 mb-5 mt-sm-3 col-8 offset-1" style="background-color: #f83d46" type="button"
 				>Check on NPM</button
 			>
 		</MyProjectCard>
 
 		<MyProjectRight slot="right">
 			<p class="text-muted font-weight-bold text-uppercase">| date</p>
-			<p class="text-light text-sm-left">11.2021</p>
+			<p class="text-sm-left">11.2021</p>
 		</MyProjectRight>
 	</MyProject>
 
@@ -193,6 +193,14 @@
 
 	:global([mainCssRef='indepth-color']) {
 		background-color: #a1998c;
+	}
+
+	:global([backgroundCssRef='yt-player-background']) {
+		background: linear-gradient(180deg, white 1%, #f83d46 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	}
+
+	:global([mainCssRef='yt-player-color']) {
+		background-color: white;
 	}
 
 	/* .bg-dark {
