@@ -23,13 +23,13 @@
 </script>
 
 <div class="my-project">
-	<div class="row">
+	<div class="row no-gutters">
 		<div class="position-absolute background-section">
 			<div
 				class="col-2 offset-10 col-sm-5 offset-sm-7 rellaxx"
 				data-rellax-speed="-1"
-				data-rellax-mobile-speed="1"
-				data-rellax-xs-speed="1"
+				data-rellax-mobile-speed="1.5"
+				data-rellax-xs-speed="1.5"
 			/>
 		</div>
 		<div
@@ -38,45 +38,26 @@
 			data-rellax-mobile-speed="0"
 			data-rellax-xs-speed="0"
 		>
-			<div class="col-12 col-sm-8 offset-sm-1 order-2 order-sm-1 d-flex justify-content-between align-self-top">
-				<p class="text-muted font-weight-bold text-uppercase">| tech stack</p>
-				<ul class="text-dark text-right text-sm-left">
-					<li>Vue</li>
-					<li>Nuxt</li>
-					<li>Vuetify</li>
-					<li>Storybook</li>
-				</ul>
-			</div>
-			<div class="col-12 col-sm-11 offset-sm-1 order-1 order-sm-2 d-flex flex-column align-self-top mt-3 mt-sm-0">
-				<p class="text-muted font-weight-bold text-uppercase mb-0">| type</p>
-				<h6 class="display-2 pt-0" style="color: #f83d46;">Hackathon</h6>
-			</div>
+			<slot name="top-left" />
+			<slot name="bottom-left" />
 		</div>
 		<div class="col-12 col-sm-4 order-3 order-sm-2 d-flex align-items-end">
-			<div class="vhs-tape mx-0 mx-lg-5 rellaxx" data-rellax-speed="2" data-rellax-mobile-speed="-1" data-rellax-xs-speed="-1">
-				<div class="container">
-					<h1 class="h5 font-weight-bold text-uppercase mt-5 pb-0 mb-0 text-center">Hackathon B-Hack</h1>
-					<h1 class="display-3 text-center mb-5">Barbórka 4.0</h1>
-					<p class="col-10 pt-3 text-right">
-						Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased
-						to twinkle. By the same illusion which lifts the horizon of.
-					</p>
-					<button class="btn btn-secondary mt-5 col-8 offset-1" style="background-color: #4a4a4a" type="button"
-						>Check project`s storybook page</button
-					>
-				</div>
+			<div
+				class="vhs-tape mx-0 mb-5 mt-1 mx-lg-5 rellaxx"
+				data-rellax-speed="2"
+				data-rellax-mobile-speed="0"
+				data-rellax-xs-speed="0"
+			>
+				<slot name="card" />
 			</div>
 		</div>
 		<div
 			class="col-12 col-sm-4 order-2 order-sm-3 section-right rellaxx"
-			data-rellax-speed="-2"
+			data-rellax-speed="-3"
 			data-rellax-mobile-speed="0"
 			data-rellax-xs-speed="0"
 		>
-			<div class="col-12 col-sm-8 offset-sm-1 d-flex justify-content-between align-self-top">
-				<p class="text-muted font-weight-bold text-uppercase">| date</p>
-				<p class="text-dark text-sm-left">11.2021</p>
-			</div>
+			<slot name="right" />
 		</div>
 	</div>
 </div>
@@ -86,14 +67,15 @@
 		position: relative;
 		min-height: 100vh;
 		background-color: #f0ede6;
+		overflow-y: hidden;
 	}
 
 	.my-project > div:nth-child(1) {
-		height: 100vh;
+		min-height: 100vh;
 	}
 
 	.vhs-tape {
-		height: 65vh;
+		min-height: 65vh;
 		width: 100%;
 		position: relative;
 		box-shadow: 3px 3px 5px 6px rgb(0 0 0 / 20%);
@@ -105,7 +87,7 @@
 		display: grid;
 	}
 
-	.my-project ul {
+	.my-project :global(ul) {
 		list-style-type: none;
 	}
 
@@ -118,6 +100,6 @@
 
 	.background-section > div {
 		background: linear-gradient(180deg, #f83d46 20%, #4a4a4a 0%);
-		height: 80vh;
+		height: 100vh;
 	}
 </style>
