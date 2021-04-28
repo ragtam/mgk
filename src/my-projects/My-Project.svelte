@@ -2,13 +2,17 @@
 	import { onMount } from 'svelte';
 	import Rellax from 'rellax';
 
+	export let parallaxClassName;
+	export let mainColor;
+	export let ref;
+
 	let rellax;
 
 	onMount(() => {
 		const sectionObserver = new IntersectionObserver((entries) => {
 			entries.forEach((entry) => {
 				if (entry.isIntersecting) {
-					rellax = new Rellax('.rellaxx', {
+					rellax = new Rellax(`.${parallaxClassName}`, {
 						breakpoints: [576, 768, 1201],
 					});
 				} else {
@@ -22,18 +26,19 @@
 	});
 </script>
 
-<div class="my-project">
+<div class="my-project" style="background-color: {mainColor}">
 	<div class="row no-gutters">
 		<div class="position-absolute background-section">
 			<div
-				class="col-2 offset-10 col-sm-5 offset-sm-7 rellaxx"
+				{ref}
+				class="col-2 offset-10 col-sm-5 offset-sm-7 {parallaxClassName}"
 				data-rellax-speed="-1"
 				data-rellax-mobile-speed="1.5"
 				data-rellax-xs-speed="1.5"
 			/>
 		</div>
 		<div
-			class="col-12 col-sm-4 order-1 order-sm-1 section-left rellaxx"
+			class="col-12 col-sm-4 order-1 order-sm-1 section-left {parallaxClassName}"
 			data-rellax-speed="-2"
 			data-rellax-mobile-speed="0"
 			data-rellax-xs-speed="0"
@@ -43,8 +48,8 @@
 		</div>
 		<div class="col-12 col-sm-4 order-3 order-sm-2 d-flex align-items-end">
 			<div
-				class="vhs-tape mx-0 mb-5 mt-1 mx-lg-5 rellaxx"
-				data-rellax-speed="2"
+				class="vhs-tape mx-0 mb-5 mt-1 mx-lg-5 {parallaxClassName}"
+				data-rellax-speed="1.7"
 				data-rellax-mobile-speed="0"
 				data-rellax-xs-speed="0"
 			>
@@ -52,7 +57,7 @@
 			</div>
 		</div>
 		<div
-			class="col-12 col-sm-4 order-2 order-sm-3 section-right rellaxx"
+			class="col-12 col-sm-4 order-2 order-sm-3 section-right {parallaxClassName}"
 			data-rellax-speed="-3"
 			data-rellax-mobile-speed="0"
 			data-rellax-xs-speed="0"
@@ -66,7 +71,6 @@
 	.my-project {
 		position: relative;
 		min-height: 100vh;
-		background-color: #f0ede6;
 		overflow-y: hidden;
 	}
 
@@ -99,7 +103,6 @@
 	}
 
 	.background-section > div {
-		background: linear-gradient(180deg, #f83d46 20%, #4a4a4a 0%);
 		height: 100vh;
 	}
 </style>
