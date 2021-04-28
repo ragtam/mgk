@@ -9,17 +9,13 @@
 	let rellax;
 
 	onMount(() => {
-		console.log('mainCssRef :>> ', mainCssRef);
-
 		const sectionObserver = new IntersectionObserver((entries) => {
 			entries.forEach((entry) => {
 				if (entry.isIntersecting) {
-					console.log('is');
 					rellax = new Rellax(`.${parallaxClassName}`, {
 						breakpoints: [576, 768, 1201],
 					});
 				} else {
-					console.log('is not');
 					rellax.destroy();
 				}
 			});
@@ -37,36 +33,41 @@
 				{backgroundCssRef}
 				class="col-2 offset-10 col-sm-5 offset-sm-7 {parallaxClassName}"
 				data-rellax-speed="-1"
-				data-rellax-mobile-speed="1.5"
-				data-rellax-xs-speed="1.5"
+				data-rellax-mobile-speed="0.8"
+				data-rellax-xs-speed="0.8"
+				data-rellax-percentage="0.5"
 			/>
 		</div>
 		<div
 			class="col-12 col-sm-4 order-1 order-sm-1 section-left {parallaxClassName}"
-			data-rellax-speed="-2"
+			data-rellax-speed="-3"
 			data-rellax-mobile-speed="0"
 			data-rellax-xs-speed="0"
+			data-rellax-percentage="0.5"
 		>
 			<slot name="top-left" />
 			<slot name="bottom-left" />
 		</div>
-		<div class="col-12 col-sm-4 order-3 order-sm-2 d-flex align-items-end">
+		<div class="col-12 col-sm-4 order-3 order-sm-2 d-flex align-items-center">
 			<div
 				class="vhs-tape mx-0 mb-5 mt-1 mx-lg-5 {parallaxClassName}"
-				data-rellax-speed="1.7"
+				data-rellax-speed="6"
 				data-rellax-mobile-speed="0"
 				data-rellax-xs-speed="0"
+				data-rellax-percentage="0.5"
 			>
 				<slot name="card" />
 			</div>
 		</div>
 		<div
 			class="col-12 col-sm-4 order-2 order-sm-3 section-right {parallaxClassName}"
-			data-rellax-speed="-3"
+			data-rellax-speed="1.5"
 			data-rellax-mobile-speed="0"
 			data-rellax-xs-speed="0"
+			data-rellax-percentage="0.5"
 		>
 			<slot name="right" />
+			<div class="col-12 col-sm-11 offset-sm-1 order-1 order-sm-2 d-flex flex-column align-self-center mt-3 mt-sm-0" />
 		</div>
 	</div>
 </div>
@@ -107,6 +108,6 @@
 	}
 
 	.background-section > div {
-		height: 100vh;
+		height: 60vh;
 	}
 </style>
