@@ -27,7 +27,7 @@
 		<MyProjectCard slot="card">
 			<h1 class="h5 font-weight-bold text-uppercase mt-5 pb-0 mb-0 text-center">Hackathon B-Hack</h1>
 			<h1 class="display-3 text-center mb-5 d-none d-sm-block">Barbórka 4.0</h1>
-			<h1 class="display-4 text-center mb-1 mb-sm-5 d-block d-sm-none">Barbórka 4.0</h1>
+			<h1 class="display-5 text-center mb-1 mb-sm-5 d-block d-sm-none">Barbórka 4.0</h1>
 
 			<p class="col-10 pt-0 pt-sm-3 text-right">
 				Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to
@@ -63,7 +63,7 @@
 		<MyProjectCard slot="card">
 			<h1 class="h5 font-weight-bold text-uppercase mt-5 pb-0 mb-0 text-center">Indepth.dev Article</h1>
 			<h1 class="display-3 text-center mb-5 d-none d-sm-block">Reusable menu component</h1>
-			<h1 class="display-4 text-center mb-1 mb-sm-5 d-block d-sm-none">Reusable menu component</h1>
+			<h1 class="display-5 text-center mb-1 mb-sm-5 d-block d-sm-none">Reusable menu component</h1>
 
 			<p class="col-10 pt-0 pt-sm-3 text-right">
 				Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to
@@ -99,7 +99,7 @@
 		<MyProjectCard slot="card">
 			<h1 class="h5 font-weight-bold text-uppercase mt-5 pb-0 mb-0 text-center text-secondary">NPM Package</h1>
 			<h1 class="display-3 text-center mb-5 d-none d-sm-block">Date-faker</h1>
-			<h1 class="display-4 text-center mb-1 mb-sm-5 d-block d-sm-none">Date-faker</h1>
+			<h1 class="display-5 text-center mb-1 mb-sm-5 d-block d-sm-none">Date-faker</h1>
 
 			<p class="col-10 pt-0 pt-sm-3 text-right text-light">
 				Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to
@@ -134,7 +134,7 @@
 		<MyProjectCard slot="card">
 			<h1 class="h5 font-weight-bold text-uppercase mt-5 pb-0 mb-0 text-center text-secondary">NPM Package</h1>
 			<h1 class="display-3 text-center mb-5 d-none d-sm-block">Yt-Player-Angular</h1>
-			<h1 class="display-4 text-center mb-1 mb-sm-5 d-block d-sm-none">Yt-Player-Angular</h1>
+			<h1 class="display-5 text-center mb-1 mb-sm-5 d-block d-sm-none">Yt-Player-Angular</h1>
 
 			<p class="col-10 pt-0 pt-sm-3 text-right">
 				Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to

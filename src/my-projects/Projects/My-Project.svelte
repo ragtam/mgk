@@ -34,8 +34,8 @@
 		<div
 			class="col-12 col-sm-4 order-1 order-sm-1 section-left {parallaxClassName}"
 			data-rellax-speed="-3"
-			data-rellax-mobile-speed="0"
-			data-rellax-xs-speed="0"
+			data-rellax-mobile-speed="0.5"
+			data-rellax-xs-speed="0.5"
 			data-rellax-percentage="0.5"
 		>
 			<slot name="top-left" />
@@ -55,8 +55,8 @@
 		<div
 			class="col-12 col-sm-4 order-2 order-sm-3 section-right {parallaxClassName}"
 			data-rellax-speed="1.5"
-			data-rellax-mobile-speed="0"
-			data-rellax-xs-speed="0"
+			data-rellax-mobile-speed="0.5"
+			data-rellax-xs-speed="0.5"
 			data-rellax-percentage="0.5"
 		>
 			<slot name="right" />
