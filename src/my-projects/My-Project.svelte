@@ -3,34 +3,38 @@
 	import Rellax from 'rellax';
 
 	export let parallaxClassName;
-	export let mainColor;
-	export let ref;
+	export let mainCssRef;
+	export let backgroundCssRef;
 
 	let rellax;
 
 	onMount(() => {
+		console.log('mainCssRef :>> ', mainCssRef);
+
 		const sectionObserver = new IntersectionObserver((entries) => {
 			entries.forEach((entry) => {
 				if (entry.isIntersecting) {
+					console.log('is');
 					rellax = new Rellax(`.${parallaxClassName}`, {
 						breakpoints: [576, 768, 1201],
 					});
 				} else {
+					console.log('is not');
 					rellax.destroy();
 				}
 			});
 		});
 
-		const sectionElement = document.querySelector('.my-project');
+		const sectionElement = document.querySelector(`[mainCssRef='${mainCssRef}']`);
 		sectionObserver.observe(sectionElement);
 	});
 </script>
 
-<div class="my-project" style="background-color: {mainColor}">
+<div {mainCssRef} class="my-project">
 	<div class="row no-gutters">
 		<div class="position-absolute background-section">
 			<div
-				{ref}
+				{backgroundCssRef}
 				class="col-2 offset-10 col-sm-5 offset-sm-7 {parallaxClassName}"
 				data-rellax-speed="-1"
 				data-rellax-mobile-speed="1.5"

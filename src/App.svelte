@@ -15,12 +15,7 @@
 
 	<MyProjectsHeader />
 
-	<MyProject
-		parallaxClassName="hackathon-parallax"
-		mainColor="#f0ede6;"
-		ref="black-red-gradient"
-		backgroundColor="linear-gradient(180deg, #f83d46 20%, #4a4a4a 0%);"
-	>
+	<MyProject parallaxClassName="hackathon-parallax" mainCssRef="first-project-color" backgroundCssRef="first-project-background">
 		<MyProjectTopLeft slot="top-left">
 			<p class="text-muted font-weight-bold text-uppercase">| tech stack</p>
 			<ul class="text-dark text-right text-sm-left">
@@ -69,8 +64,12 @@
 		box-sizing: border-box;
 	}
 
-	:global([ref='black-red-gradient']) {
+	:global([backgroundCssRef='first-project-background']) {
 		background: linear-gradient(180deg, #f83d46 20%, #4a4a4a 0%);
+	}
+
+	:global([mainCssRef='first-project-color']) {
+		background-color: #f0ede6;
 	}
 
 	/* .bg-dark {
