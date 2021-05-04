@@ -4,10 +4,9 @@
 	import anime from 'animejs/lib/anime.es.js';
 
 	let isSectionVisible = false;
+	let rellax;
 
 	onMount(() => {
-		const r = new Rellax('.rellax');
-
 		const entryAnimation = getEntryAnimation();
 		const backgroundOpacityAnimationIn = getBackgroundOpacityAnimationIn();
 		const backgroundOpacityAnimationOut = getBackgroundOpacityAnimationOut();
@@ -26,6 +25,19 @@
 		);
 
 		const target = document.querySelector('.frame__background--transitional');
+
+		const sectionObserver = new IntersectionObserver((entries) => {
+			entries.forEach((entry) => {
+				if (entry.isIntersecting) {
+					rellax = new Rellax('.rellax');
+				} else {
+					rellax.destroy();
+				}
+			});
+		});
+
+		const sectionElement = document.querySelector('.home-screen');
+		sectionObserver.observe(sectionElement);
 
 		setTimeout(() => {
 			isSectionVisible = true;
@@ -90,11 +102,11 @@
 		<div />
 		<div />
 	</div>
-	<div class="frame mt-3 mt-md-0 rellax {isSectionVisible ? 'home-screen--visible' : 'home-screen--hidden'}" data-rellax-speed="2">
+	<div class="frame mt-3 mt-md-0  {isSectionVisible ? 'home-screen--visible' : 'home-screen--hidden'}">
 		<div class="frame__background--transitional" />
 
 		<div class="container position-relative">
-			<div class="row g-0 mt-3">
+			<div class="row g-0 mt-3 ml-1">
 				<div class="dots-in-line">
 					<div />
 					<div />
@@ -103,7 +115,7 @@
 			</div>
 			<div class="d-flex g-0 mt-3 justify-content-between">
 				<div>
-					<h1 class="display-5">Hello</h1>
+					<h1 class="h1 font-weight-light">Hello</h1>
 				</div>
 				<div class="platforms">
 					<button class="btn rounded-circle"><i class="bi bi-github" /></button>
@@ -112,8 +124,10 @@
 			</div>
 			<div class="row g-0 mt-5 introduction-text">
 				<div class="col-8 col-sm-8 col-md-9 col-lg-10">
-					<h1 class="h1">My name is</h1>
-					<h1 class="display-1 mb-0 fw-bolder">Mateusz</h1>
+					<h1 class="h2 font-weight-light d-none d-sm-block">My name is</h1>
+					<h1 class="display-1 mb-0 d-none d-sm-block">Mateusz</h1>
+					<h1 class="h3 font-weight-light d-block d-sm-none">My name is</h1>
+					<h1 class="display-5 mb-0 d-block d-sm-none">Mateusz</h1>
 					<p>Front-end developer with .NET background.</p>
 				</div>
 				<div class="col-4 col-sm-4 col-md-3 col-lg-2 d-flex justify-content-center">
@@ -194,15 +208,16 @@
 		/* border: 8px solid white;
 		border-radius: 20px; */
 		position: relative;
-		box-shadow: 7px 10px 5px 5px rgb(0 0 0 / 20%);
+		/* box-shadow: 7px 10px 5px 5px rgb(0 0 0 / 20%); */
 
 		background: rgba(255, 251, 229, 0.1);
-		box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+		box-shadow: 3px 3px 5px 6px rgb(0 0 0 / 20%);
+		/* box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); */
 		/* backdrop-filter: blur(2px);
 		-webkit-backdrop-filter: blur(2px); */
 		border-radius: 20px;
 		/* border: 1px solid rgba(255, 255, 255, 0.18); */
-		transform: translateX(-100vw);
+		/* transform: translateX(-100vw); */
 	}
 
 	.frame__background--transitional {
