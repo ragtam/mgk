@@ -5,6 +5,7 @@
 	export let parallaxClassName;
 	export let mainCssRef;
 	export let backgroundCssRef;
+	export let cardCssRef;
 
 	let rellax;
 
@@ -44,6 +45,7 @@
 		<div class="col-12 col-sm-4 order-3 order-sm-2 d-flex align-items-center">
 			<div
 				class="vhs-tape mx-0 mb-5 mt-1 mx-lg-5 mx-4 {parallaxClassName}"
+				{cardCssRef}
 				data-rellax-speed="-10"
 				data-rellax-mobile-speed="3"
 				data-rellax-xs-speed="3"

@@ -7,7 +7,12 @@
 </script>
 
 <div>
-	<MyProject parallaxClassName="hackathon-parallax" mainCssRef="first-project-color" backgroundCssRef="first-project-background">
+	<MyProject
+		parallaxClassName="hackathon-parallax"
+		mainCssRef="first-project-color"
+		backgroundCssRef="first-project-background"
+		cardCssRef="first-project-card"
+	>
 		<MyProjectTopLeft slot="top-left">
 			<p class="text-muted font-weight-bold text-uppercase">| tech stack</p>
 			<ul class="text-dark text-right text-sm-left">
@@ -44,7 +49,12 @@
 		</MyProjectRight>
 	</MyProject>
 
-	<MyProject parallaxClassName="indepth-parallax" mainCssRef="indepth-color" backgroundCssRef="indepth-background">
+	<MyProject
+		parallaxClassName="indepth-parallax"
+		mainCssRef="indepth-color"
+		backgroundCssRef="indepth-background"
+		cardCssRef="indepth-card"
+	>
 		<MyProjectTopLeft slot="top-left">
 			<p class="text-muted font-weight-bold text-uppercase">| tech stack</p>
 			<ul class="text-dark text-right text-sm-left">
@@ -80,7 +90,12 @@
 		</MyProjectRight>
 	</MyProject>
 
-	<MyProject parallaxClassName="date-faker-parallax" mainCssRef="date-faker-color" backgroundCssRef="date-faker-background">
+	<MyProject
+		parallaxClassName="date-faker-parallax"
+		mainCssRef="date-faker-color"
+		backgroundCssRef="date-faker-background"
+		cardCssRef="date-faker-card"
+	>
 		<MyProjectTopLeft slot="top-left">
 			<p class="text-muted font-weight-bold text-uppercase">| tech stack</p>
 			<ul class="text-light text-right text-sm-left">
@@ -116,7 +131,12 @@
 		</MyProjectRight>
 	</MyProject>
 
-	<MyProject parallaxClassName="yt-player-parallax" mainCssRef="yt-player-color" backgroundCssRef="yt-player-background">
+	<MyProject
+		parallaxClassName="yt-player-parallax"
+		mainCssRef="yt-player-color"
+		backgroundCssRef="yt-player-background"
+		cardCssRef="yt-player-card"
+	>
 		<MyProjectTopLeft slot="top-left">
 			<p class="text-muted font-weight-bold text-uppercase">| tech stack</p>
 			<ul class="text-right text-sm-left">
@@ -161,12 +181,20 @@
 		background-color: #f0ede6;
 	}
 
+	:global([cardCssRef='first-project-card']) {
+		background: rgba(240, 237, 230, 0.3);
+	}
+
 	:global([backgroundCssRef='date-faker-background']) {
 		background: linear-gradient(180deg, #03ab7a 1%, #4a4a4a 99%);
 	}
 
 	:global([mainCssRef='date-faker-color']) {
 		background-color: #4a4a4a;
+	}
+
+	:global([cardCssRef='date-faker-card']) {
+		background: rgba(74, 74, 74, 0.3);
 	}
 
 	:global([backgroundCssRef='indepth-background']) {
@@ -177,11 +205,19 @@
 		background-color: #a1998c;
 	}
 
+	:global([cardCssRef='indepth-card']) {
+		background: rgba(161, 153, 140, 0.3);
+	}
+
 	:global([backgroundCssRef='yt-player-background']) {
 		background: linear-gradient(180deg, white 1%, #f83d46 99%);
 	}
 
 	:global([mainCssRef='yt-player-color']) {
 		background-color: white;
+	}
+
+	:global([cardCssRef='yt-player-card']) {
+		background: rgba(255, 255, 255, 0.3);
 	}
 </style>
