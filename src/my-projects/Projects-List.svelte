@@ -4,6 +4,16 @@
 	import MyProjectBottomLeft from './Projects/slots/My-Project-Bottom-Left.svelte';
 	import MyProjectCard from './Projects/slots/My-Project-Card.svelte';
 	import MyProjectRight from './Projects/slots/My-Project-Right.svelte';
+	import { onMount } from 'svelte';
+	import VanillaTilt from 'vanilla-tilt/lib/vanilla-tilt.es2015';
+
+	onMount(() => {
+		setUpTilt();
+	});
+
+	function setUpTilt() {
+		VanillaTilt.init(document.querySelectorAll('.vhs-tape'), { max: 3, glare: true, 'max-glare': 0.5 });
+	}
 </script>
 
 <div>
