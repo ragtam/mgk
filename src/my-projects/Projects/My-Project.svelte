@@ -43,8 +43,8 @@
 		</div>
 		<div class="col-12 col-sm-4 order-3 order-sm-2 d-flex align-items-center">
 			<div
-				class="vhs-tape mx-0 mb-5 mt-1 mx-lg-5 {parallaxClassName}"
-				data-rellax-speed="-5"
+				class="vhs-tape mx-0 mb-5 mt-1 mx-lg-5 mx-4 {parallaxClassName}"
+				data-rellax-speed="-10"
 				data-rellax-mobile-speed="3"
 				data-rellax-xs-speed="3"
 				data-rellax-percentage="0.5"
@@ -82,6 +82,9 @@
 		position: relative;
 		box-shadow: 3px 3px 5px 6px rgb(0 0 0 / 20%);
 		border-radius: 10px;
+
+		backdrop-filter: blur(10px);
+		--webkit-backdrop-filter: blur(10px);
 	}
 
 	.section-left,

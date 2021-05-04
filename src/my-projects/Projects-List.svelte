@@ -29,11 +29,11 @@
 			<h1 class="display-3 text-center mb-5 d-none d-sm-block">Barbórka 4.0</h1>
 			<h1 class="display-5 text-center mb-1 mb-sm-5 d-block d-sm-none">Barbórka 4.0</h1>
 
-			<p class="col-10 pt-0 pt-sm-3 text-right">
+			<p class="pt-0 pt-sm-3 text-right">
 				Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to
 				twinkle. By the same illusion which lifts the horizon of.
 			</p>
-			<button class="btn btn-secondary mt-0 mb-5 mt-sm-3 col-8 offset-1" style="background-color: #4a4a4a" type="button"
+			<button class="btn btn-secondary mt-0 mb-5 mt-sm-3 col-10 offset-1" style="background-color: #4a4a4a" type="button"
 				>Storybook page</button
 			>
 		</MyProjectCard>
@@ -65,11 +65,11 @@
 			<h1 class="display-3 text-center mb-5 d-none d-sm-block">Reusable menu component</h1>
 			<h1 class="display-5 text-center mb-1 mb-sm-5 d-block d-sm-none">Reusable menu component</h1>
 
-			<p class="col-10 pt-0 pt-sm-3 text-right">
+			<p class="pt-0 pt-sm-3 text-right">
 				Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to
 				twinkle. By the same illusion which lifts the horizon of.
 			</p>
-			<button class="btn btn-secondary mt-0 mb-5 mt-sm-3 col-8 offset-1" style="background-color: #BF7224" type="button"
+			<button class="btn btn-secondary mt-0 mb-5 mt-sm-3 col-10 offset-1" style="background-color: #BF7224" type="button"
 				>Go to article</button
 			>
 		</MyProjectCard>
@@ -101,11 +101,11 @@
 			<h1 class="display-3 text-center mb-5 d-none d-sm-block">Date-faker</h1>
 			<h1 class="display-5 text-center mb-1 mb-sm-5 d-block d-sm-none">Date-faker</h1>
 
-			<p class="col-10 pt-0 pt-sm-3 text-right text-light">
+			<p class="pt-0 pt-sm-3 text-right text-light">
 				Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to
 				twinkle. By the same illusion which lifts the horizon of.
 			</p>
-			<button class="btn btn-secondary mt-0 mb-5 mt-sm-3 col-8 offset-1" style="background-color: #03ab7a" type="button"
+			<button class="btn btn-secondary mt-0 mb-5 mt-sm-3 col-10 offset-1" style="background-color: #03ab7a" type="button"
 				>Check on NPM</button
 			>
 		</MyProjectCard>
@@ -136,11 +136,11 @@
 			<h1 class="display-3 text-center mb-5 d-none d-sm-block">Yt-Player-Angular</h1>
 			<h1 class="display-5 text-center mb-1 mb-sm-5 d-block d-sm-none">Yt-Player-Angular</h1>
 
-			<p class="col-10 pt-0 pt-sm-3 text-right">
+			<p class="pt-0 pt-sm-3 text-right">
 				Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to
 				twinkle. By the same illusion which lifts the horizon of.
 			</p>
-			<button class="btn btn-secondary mt-0 mb-5 mt-sm-3 col-8 offset-1" style="background-color: #f83d46" type="button"
+			<button class="btn btn-secondary mt-0 mb-5 mt-sm-3 col-10 offset-1" style="background-color: #f83d46" type="button"
 				>Check on NPM</button
 			>
 		</MyProjectCard>

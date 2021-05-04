@@ -58,7 +58,7 @@
 </script>
 
 <div class="my-projects-header">
-	<h1 class="main-text display-4 py-4 px-2">
+	<h1 class="main-text display-5 py-4 px-2">
 		<div class="secondary-text py-4 px-2 {isSectionVisible ? 'secondary-text__width-will-change' : ''}">My Projects</div>
 		My Projects
 	</h1>
