@@ -2,6 +2,7 @@
 	import { onMount } from 'svelte';
 	import Rellax from 'rellax';
 	import anime from 'animejs/lib/anime.es.js';
+	import VanillaTilt from 'vanilla-tilt/lib/vanilla-tilt.es2015';
 
 	let isSectionVisible = false;
 	let rellax;
@@ -47,6 +48,8 @@
 			entryAnimation.finished.then(() => {
 				observer.observe(target);
 			});
+
+			setUpTilt();
 		}, 500);
 	});
 
@@ -91,6 +94,10 @@
 			easing: 'linear',
 			autoplay: false,
 		});
+	}
+
+	function setUpTilt() {
+		VanillaTilt.init(document.querySelector('.frame'), { max: 1, glare: true, 'max-glare': 0.5 });
 	}
 </script>
 
