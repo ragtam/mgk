@@ -2,10 +2,11 @@
 	import { onMount } from 'svelte';
 	import Rellax from 'rellax';
 	import anime from 'animejs/lib/anime.es.js';
-	import VanillaTilt from 'vanilla-tilt/lib/vanilla-tilt.es2015';
+	import { initializeTiltElement, destroyTilt } from '../utils/tilt-animation';
 
 	let isSectionVisible = false;
 	let rellax;
+	let tiltElement;
 
 	onMount(() => {
 		const entryAnimation = getEntryAnimation();
@@ -31,8 +32,10 @@
 			entries.forEach((entry) => {
 				if (entry.isIntersecting) {
 					rellax = new Rellax('.rellax');
+					tiltElement = initializeTiltElement('.frame', { max: 1 });
 				} else {
 					rellax.destroy();
+					destroyTilt(tiltElement);
 				}
 			});
 		});
@@ -48,8 +51,6 @@
 			entryAnimation.finished.then(() => {
 				observer.observe(target);
 			});
-
-			setUpTilt();
 		}, 500);
 	});
 
@@ -94,10 +95,6 @@
 			easing: 'linear',
 			autoplay: false,
 		});
-	}
-
-	function setUpTilt() {
-		VanillaTilt.init(document.querySelector('.frame'), { max: 1, glare: true, 'max-glare': 0.5 });
 	}
 </script>
 

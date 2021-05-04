@@ -1,6 +1,7 @@
 <script>
 	import { onMount } from 'svelte';
 	import Rellax from 'rellax';
+	import { initializeTiltElement, destroyTilt } from '../../utils/tilt-animation';
 
 	export let parallaxClassName;
 	export let mainCssRef;
@@ -8,6 +9,7 @@
 	export let cardCssRef;
 
 	let rellax;
+	let tiltElement;
 
 	onMount(() => {
 		const sectionObserver = new IntersectionObserver((entries) => {
@@ -16,8 +18,11 @@
 					rellax = new Rellax(`.${parallaxClassName}`, {
 						breakpoints: [576, 768, 1201],
 					});
+
+					tiltElement = initializeTiltElement(`.${parallaxClassName}--tilt`, { max: 3 });
 				} else {
 					rellax.destroy();
+					destroyTilt(tiltElement);
 				}
 			});
 		});
@@ -50,7 +55,7 @@
 				data-rellax-xs-speed="3"
 				data-rellax-percentage="0.5"
 			>
-				<div class="vhs-tape" {cardCssRef}>
+				<div class="vhs-tape {parallaxClassName + '--tilt'} " {cardCssRef}>
 					<slot name="card" />
 				</div>
 			</div>
