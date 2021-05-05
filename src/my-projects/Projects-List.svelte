@@ -30,7 +30,7 @@
 		</MyProjectBottomLeft>
 
 		<MyProjectCard slot="card">
-			<h1 class="h5 font-weight-bold text-uppercase mt-5 pb-0 mb-0 text-center">Hackathon B-Hack</h1>
+			<h1 class="h5 font-weight-bold text-uppercase mt-5 pb-0 mb-0 text-center text-secondary">Hackathon B-Hack</h1>
 			<h1 class="display-3 text-center mb-5 d-none d-sm-block">Barbórka 4.0</h1>
 			<h1 class="display-5 text-center mb-1 mb-sm-5 d-block d-sm-none">Barbórka 4.0</h1>
 
@@ -45,7 +45,7 @@
 
 		<MyProjectRight slot="right">
 			<p class="text-muted font-weight-bold text-uppercase">| date</p>
-			<p class="text-dark text-sm-left">11.2021</p>
+			<p class="text-dark text-sm-left">11.2020</p>
 		</MyProjectRight>
 	</MyProject>
 
@@ -71,22 +71,26 @@
 		</MyProjectBottomLeft>
 
 		<MyProjectCard slot="card">
-			<h1 class="h5 font-weight-bold text-uppercase mt-5 pb-0 mb-0 text-center">Indepth.dev Article</h1>
+			<h1 class="h5 font-weight-bold text-uppercase mt-5 pb-0 mb-0 text-center text-secondary">Indepth.dev Article</h1>
 			<h1 class="display-3 text-center mb-5 d-none d-sm-block">Reusable menu component</h1>
 			<h1 class="display-5 text-center mb-1 mb-sm-5 d-block d-sm-none">Reusable menu component</h1>
 
 			<p class="pt-0 pt-sm-3 text-right">
-				Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to
-				twinkle. By the same illusion which lifts the horizon of.
+				Tutorial article on how to build a generic context menu with Angular. Menu items configurable with HTML with no sub-menu
+				nesting. Guide focuses on menu`s logic, not the looks.
 			</p>
-			<button class="btn btn-secondary mt-0 mb-5 mt-sm-3 col-10 offset-1" style="background-color: #BF7224" type="button"
-				>Go to article</button
+			<a
+				href="https://indepth.dev/posts/1297/building-a-reusable-menu-component"
+				target="_blank"
+				class="btn btn-secondary mt-0 mb-5 mt-sm-3 col-10 offset-1"
+				style="background-color: #BF7224"
+				role="button">Go to article</a
 			>
 		</MyProjectCard>
 
 		<MyProjectRight slot="right">
 			<p class="text-muted font-weight-bold text-uppercase">| date</p>
-			<p class="text-dark text-sm-left">11.2021</p>
+			<p class="text-dark text-sm-left">07.2020</p>
 		</MyProjectRight>
 	</MyProject>
 
@@ -117,17 +121,21 @@
 			<h1 class="display-5 text-center mb-1 mb-sm-5 d-block d-sm-none">Date-faker</h1>
 
 			<p class="pt-0 pt-sm-3 text-right text-light">
-				Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to
-				twinkle. By the same illusion which lifts the horizon of.
+				Package overriding what the now ( new Date(), Date.now() ) is in JS. It allows to manually change current date with
+				moment.js like syntax.
 			</p>
-			<button class="btn btn-secondary mt-0 mb-5 mt-sm-3 col-10 offset-1" style="background-color: #03ab7a" type="button"
-				>Check on NPM</button
+			<a
+				href="https://www.npmjs.com/package/date-faker"
+				target="_blank"
+				class="btn btn-secondary mt-0 mb-5 mt-sm-3 col-10 offset-1"
+				style="background-color: #03ab7a"
+				role="button">Check on NPM</a
 			>
 		</MyProjectCard>
 
 		<MyProjectRight slot="right">
 			<p class="text-muted font-weight-bold text-uppercase">| date</p>
-			<p class="text-sm-left text-light">11.2021</p>
+			<p class="text-sm-left text-light">03.2020</p>
 		</MyProjectRight>
 	</MyProject>
 
@@ -157,17 +165,21 @@
 			<h1 class="display-5 text-center mb-1 mb-sm-5 d-block d-sm-none">Yt-Player-Angular</h1>
 
 			<p class="pt-0 pt-sm-3 text-right">
-				Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to
-				twinkle. By the same illusion which lifts the horizon of.
+				The package is an Angular wrapper for yt-player, YouTube Player API. Lets you embed Youtube video and control it (
+				play/pause/seek and many more ) programatically.
 			</p>
-			<button class="btn btn-secondary mt-0 mb-5 mt-sm-3 col-10 offset-1" style="background-color: #f83d46" type="button"
-				>Check on NPM</button
+			<a
+				href="https://www.npmjs.com/package/yt-player-angular"
+				target="_blank"
+				class="btn btn-secondary mt-0 mb-5 mt-sm-3 col-10 offset-1"
+				style="background-color: #f83d46"
+				role="button">Check on NPM</a
 			>
 		</MyProjectCard>
 
 		<MyProjectRight slot="right">
 			<p class="text-muted font-weight-bold text-uppercase">| date</p>
-			<p class="text-sm-left">11.2021</p>
+			<p class="text-sm-left">09.2019</p>
 		</MyProjectRight>
 	</MyProject>
 </div>

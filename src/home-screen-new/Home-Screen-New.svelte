@@ -122,14 +122,21 @@
 					<h1 class="h1 font-weight-light">Hello</h1>
 				</div>
 				<div class="platforms">
-					<button class="btn rounded-circle"><i class="bi bi-github" /></button>
-					<button class="btn rounded-circle"><i class="bi bi-linkedin" /></button>
+					<a href="https://github.com/ragtam" target="_blank" class="btn rounded-circle" role="button"
+						><i class="bi bi-github" /></a
+					>
+					<a
+						href="https://www.linkedin.com/in/mateusz-garbaciak-b50b20194/"
+						target="_blank"
+						class="btn rounded-circle"
+						role="button"><i class="bi bi-linkedin" /></a
+					>
 				</div>
 			</div>
 			<div class="row g-0 mt-5 introduction-text">
 				<div class="col-8 col-sm-8 col-md-9 col-lg-10">
 					<h1 class="h2 font-weight-light d-none d-sm-block">My name is</h1>
-					<h1 class="display-1 mb-0 d-none d-sm-block">Mateusz</h1>
+					<p class="display-1 mb-0 d-none d-sm-block">Mateusz</p>
 					<h1 class="h3 font-weight-light d-block d-sm-none">My name is</h1>
 					<h1 class="display-5 mb-0 d-block d-sm-none">Mateusz</h1>
 					<p>Front-end developer with .NET background.</p>
@@ -139,7 +146,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="container frame__footer d-flex justify-content-end position-relative">
+		<div class="container frame__footer d-flex justify-content-start position-relative">
 			<div>ANGULAR</div>
 			<div>VUE</div>
 		</div>
@@ -178,7 +185,7 @@
 		background-color: #acf735;
 	}
 
-	.platforms > button {
+	.platforms > a {
 		font-size: 1.5rem;
 	}
 
