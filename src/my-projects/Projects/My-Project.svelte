@@ -38,7 +38,7 @@
 			<div {backgroundCssRef} class="col-2 offset-10 col-sm-5 offset-sm-7" />
 		</div>
 		<div
-			class="col-12 col-sm-4 order-1 order-sm-1 section-left {parallaxClassName}"
+			class="col-12 col-sm-12 col-md-4 order-1 order-sm-1 section-left {parallaxClassName}"
 			data-rellax-speed="-3"
 			data-rellax-mobile-speed="0.5"
 			data-rellax-xs-speed="0.5"
@@ -47,7 +47,7 @@
 			<slot name="top-left" />
 			<slot name="bottom-left" />
 		</div>
-		<div class="col-12 col-sm-4 order-3 order-sm-2 d-flex align-items-center">
+		<div class="col-12 col-sm-11 offset-sm-1 offset-md-0 col-md-4 order-3 order-sm-3 order-md-2 d-flex align-items-center">
 			<div
 				class="px-4 px-md-5 {parallaxClassName}"
 				data-rellax-speed="-10"
@@ -61,14 +61,14 @@
 			</div>
 		</div>
 		<div
-			class="col-12 col-sm-4 order-2 order-sm-3 section-right {parallaxClassName}"
+			class="col-12 col-sm-12 col-md-4 order-2 order-sm-2 order-md-3 section-right {parallaxClassName}"
 			data-rellax-speed="1.5"
 			data-rellax-mobile-speed="0.5"
 			data-rellax-xs-speed="0.5"
 			data-rellax-percentage="0.5"
 		>
 			<slot name="right" />
-			<div class="col-12 col-sm-11 offset-sm-1 order-1 order-sm-2 d-flex flex-column align-self-center mt-3 mt-sm-0" />
+			<div class="col-12 col-sm-11 offset-sm-1 order-1 order-md-2 d-flex flex-column align-self-center mt-3 mt-sm-0" />
 		</div>
 	</div>
 </div>
