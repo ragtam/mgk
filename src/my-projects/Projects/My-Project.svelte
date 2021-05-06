@@ -15,13 +15,10 @@
 		const sectionObserver = new IntersectionObserver((entries) => {
 			entries.forEach((entry) => {
 				if (entry.isIntersecting) {
-					rellax = new Rellax(`.${parallaxClassName}`, {
-						breakpoints: [576, 768, 1201],
-					});
-
+					rellax = initializeRellax(`.${parallaxClassName}`);
 					tiltElement = initializeTiltElement(`.${parallaxClassName}--tilt`, { max: 3 });
 				} else {
-					rellax.destroy();
+					destroyRellax(rellax);
 					destroyTilt(tiltElement);
 				}
 			});
@@ -30,6 +27,18 @@
 		const sectionElement = document.querySelector(`[mainCssRef='${mainCssRef}']`);
 		sectionObserver.observe(sectionElement);
 	});
+
+	function initializeRellax(cssSelector) {
+		return new Rellax(cssSelector, {
+			breakpoints: [576, 768, 1201],
+		});
+	}
+
+	function destroyRellax(rellaxRef) {
+		if (rellaxRef) {
+			rellaxRef.destroy();
+		}
+	}
 </script>
 
 <div {mainCssRef} class="my-project">

@@ -10,6 +10,6 @@ export function destroyTilt(tiltElement) {
     if (tiltElement && tiltElement.vanillaTilt) {
         tiltElement.vanillaTilt.destroy();
     } else {
-        throw new Error('TiltAnimation not available on the HTML element');
+        console.warn('TiltAnimation not available on the HTML element', tiltElement);
     }
 }
