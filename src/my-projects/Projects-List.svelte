@@ -15,7 +15,7 @@
 	>
 		<MyProjectTopLeft slot="top-left">
 			<p class="text-muted font-weight-bold text-uppercase">| tech stack</p>
-			<ul class="text-dark text-right text-sm-left">
+			<ul class="text-dark text-right text-md-left">
 				<li>Vuee</li>
 				<li>Nuxt</li>
 				<li>Vuetify</li>
@@ -57,7 +57,7 @@
 	>
 		<MyProjectTopLeft slot="top-left">
 			<p class="text-muted font-weight-bold text-uppercase">| tech stack</p>
-			<ul class="text-dark text-right text-sm-left">
+			<ul class="text-dark text-right text-md-left">
 				<li>Angular</li>
 				<li>Typescript</li>
 				<li>SCSS</li>
@@ -72,8 +72,8 @@
 
 		<MyProjectCard slot="card">
 			<h1 class="h5 font-weight-bold text-uppercase mt-5 pb-0 mb-0 text-center text-secondary">Indepth.dev Article</h1>
-			<h1 class="display-3 text-center mb-5 d-none d-sm-block">Reusable menu component</h1>
-			<h1 class="display-5 text-center mb-1 mb-sm-5 d-block d-sm-none">Reusable menu component</h1>
+			<h1 class="display-3 text-center mb-5 d-none d-sm-block">Reusable context menu</h1>
+			<h1 class="display-5 text-center mb-1 mb-sm-5 d-block d-sm-none">Reusable context menu</h1>
 
 			<p class="pt-0 pt-sm-3 text-right">
 				Tutorial article on how to build a generic context menu with Angular. Menu items configurable with HTML with no sub-menu
@@ -102,7 +102,7 @@
 	>
 		<MyProjectTopLeft slot="top-left">
 			<p class="text-muted font-weight-bold text-uppercase">| tech stack</p>
-			<ul class="text-light text-right text-sm-left">
+			<ul class="text-light text-right text-md-left">
 				<li>Javascript</li>
 				<li>Jest</li>
 				<li>Parcel</li>
@@ -147,7 +147,7 @@
 	>
 		<MyProjectTopLeft slot="top-left">
 			<p class="text-muted font-weight-bold text-uppercase">| tech stack</p>
-			<ul class="text-right text-sm-left">
+			<ul class="text-right text-md-left">
 				<li>Angular</li>
 				<li>Typescript</li>
 			</ul>

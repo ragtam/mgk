@@ -1,8 +1,7 @@
 <script>
 	import { onMount } from 'svelte';
-	import Rellax from 'rellax';
 	import anime from 'animejs/lib/anime.es.js';
-	import { initializeTiltElement, destroyTilt } from '../utils/tilt-animation';
+	import { initializeTiltElement, destroyTilt, initializeRellax, destroyRellax } from '../utils';
 
 	let isSectionVisible = false;
 	let rellax;
@@ -31,10 +30,10 @@
 		const sectionObserver = new IntersectionObserver((entries) => {
 			entries.forEach((entry) => {
 				if (entry.isIntersecting) {
-					rellax = new Rellax('.rellax');
+					rellax = initializeRellax('.rellax');
 					tiltElement = initializeTiltElement('.frame', { max: 1 });
 				} else {
-					rellax.destroy();
+					destroyRellax(rellax);
 					destroyTilt(tiltElement);
 				}
 			});
