@@ -1,7 +1,7 @@
 <script>
 	import { onMount } from 'svelte';
-	import Rellax from 'rellax';
-	import { initializeTiltElement, destroyTilt } from '../../utils/tilt-animation';
+
+	import { initializeTiltElement, destroyTilt, initializeRellax, destroyRellax } from '../../utils';
 
 	export let parallaxClassName;
 	export let mainCssRef;
@@ -27,18 +27,6 @@
 		const sectionElement = document.querySelector(`[mainCssRef='${mainCssRef}']`);
 		sectionObserver.observe(sectionElement);
 	});
-
-	function initializeRellax(cssSelector) {
-		return new Rellax(cssSelector, {
-			breakpoints: [576, 768, 1201],
-		});
-	}
-
-	function destroyRellax(rellaxRef) {
-		if (rellaxRef) {
-			rellaxRef.destroy();
-		}
-	}
 </script>
 
 <div {mainCssRef} class="my-project">
