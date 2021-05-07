@@ -31,7 +31,7 @@
 			entries.forEach((entry) => {
 				if (entry.isIntersecting) {
 					rellax = initializeRellax('.rellax');
-					tiltElement = initializeTiltElement('.frame', { max: 1 });
+					tiltElement = initializeTiltElement('.frame', { max: 1, gyroscope: false });
 				} else {
 					destroyRellax(rellax);
 					destroyTilt(tiltElement);
@@ -40,7 +40,6 @@
 		});
 
 		const sectionElement = document.querySelector('.home-screen');
-		sectionObserver.observe(sectionElement);
 
 		setTimeout(() => {
 			isSectionVisible = true;
@@ -49,6 +48,7 @@
 			entryAnimation.play();
 			entryAnimation.finished.then(() => {
 				observer.observe(target);
+				sectionObserver.observe(sectionElement);
 			});
 		}, 500);
 	});

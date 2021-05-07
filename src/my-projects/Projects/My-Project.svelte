@@ -16,7 +16,7 @@
 			entries.forEach((entry) => {
 				if (entry.isIntersecting) {
 					rellax = initializeRellax(`.${parallaxClassName}`);
-					tiltElement = initializeTiltElement(`.${parallaxClassName}--tilt`, { max: 3 });
+					tiltElement = initializeTiltElement(`.${parallaxClassName}--tilt`, { max: 3, gyroscope: false });
 				} else {
 					destroyRellax(rellax);
 					destroyTilt(tiltElement);
