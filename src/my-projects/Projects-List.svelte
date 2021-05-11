@@ -155,8 +155,8 @@
 
 		<MyProjectBottomLeft slot="bottom-left">
 			<p class="text-muted font-weight-bold text-uppercase mb-0">| type</p>
-			<h6 class="display-2 pt-0 d-none d-sm-block" style="color: #f83d46;">NPM Package</h6>
-			<h6 class="display-4 pt-0 d-block d-sm-none" style="color: #f83d46;">NPM Package</h6>
+			<h6 class="display-2 pt-0 d-none d-sm-block" style="color: #fffbe5;">NPM Package</h6>
+			<h6 class="display-4 pt-0 d-block d-sm-none" style="color: #fffbe5;">NPM Package</h6>
 		</MyProjectBottomLeft>
 
 		<MyProjectCard slot="card">
@@ -172,7 +172,7 @@
 				href="https://www.npmjs.com/package/yt-player-angular"
 				target="_blank"
 				class="btn btn-secondary mt-0 mb-5 mt-sm-3 col-10 offset-1"
-				style="background-color: #f83d46"
+				style="background-color: #d9003a"
 				role="button">Check on NPM</a
 			>
 		</MyProjectCard>
@@ -222,14 +222,14 @@
 	}
 
 	:global([backgroundCssRef='yt-player-background']) {
-		background: linear-gradient(180deg, white 1%, #f83d46 99%);
+		background: linear-gradient(130deg, #d9003a, #810140);
 	}
 
 	:global([mainCssRef='yt-player-color']) {
-		background-color: white;
+		background-color: #d9003a;
 	}
 
 	:global([cardCssRef='yt-player-card']) {
-		background: rgba(255, 255, 255, 0.3);
+		background: rgba(255, 251, 229, 0.7);
 	}
 </style>
