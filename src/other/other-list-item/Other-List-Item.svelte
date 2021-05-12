@@ -19,12 +19,12 @@
 
 <style>
 	.divider .divider__line {
-		background-color: #d9003a;
+		background-color: #d62828;
 		height: 3px;
 		width: 100%;
 	}
 
 	.divider div {
-		color: #d9003a;
+		color: #d62828;
 	}
 </style>

@@ -9,6 +9,8 @@ red: #AF3736
 blue: #4F315B
 dark blue: #3D1C49
 
+https://coolors.co/003049-d62828-f77f00-fcbf49-eae2b7
+
 # inspiration
 
 https://dribbble.com/shots/12240165-GTA-5-Game-UI-Design

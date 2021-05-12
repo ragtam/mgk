@@ -55,7 +55,7 @@
 
 <style>
 	.other {
-		background-color: #f7c334;
+		background-color: #fcbf49;
 		overflow: hidden;
 	}
 

@@ -199,7 +199,7 @@
 	}
 
 	.bg-color {
-		background-color: #fffbe5;
+		background-color: #fcbf49;
 	}
 
 	.home-screen {
@@ -253,23 +253,23 @@
 	}
 
 	.horizontal-stripes > div:nth-child(1) {
-		background-color: #feb603;
+		background-color: #eae2b7;
 	}
 
 	.horizontal-stripes > div:nth-child(2) {
-		background-color: #fc3b00;
+		background-color: #fcbf49;
 	}
 
 	.horizontal-stripes > div:nth-child(3) {
-		background-color: #fc0000;
+		background-color: #f77f00;
 	}
 
 	.horizontal-stripes > div:nth-child(4) {
-		background-color: #d9003a;
+		background-color: #d62828;
 	}
 
 	.horizontal-stripes > div:nth-child(5) {
-		background-color: #810140;
+		background-color: #003049;
 	}
 
 	.frame__footer {

@@ -25,8 +25,8 @@
 
 		<MyProjectBottomLeft slot="bottom-left">
 			<p class="text-muted font-weight-bold text-uppercase mb-0">| type</p>
-			<h6 class="display-2 pt-0 d-none d-sm-block" style="color: #f83d46;">Hackathon</h6>
-			<h6 class="display-4 pt-0 d-block d-sm-none" style="color: #f83d46;">Hackathon</h6>
+			<h6 class="display-2 pt-0 d-none d-sm-block" style="color: #003049;">Hackathon</h6>
+			<h6 class="display-4 pt-0 d-block d-sm-none" style="color: #003049;">Hackathon</h6>
 		</MyProjectBottomLeft>
 
 		<MyProjectCard slot="card">
@@ -38,7 +38,7 @@
 				Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to
 				twinkle. By the same illusion which lifts the horizon of.
 			</p>
-			<button class="btn btn-secondary mt-0 mb-5 mt-sm-3 col-10 offset-1" style="background-color: #4a4a4a" type="button"
+			<button class="btn btn-dark mt-0 mb-5 mt-sm-3 col-10 offset-1" style="background-color: #003049" type="button"
 				>Storybook page</button
 			>
 		</MyProjectCard>
@@ -66,8 +66,8 @@
 
 		<MyProjectBottomLeft slot="bottom-left">
 			<p class="text-muted font-weight-bold text-uppercase mb-0">| type</p>
-			<h6 class="display-2 pt-0 d-none d-sm-block" style="color: #BF7224;">Article</h6>
-			<h6 class="display-4 pt-0 d-block d-sm-none" style="color: #BF7224;">Article</h6>
+			<h6 class="display-2 pt-0 d-none d-sm-block" style="color: #D62828;">Article</h6>
+			<h6 class="display-4 pt-0 d-block d-sm-none" style="color: #D62828;">Article</h6>
 		</MyProjectBottomLeft>
 
 		<MyProjectCard slot="card">
@@ -82,8 +82,8 @@
 			<a
 				href="https://indepth.dev/posts/1297/building-a-reusable-menu-component"
 				target="_blank"
-				class="btn btn-secondary mt-0 mb-5 mt-sm-3 col-10 offset-1"
-				style="background-color: #BF7224"
+				class="btn btn-danger mt-0 mb-5 mt-sm-3 col-10 offset-1"
+				style="background-color: #D62828"
 				role="button">Go to article</a
 			>
 		</MyProjectCard>
@@ -111,8 +111,8 @@
 
 		<MyProjectBottomLeft slot="bottom-left">
 			<p class="text-muted font-weight-bold text-uppercase mb-0">| type</p>
-			<h6 class="display-2 pt-0 d-none d-sm-block" style="color: #03ab7a;">NPM Package</h6>
-			<h6 class="display-4 pt-0 d-block d-sm-none" style="color: #03ab7a;">NPM Package</h6>
+			<h6 class="display-2 pt-0 d-none d-sm-block" style="color: #fcbf49;">NPM Package</h6>
+			<h6 class="display-4 pt-0 d-block d-sm-none" style="color: #fcbf49;">NPM Package</h6>
 		</MyProjectBottomLeft>
 
 		<MyProjectCard slot="card">
@@ -127,8 +127,8 @@
 			<a
 				href="https://www.npmjs.com/package/date-faker"
 				target="_blank"
-				class="btn btn-secondary mt-0 mb-5 mt-sm-3 col-10 offset-1"
-				style="background-color: #03ab7a"
+				class="btn btn-warning mt-0 mb-5 mt-sm-3 col-10 offset-1"
+				style="background-color: #fcbf49"
 				role="button">Check on NPM</a
 			>
 		</MyProjectCard>
@@ -155,8 +155,8 @@
 
 		<MyProjectBottomLeft slot="bottom-left">
 			<p class="text-muted font-weight-bold text-uppercase mb-0">| type</p>
-			<h6 class="display-2 pt-0 d-none d-sm-block" style="color: #fffbe5;">NPM Package</h6>
-			<h6 class="display-4 pt-0 d-block d-sm-none" style="color: #fffbe5;">NPM Package</h6>
+			<h6 class="display-2 pt-0 d-none d-sm-block" style="color: #d62828;">NPM Package</h6>
+			<h6 class="display-4 pt-0 d-block d-sm-none" style="color: #d62828;">NPM Package</h6>
 		</MyProjectBottomLeft>
 
 		<MyProjectCard slot="card">
@@ -172,7 +172,7 @@
 				href="https://www.npmjs.com/package/yt-player-angular"
 				target="_blank"
 				class="btn btn-secondary mt-0 mb-5 mt-sm-3 col-10 offset-1"
-				style="background-color: #d9003a"
+				style="background-color: #d62828"
 				role="button">Check on NPM</a
 			>
 		</MyProjectCard>
@@ -186,35 +186,35 @@
 
 <style>
 	:global([backgroundCssRef='first-project-background']) {
-		background: linear-gradient(180deg, #f83d46 20%, #a1998c 0%);
+		background: linear-gradient(180deg, #d62828 10%, #003049 0%);
 	}
 
 	:global([mainCssRef='first-project-color']) {
-		background-color: #f0ede6;
+		background-color: #eae2b7;
 	}
 
 	:global([cardCssRef='first-project-card']) {
-		background: rgba(240, 237, 230, 0.3);
+		background: rgba(234, 226, 183, 0.3);
 	}
 
 	:global([backgroundCssRef='date-faker-background']) {
-		background: linear-gradient(180deg, #03ab7a 1%, #4a4a4a 99%);
+		background: linear-gradient(180deg, #fcbf49 10%, #eae2b7 90%);
 	}
 
 	:global([mainCssRef='date-faker-color']) {
-		background-color: #4a4a4a;
+		background-color: #003049;
 	}
 
 	:global([cardCssRef='date-faker-card']) {
-		background: rgba(74, 74, 74, 0.3);
+		background: rgba(74, 74, 74, 0.6);
 	}
 
 	:global([backgroundCssRef='indepth-background']) {
-		background: linear-gradient(180deg, #a1998c 1%, #4a4a4a 99%);
+		background: linear-gradient(180deg, #fcbf49 80%, #f77f00 20%);
 	}
 
 	:global([mainCssRef='indepth-color']) {
-		background-color: #a1998c;
+		background-color: #f77f00;
 	}
 
 	:global([cardCssRef='indepth-card']) {
@@ -222,14 +222,14 @@
 	}
 
 	:global([backgroundCssRef='yt-player-background']) {
-		background: linear-gradient(130deg, #d9003a, #810140);
+		background-color: #d62828;
 	}
 
 	:global([mainCssRef='yt-player-color']) {
-		background-color: #d9003a;
+		background-color: #eae2b7;
 	}
 
 	:global([cardCssRef='yt-player-card']) {
-		background: rgba(255, 251, 229, 0.7);
+		background: rgba(234, 226, 183, 0.1);
 	}
 </style>
