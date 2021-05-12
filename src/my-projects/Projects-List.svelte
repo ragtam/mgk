@@ -16,7 +16,7 @@
 		<MyProjectTopLeft slot="top-left">
 			<p class="text-muted font-weight-bold text-uppercase">| tech stack</p>
 			<ul class="text-dark text-right text-md-left">
-				<li>Vuee</li>
+				<li>Vue</li>
 				<li>Nuxt</li>
 				<li>Vuetify</li>
 				<li>Storybook</li>

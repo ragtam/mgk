@@ -173,15 +173,15 @@
 	}
 
 	.dots-in-line > div:nth-child(1) {
-		background-color: #f73333;
+		background-color: #003049;
 	}
 
 	.dots-in-line > div:nth-child(2) {
-		background-color: #f7c334;
+		background-color: #d62828;
 	}
 
 	.dots-in-line > div:nth-child(3) {
-		background-color: #acf735;
+		background-color: #f77f00;
 	}
 
 	.platforms > a {
@@ -215,19 +215,10 @@
 		align-content: space-between;
 		width: 80vw;
 		height: 87vh;
-		/* border: 8px solid white;
-		border-radius: 20px; */
 		position: relative;
-		/* box-shadow: 7px 10px 5px 5px rgb(0 0 0 / 20%); */
-
-		background: rgba(255, 251, 229, 0.1);
+		background: rgba(234, 226, 183, 0.1);
 		box-shadow: 3px 3px 5px 6px rgb(0 0 0 / 20%);
-		/* box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); */
-		/* backdrop-filter: blur(2px);
-		-webkit-backdrop-filter: blur(2px); */
 		border-radius: 20px;
-		/* border: 1px solid rgba(255, 255, 255, 0.18); */
-		/* transform: translateX(-100vw); */
 	}
 
 	.frame__background--transitional {
@@ -235,7 +226,7 @@
 		position: absolute;
 		width: 100%;
 		height: 100%;
-		background-color: rgba(255, 251, 229, 0.7);
+		background-color: rgba(234, 226, 183, 0.4);
 		border-radius: 20px;
 	}
 
