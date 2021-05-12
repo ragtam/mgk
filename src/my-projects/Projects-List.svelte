@@ -25,8 +25,8 @@
 
 		<MyProjectBottomLeft slot="bottom-left">
 			<p class="text-muted font-weight-bold text-uppercase mb-0">| type</p>
-			<h6 class="display-2 pt-0 d-none d-sm-block" style="color: #003049;">Hackathon</h6>
-			<h6 class="display-4 pt-0 d-block d-sm-none" style="color: #003049;">Hackathon</h6>
+			<h6 class="display-2 pt-0 d-none d-sm-block" style="color: #F77F00;">Hackathon</h6>
+			<h6 class="display-4 pt-0 d-block d-sm-none" style="color: #F77F00;">Hackathon</h6>
 		</MyProjectBottomLeft>
 
 		<MyProjectCard slot="card">
@@ -38,7 +38,7 @@
 				Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to
 				twinkle. By the same illusion which lifts the horizon of.
 			</p>
-			<button class="btn btn-dark mt-0 mb-5 mt-sm-3 col-10 offset-1" style="background-color: #003049" type="button"
+			<button class="btn btn-warning mt-0 mb-5 mt-sm-3 col-10 offset-1" style="background-color: #F77F00" type="button"
 				>Storybook page</button
 			>
 		</MyProjectCard>
@@ -111,14 +111,14 @@
 
 		<MyProjectBottomLeft slot="bottom-left">
 			<p class="text-muted font-weight-bold text-uppercase mb-0">| type</p>
-			<h6 class="display-2 pt-0 d-none d-sm-block" style="color: #fcbf49;">NPM Package</h6>
-			<h6 class="display-4 pt-0 d-block d-sm-none" style="color: #fcbf49;">NPM Package</h6>
+			<h6 class="display-2 pt-0 d-none d-sm-block" style="color: #F77F00;">NPM Package</h6>
+			<h6 class="display-4 pt-0 d-block d-sm-none" style="color: #F77F00;">NPM Package</h6>
 		</MyProjectBottomLeft>
 
 		<MyProjectCard slot="card">
 			<h1 class="h5 font-weight-bold text-uppercase mt-5 pb-0 mb-0 text-center text-secondary">NPM Package</h1>
-			<h1 class="display-3 text-center mb-5 d-none d-sm-block">Date-faker</h1>
-			<h1 class="display-5 text-center mb-1 mb-sm-5 d-block d-sm-none">Date-faker</h1>
+			<h1 class="display-3 text-center mb-5 d-none d-sm-block text-muted">Date-faker</h1>
+			<h1 class="display-5 text-center mb-1 mb-sm-5 d-block d-sm-none text-muted">Date-faker</h1>
 
 			<p class="pt-0 pt-sm-3 text-right text-light">
 				Package overriding what the now ( new Date(), Date.now() ) is in JS. It allows to manually change current date with
@@ -128,7 +128,7 @@
 				href="https://www.npmjs.com/package/date-faker"
 				target="_blank"
 				class="btn btn-warning mt-0 mb-5 mt-sm-3 col-10 offset-1"
-				style="background-color: #fcbf49"
+				style="background-color: #F77F00"
 				role="button">Check on NPM</a
 			>
 		</MyProjectCard>
@@ -186,7 +186,7 @@
 
 <style>
 	:global([backgroundCssRef='first-project-background']) {
-		background: linear-gradient(180deg, #d62828 10%, #003049 0%);
+		background: repeating-radial-gradient(circle, #f77f00, #f77f00 40px, #eae2b7 40px, #eae2b7 80px);
 	}
 
 	:global([mainCssRef='first-project-color']) {
@@ -194,11 +194,11 @@
 	}
 
 	:global([cardCssRef='first-project-card']) {
-		background: rgba(234, 226, 183, 0.3);
+		background: rgba(234, 226, 183, 0.5);
 	}
 
 	:global([backgroundCssRef='date-faker-background']) {
-		background: linear-gradient(180deg, #fcbf49 10%, #eae2b7 90%);
+		background: repeating-linear-gradient(135deg, #003049, #003049 20px, #f77f00 20px, #f77f00 40px);
 	}
 
 	:global([mainCssRef='date-faker-color']) {
@@ -206,7 +206,7 @@
 	}
 
 	:global([cardCssRef='date-faker-card']) {
-		background: rgba(74, 74, 74, 0.6);
+		background: rgba(0, 48, 73, 0.1);
 	}
 
 	:global([backgroundCssRef='indepth-background']) {
@@ -218,7 +218,7 @@
 	}
 
 	:global([cardCssRef='indepth-card']) {
-		background: rgba(161, 153, 140, 0.3);
+		background: rgba(247, 127, 0, 0.3);
 	}
 
 	:global([backgroundCssRef='yt-player-background']) {

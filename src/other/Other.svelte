@@ -60,6 +60,6 @@
 	}
 
 	.other__list {
-		min-height: 80vh;
+		min-height: 90vh;
 	}
 </style>
