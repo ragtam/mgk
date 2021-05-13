@@ -122,13 +122,16 @@
 				</div>
 				<div class="platforms">
 					<a href="https://github.com/ragtam" target="_blank" class="btn rounded-circle" role="button"
-						><i class="bi bi-github" /></a
+						><i class="bi bi-google" /></a
 					>
 					<a
 						href="https://www.linkedin.com/in/mateusz-garbaciak-b50b20194/"
 						target="_blank"
 						class="btn rounded-circle"
 						role="button"><i class="bi bi-linkedin" /></a
+					>
+					<a href="https://github.com/ragtam" target="_blank" class="btn rounded-circle" role="button"
+						><i class="bi bi-github" /></a
 					>
 				</div>
 			</div>
