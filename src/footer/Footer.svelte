@@ -2,23 +2,23 @@
 	import { onMount } from 'svelte';
 	import { initializeRellax, destroyRellax } from '../utils';
 
-	onMount(() => {
-		const parallaxObserver = getParallaxObserver();
-		const element = document.querySelector('.footer');
-		parallaxObserver.observe(element);
-	});
+	// onMount(() => {
+	// 	const parallaxObserver = getParallaxObserver();
+	// 	const element = document.querySelector('.footer');
+	// 	parallaxObserver.observe(element);
+	// });
 
-	function getParallaxObserver() {
-		return new IntersectionObserver((entries) => {
-			entries.forEach((entry) => {
-				if (entry.isIntersecting) {
-					rellax = initializeRellax('.rellax');
-				} else {
-					destroyRellax(rellax);
-				}
-			});
-		});
-	}
+	// function getParallaxObserver() {
+	// 	return new IntersectionObserver((entries) => {
+	// 		entries.forEach((entry) => {
+	// 			if (entry.isIntersecting) {
+	// 				rellax = initializeRellax('.rellax');
+	// 			} else {
+	// 				destroyRellax(rellax);
+	// 			}
+	// 		});
+	// 	});
+	// }
 </script>
 
 <div class="footer py-5">

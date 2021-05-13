@@ -1,7 +1,6 @@
 <script>
 	import { onMount } from 'svelte';
 	import OtherListItem from './other-list-item/Other-List-Item.svelte';
-	import { initializeRellax, destroyRellax } from '../utils';
 	import anime from 'animejs/lib/anime.es.js';
 
 	const items = [
@@ -18,16 +17,10 @@
 			subheader: 'description',
 		},
 	];
-	let rellax;
 
 	onMount(() => {
-		const parallaxObserver = getParallaxObserver();
 		const entryAnimationObserver = getEntryAnimationObserver(getAnimation());
-
-		const element = document.querySelector('.other');
 		const otherListElement = document.querySelector('.other__list');
-
-		parallaxObserver.observe(element);
 		entryAnimationObserver.observe(otherListElement);
 	});
 
@@ -37,18 +30,6 @@
 			targets: '.other__list-item',
 			translateX: ['-8px', '0'],
 			delay: anime.stagger(100),
-		});
-	}
-
-	function getParallaxObserver(animation) {
-		return new IntersectionObserver((entries) => {
-			entries.forEach((entry) => {
-				if (entry.isIntersecting) {
-					rellax = initializeRellax('.rellax');
-				} else {
-					destroyRellax(rellax);
-				}
-			});
 		});
 	}
 
@@ -67,8 +48,8 @@
 </script>
 
 <div class="other">
-	<div class="container-fluid">
-		<div class="row rellax" data-rellax-speed="-3" data-rellax-percentage="0.5">
+	<div class="some-text">
+		<div class="row">
 			<div class="col-12">
 				<h1 class="display-4 text-muted font-weight-light text-md-center text-left">
 					|conferences |workshops |trainings |contributions
@@ -94,16 +75,26 @@
 <style>
 	.other {
 		background-color: #fcbf49;
-		overflow: hidden;
 		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		min-height: 90vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		position: relative;
 	}
 
 	.other__list > div {
 		backdrop-filter: blur(4px);
-		--webkit-backdrop-filter: blur(10px);
+		--webkit-backdrop-filter: blur(4px);
 	}
 
 	.other__list {
 		min-height: 60vh;
+	}
+
+	.some-text {
+		position: sticky;
+		top: 3rem;
 	}
 </style>
