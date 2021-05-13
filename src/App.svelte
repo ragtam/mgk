@@ -6,6 +6,7 @@
 	import ProjectsList from './my-projects/Projects-List.svelte';
 	import Other from './other/other.svelte';
 	import Bio from './bio/Bio.svelte';
+	import Footer from './footer/Footer.svelte';
 </script>
 
 <div>
@@ -18,6 +19,8 @@
 	<Other />
 
 	<Bio />
+
+	<Footer />
 </div>
 
 <style>

@@ -91,6 +91,7 @@
 
 	.other__list {
 		min-height: 60vh;
+		width: 100%;
 	}
 
 	.some-text {
