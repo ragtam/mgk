@@ -35,12 +35,12 @@
 		return anime({
 			autoplay: false,
 			targets: '.other__list-item',
-			translateX: ['-3rem', '0'],
+			translateX: ['-8px', '0'],
 			delay: anime.stagger(100),
 		});
 	}
 
-	function getParallaxObserver() {
+	function getParallaxObserver(animation) {
 		return new IntersectionObserver((entries) => {
 			entries.forEach((entry) => {
 				if (entry.isIntersecting) {
@@ -68,7 +68,7 @@
 
 <div class="other">
 	<div class="container-fluid">
-		<div class="row rellax" data-rellax-speed="-4" data-rellax-percentage="0.7">
+		<div class="row rellax" data-rellax-speed="-3" data-rellax-percentage="0.5">
 			<div class="col-12">
 				<h1 class="display-4 text-muted font-weight-light text-md-center text-left">
 					|conferences |workshops |trainings |contributions
@@ -76,8 +76,8 @@
 			</div>
 		</div>
 	</div>
-	<div class="other__list d-flex align-items-center py-5">
-		<div class="container rellax" data-rellax-speed="3" data-rellax-percentage="0.5">
+	<div class="other__list d-flex align-items-center mt-5">
+		<div class="container">
 			{#each items as item, index}
 				<div class="other__list-item">
 					<OtherListItem
@@ -95,11 +95,15 @@
 	.other {
 		background-color: #fcbf49;
 		overflow: hidden;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	}
 
 	.other__list > div {
-		min-height: 90vh;
 		backdrop-filter: blur(4px);
 		--webkit-backdrop-filter: blur(10px);
+	}
+
+	.other__list {
+		min-height: 60vh;
 	}
 </style>
