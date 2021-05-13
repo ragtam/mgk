@@ -5,7 +5,7 @@
 	import MyProjectsHeader from './my-projects-header/My-Projects-Header.svelte';
 	import ProjectsList from './my-projects/Projects-List.svelte';
 	import Other from './other/other.svelte';
-	import Footer from './footer/Footer.svelte';
+	import Bio from './bio/Bio.svelte';
 </script>
 
 <div>
@@ -17,7 +17,7 @@
 
 	<Other />
 
-	<Footer />
+	<Bio />
 </div>
 
 <style>

@@ -42,7 +42,7 @@
 					}
 				});
 			},
-			{ threshold: '0.7' }
+			{ threshold: '0.9' }
 		);
 	}
 </script>
