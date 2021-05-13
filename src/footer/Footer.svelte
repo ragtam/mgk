@@ -1,26 +1,3 @@
-<script>
-	import { onMount } from 'svelte';
-	import { initializeRellax, destroyRellax } from '../utils';
-
-	// onMount(() => {
-	// 	const parallaxObserver = getParallaxObserver();
-	// 	const element = document.querySelector('.footer');
-	// 	parallaxObserver.observe(element);
-	// });
-
-	// function getParallaxObserver() {
-	// 	return new IntersectionObserver((entries) => {
-	// 		entries.forEach((entry) => {
-	// 			if (entry.isIntersecting) {
-	// 				rellax = initializeRellax('.rellax');
-	// 			} else {
-	// 				destroyRellax(rellax);
-	// 			}
-	// 		});
-	// 	});
-	// }
-</script>
-
 <div class="footer py-5">
 	<div class="container">
 		<div class="footer__frame d-flex align-items-center justify-content-center ">
@@ -40,7 +17,7 @@
 
 	.footer__frame {
 		background-color: #d62828;
-		min-height: 50vh;
+		min-height: 100vh;
 		border: 3px solid #fcbf49;
 		border-radius: 10px;
 		box-shadow: 4px 4px 5px 6px rgb(0 0 0 / 20%);
