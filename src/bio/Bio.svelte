@@ -15,8 +15,10 @@
 								<div class="col-12 col-sm-6">
 									<p class="text-dark">
 										Currently I am doing <b>Angular</b> at <b>Credit Suisse</b>. Previously worked at <b>Volvo</b>,
-										creating and maintaining <b>Angular</b> and <b>AngularJS</b> applications with some <b>.NET</b> tasks
-										too. Visit my linkedin profile for more details.
+										creating and maintaining
+										<b
+											>Angular applications with some <b>.NET</b> tasks too. Visit my linkedin profile for more details.
+										</b>
 									</p>
 								</div>
 								<div class="col-12 col-sm-6">
@@ -27,7 +29,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-1 d-flex flex-column align-items-center" style="background-color: #fcbf49">
+						<div class="col-1 d-flex flex-column align-items-center" style="background-color: #d62828">
 							<a href="https://github.com/ragtam" target="_blank" class="btn rounded-circle" role="button"
 								><i class="bi bi-google" /></a
 							>
@@ -61,12 +63,12 @@
 		right: 0;
 		bottom: 0;
 		z-index: -2;
-		background: repeating-radial-gradient(circle, #f77f00, #f77f00 40px, #d62828 40px, #d62828 80px);
+		background: repeating-radial-gradient(circle, #eae2b7, #eae2b7 40px, #fcbf49 40px, #fcbf49 80px);
 	}
 
 	.bio__frame {
-		background-color: #d62828;
-		border: 3px solid #fcbf49;
+		background-color: #f77f00;
+		border: 3px solid #d62828;
 		border-radius: 10px;
 		box-shadow: 4px 4px 5px 6px rgb(0 0 0 / 20%);
 	}
