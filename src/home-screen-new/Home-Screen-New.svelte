@@ -122,7 +122,7 @@
 				</div>
 				<div class="platforms">
 					<a href="https://github.com/ragtam" target="_blank" class="btn rounded-circle" role="button"
-						><i class="bi bi-github" /></a
+						><i class="bi bi-google" /></a
 					>
 					<a
 						href="https://www.linkedin.com/in/mateusz-garbaciak-b50b20194/"
@@ -130,17 +130,20 @@
 						class="btn rounded-circle"
 						role="button"><i class="bi bi-linkedin" /></a
 					>
+					<a href="https://github.com/ragtam" target="_blank" class="btn rounded-circle" role="button"
+						><i class="bi bi-github" /></a
+					>
 				</div>
 			</div>
 			<div class="row g-0 mt-5 introduction-text">
-				<div class="col-8 col-sm-8 col-md-9 col-lg-10">
+				<div class="col-8 col-sm-7 col-md-8 col-lg-9">
 					<h1 class="h2 font-weight-light d-none d-sm-block">My name is</h1>
 					<p class="display-1 mb-0 d-none d-sm-block">Mateusz</p>
 					<h1 class="h3 font-weight-light d-block d-sm-none">My name is</h1>
 					<h1 class="display-5 mb-0 d-block d-sm-none">Mateusz</h1>
 					<p>Front-end developer with .NET background.</p>
 				</div>
-				<div class="col-4 col-sm-4 col-md-3 col-lg-2 d-flex justify-content-center">
+				<div class="col-4 col-sm-5 col-md-4 col-lg-3 d-flex justify-content-center">
 					<img src="/assets/avatar.jfif" alt="avatar" />
 				</div>
 			</div>
@@ -173,15 +176,15 @@
 	}
 
 	.dots-in-line > div:nth-child(1) {
-		background-color: #f73333;
+		background-color: #003049;
 	}
 
 	.dots-in-line > div:nth-child(2) {
-		background-color: #f7c334;
+		background-color: #d62828;
 	}
 
 	.dots-in-line > div:nth-child(3) {
-		background-color: #acf735;
+		background-color: #f77f00;
 	}
 
 	.platforms > a {
@@ -199,7 +202,7 @@
 	}
 
 	.bg-color {
-		background-color: #fffbe5;
+		background-color: #fcbf49;
 	}
 
 	.home-screen {
@@ -215,19 +218,10 @@
 		align-content: space-between;
 		width: 80vw;
 		height: 87vh;
-		/* border: 8px solid white;
-		border-radius: 20px; */
 		position: relative;
-		/* box-shadow: 7px 10px 5px 5px rgb(0 0 0 / 20%); */
-
-		background: rgba(255, 251, 229, 0.1);
+		background: rgba(234, 226, 183, 0.1);
 		box-shadow: 3px 3px 5px 6px rgb(0 0 0 / 20%);
-		/* box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); */
-		/* backdrop-filter: blur(2px);
-		-webkit-backdrop-filter: blur(2px); */
 		border-radius: 20px;
-		/* border: 1px solid rgba(255, 255, 255, 0.18); */
-		/* transform: translateX(-100vw); */
 	}
 
 	.frame__background--transitional {
@@ -235,7 +229,7 @@
 		position: absolute;
 		width: 100%;
 		height: 100%;
-		background-color: rgba(255, 251, 229, 0.7);
+		background-color: rgba(234, 226, 183, 0.4);
 		border-radius: 20px;
 	}
 
@@ -253,23 +247,23 @@
 	}
 
 	.horizontal-stripes > div:nth-child(1) {
-		background-color: #feb603;
+		background-color: #eae2b7;
 	}
 
 	.horizontal-stripes > div:nth-child(2) {
-		background-color: #fc3b00;
+		background-color: #fcbf49;
 	}
 
 	.horizontal-stripes > div:nth-child(3) {
-		background-color: #fc0000;
+		background-color: #f77f00;
 	}
 
 	.horizontal-stripes > div:nth-child(4) {
-		background-color: #d9003a;
+		background-color: #d62828;
 	}
 
 	.horizontal-stripes > div:nth-child(5) {
-		background-color: #810140;
+		background-color: #003049;
 	}
 
 	.frame__footer {

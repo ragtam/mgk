@@ -16,7 +16,7 @@
 		<MyProjectTopLeft slot="top-left">
 			<p class="text-muted font-weight-bold text-uppercase">| tech stack</p>
 			<ul class="text-dark text-right text-md-left">
-				<li>Vuee</li>
+				<li>Vue</li>
 				<li>Nuxt</li>
 				<li>Vuetify</li>
 				<li>Storybook</li>
@@ -25,8 +25,8 @@
 
 		<MyProjectBottomLeft slot="bottom-left">
 			<p class="text-muted font-weight-bold text-uppercase mb-0">| type</p>
-			<h6 class="display-2 pt-0 d-none d-sm-block" style="color: #f83d46;">Hackathon</h6>
-			<h6 class="display-4 pt-0 d-block d-sm-none" style="color: #f83d46;">Hackathon</h6>
+			<h6 class="display-2 pt-0 d-none d-sm-block" style="color: #F77F00;">Hackathon</h6>
+			<h6 class="display-4 pt-0 d-block d-sm-none" style="color: #F77F00;">Hackathon</h6>
 		</MyProjectBottomLeft>
 
 		<MyProjectCard slot="card">
@@ -38,7 +38,7 @@
 				Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to
 				twinkle. By the same illusion which lifts the horizon of.
 			</p>
-			<button class="btn btn-secondary mt-0 mb-5 mt-sm-3 col-10 offset-1" style="background-color: #4a4a4a" type="button"
+			<button class="btn btn-warning mt-0 mb-5 mt-sm-3 col-10 offset-1" style="background-color: #F77F00" type="button"
 				>Storybook page</button
 			>
 		</MyProjectCard>
@@ -66,8 +66,8 @@
 
 		<MyProjectBottomLeft slot="bottom-left">
 			<p class="text-muted font-weight-bold text-uppercase mb-0">| type</p>
-			<h6 class="display-2 pt-0 d-none d-sm-block" style="color: #BF7224;">Article</h6>
-			<h6 class="display-4 pt-0 d-block d-sm-none" style="color: #BF7224;">Article</h6>
+			<h6 class="display-2 pt-0 d-none d-sm-block" style="color: #D62828;">Article</h6>
+			<h6 class="display-4 pt-0 d-block d-sm-none" style="color: #D62828;">Article</h6>
 		</MyProjectBottomLeft>
 
 		<MyProjectCard slot="card">
@@ -82,8 +82,8 @@
 			<a
 				href="https://indepth.dev/posts/1297/building-a-reusable-menu-component"
 				target="_blank"
-				class="btn btn-secondary mt-0 mb-5 mt-sm-3 col-10 offset-1"
-				style="background-color: #BF7224"
+				class="btn btn-danger mt-0 mb-5 mt-sm-3 col-10 offset-1"
+				style="background-color: #D62828"
 				role="button">Go to article</a
 			>
 		</MyProjectCard>
@@ -111,14 +111,14 @@
 
 		<MyProjectBottomLeft slot="bottom-left">
 			<p class="text-muted font-weight-bold text-uppercase mb-0">| type</p>
-			<h6 class="display-2 pt-0 d-none d-sm-block" style="color: #03ab7a;">NPM Package</h6>
-			<h6 class="display-4 pt-0 d-block d-sm-none" style="color: #03ab7a;">NPM Package</h6>
+			<h6 class="display-2 pt-0 d-none d-sm-block" style="color: #F77F00;">NPM Package</h6>
+			<h6 class="display-4 pt-0 d-block d-sm-none" style="color: #F77F00;">NPM Package</h6>
 		</MyProjectBottomLeft>
 
 		<MyProjectCard slot="card">
 			<h1 class="h5 font-weight-bold text-uppercase mt-5 pb-0 mb-0 text-center text-secondary">NPM Package</h1>
-			<h1 class="display-3 text-center mb-5 d-none d-sm-block">Date-faker</h1>
-			<h1 class="display-5 text-center mb-1 mb-sm-5 d-block d-sm-none">Date-faker</h1>
+			<h1 class="display-3 text-center mb-5 d-none d-sm-block text-muted">Date-faker</h1>
+			<h1 class="display-5 text-center mb-1 mb-sm-5 d-block d-sm-none text-muted">Date-faker</h1>
 
 			<p class="pt-0 pt-sm-3 text-right text-light">
 				Package overriding what the now ( new Date(), Date.now() ) is in JS. It allows to manually change current date with
@@ -127,8 +127,8 @@
 			<a
 				href="https://www.npmjs.com/package/date-faker"
 				target="_blank"
-				class="btn btn-secondary mt-0 mb-5 mt-sm-3 col-10 offset-1"
-				style="background-color: #03ab7a"
+				class="btn btn-warning mt-0 mb-5 mt-sm-3 col-10 offset-1"
+				style="background-color: #F77F00"
 				role="button">Check on NPM</a
 			>
 		</MyProjectCard>
@@ -155,8 +155,8 @@
 
 		<MyProjectBottomLeft slot="bottom-left">
 			<p class="text-muted font-weight-bold text-uppercase mb-0">| type</p>
-			<h6 class="display-2 pt-0 d-none d-sm-block" style="color: #f83d46;">NPM Package</h6>
-			<h6 class="display-4 pt-0 d-block d-sm-none" style="color: #f83d46;">NPM Package</h6>
+			<h6 class="display-2 pt-0 d-none d-sm-block" style="color: #d62828;">NPM Package</h6>
+			<h6 class="display-4 pt-0 d-block d-sm-none" style="color: #d62828;">NPM Package</h6>
 		</MyProjectBottomLeft>
 
 		<MyProjectCard slot="card">
@@ -172,7 +172,7 @@
 				href="https://www.npmjs.com/package/yt-player-angular"
 				target="_blank"
 				class="btn btn-secondary mt-0 mb-5 mt-sm-3 col-10 offset-1"
-				style="background-color: #f83d46"
+				style="background-color: #d62828"
 				role="button">Check on NPM</a
 			>
 		</MyProjectCard>
@@ -186,50 +186,50 @@
 
 <style>
 	:global([backgroundCssRef='first-project-background']) {
-		background: linear-gradient(180deg, #f83d46 20%, #a1998c 0%);
+		background: repeating-radial-gradient(circle, #f77f00, #f77f00 40px, #eae2b7 40px, #eae2b7 80px);
 	}
 
 	:global([mainCssRef='first-project-color']) {
-		background-color: #f0ede6;
+		background-color: #eae2b7;
 	}
 
 	:global([cardCssRef='first-project-card']) {
-		background: rgba(240, 237, 230, 0.3);
+		background: rgba(234, 226, 183, 0.5);
 	}
 
 	:global([backgroundCssRef='date-faker-background']) {
-		background: linear-gradient(180deg, #03ab7a 1%, #4a4a4a 99%);
+		background: repeating-linear-gradient(135deg, #003049, #003049 20px, #f77f00 20px, #f77f00 40px);
 	}
 
 	:global([mainCssRef='date-faker-color']) {
-		background-color: #4a4a4a;
+		background-color: #003049;
 	}
 
 	:global([cardCssRef='date-faker-card']) {
-		background: rgba(74, 74, 74, 0.3);
+		background: rgba(0, 48, 73, 0.1);
 	}
 
 	:global([backgroundCssRef='indepth-background']) {
-		background: linear-gradient(180deg, #a1998c 1%, #4a4a4a 99%);
+		background: linear-gradient(180deg, #fcbf49 80%, #f77f00 20%);
 	}
 
 	:global([mainCssRef='indepth-color']) {
-		background-color: #a1998c;
+		background-color: #f77f00;
 	}
 
 	:global([cardCssRef='indepth-card']) {
-		background: rgba(161, 153, 140, 0.3);
+		background: rgba(247, 127, 0, 0.3);
 	}
 
 	:global([backgroundCssRef='yt-player-background']) {
-		background: linear-gradient(180deg, white 1%, #f83d46 99%);
+		background-color: #d62828;
 	}
 
 	:global([mainCssRef='yt-player-color']) {
-		background-color: white;
+		background-color: #eae2b7;
 	}
 
 	:global([cardCssRef='yt-player-card']) {
-		background: rgba(255, 255, 255, 0.3);
+		background: rgba(234, 226, 183, 0.1);
 	}
 </style>
