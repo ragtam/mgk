@@ -68,7 +68,7 @@
 		box-shadow: 4px 4px 5px 6px rgb(0 0 0 / 20%);
 	}
 
-	a {
+	.bio a {
 		color: #eae2b7;
 		font-size: 2rem;
 	}
