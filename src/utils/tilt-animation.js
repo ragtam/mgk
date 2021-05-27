@@ -1,4 +1,4 @@
-import VanillaTilt from 'vanilla-tilt/lib/vanilla-tilt.es2015';
+import VanillaTilt from 'vanilla-tilt';
 
 export function initializeTiltElement(selector, config) {
     const element = document.querySelector(selector);

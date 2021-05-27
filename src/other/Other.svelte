@@ -13,8 +13,12 @@
 			subheader: 'Conference',
 		},
 		{
-			header: 'Another Thing',
-			subheader: 'description',
+			header: 'Rethinking Asynchronous Programming',
+			subheader: 'training by Kyle Simpson',
+		},
+		{
+			header: 'Functional-Lite JavaScript',
+			subheader: 'training by Kyle Simpson',
 		},
 	];
 
@@ -82,6 +86,7 @@
 		align-items: center;
 		flex-direction: column;
 		position: relative;
+		z-index: 1;
 	}
 
 	.other__list > div {

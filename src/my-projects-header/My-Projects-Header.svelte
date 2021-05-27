@@ -66,7 +66,7 @@
 
 <style>
 	.my-projects-header {
-		z-index: -1;
+		z-index: 1;
 		background-color: #2e2e2e;
 		min-height: 80vh;
 		display: flex;

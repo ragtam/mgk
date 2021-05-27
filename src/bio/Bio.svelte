@@ -52,12 +52,12 @@
 <style>
 	.bio {
 		box-shadow: inset 0px 9px 6px 1px rgb(0 0 0 / 20%);
-		position: fixed;
+		position: sticky;
+		height: 100vh;
 		top: 0;
 		left: 0;
 		right: 0;
 		bottom: 0;
-		z-index: -2;
 		background: repeating-radial-gradient(circle, #eae2b7, #eae2b7 40px, #d62828 40px, #d62828 80px);
 	}
 

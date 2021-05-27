@@ -6,7 +6,7 @@
 	import MyProjectRight from './Projects/slots/My-Project-Right.svelte';
 </script>
 
-<div>
+<div class="projects-list">
 	<MyProject
 		parallaxClassName="hackathon-parallax"
 		mainCssRef="first-project-color"
@@ -185,6 +185,11 @@
 </div>
 
 <style>
+	.projects-list {
+		position: relative;
+		z-index: 1;
+	}
+
 	:global([backgroundCssRef='first-project-background']) {
 		background: repeating-radial-gradient(circle, #f77f00, #f77f00 40px, #eae2b7 40px, #eae2b7 80px);
 	}

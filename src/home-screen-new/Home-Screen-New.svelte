@@ -141,7 +141,10 @@
 					<p class="display-1 mb-0 d-none d-sm-block">Mateusz</p>
 					<h1 class="h3 font-weight-light d-block d-sm-none">My name is</h1>
 					<h1 class="display-5 mb-0 d-block d-sm-none">Mateusz</h1>
-					<p>Front-end developer with .NET background.</p>
+					<p>
+						I am a frontend developer focusing mainly on Angular but I explore other frameworks too (Vue or Svelte). Making my
+						first steps in web design. Member of <a href="https://indepth.dev/" target="_blank">inDepth.dev</a> community.
+					</p>
 				</div>
 				<div class="col-4 col-sm-5 col-md-4 col-lg-3 d-flex justify-content-center">
 					<img src="/assets/avatar.jfif" alt="avatar" />
@@ -151,11 +154,21 @@
 		<div class="container frame__footer d-flex justify-content-start position-relative">
 			<div>ANGULAR</div>
 			<div>VUE</div>
+			<div>SVELTE</div>
 		</div>
 	</div>
 </div>
 
 <style>
+	.home-screen {
+		height: 100vh;
+		justify-content: center;
+		box-shadow: 8px 7px 10px 9px rgb(0 0 0 / 26%);
+		position: relative;
+		overflow-y: hidden;
+		z-index: 1;
+	}
+
 	.home-screen--visible {
 		visibility: visible;
 	}
@@ -203,14 +216,6 @@
 
 	.bg-color {
 		background-color: #fcbf49;
-	}
-
-	.home-screen {
-		height: 100vh;
-		justify-content: center;
-		box-shadow: 8px 7px 10px 9px rgb(0 0 0 / 26%);
-		position: relative;
-		overflow-y: hidden;
 	}
 
 	.frame {
