@@ -142,7 +142,7 @@
 			<div class="row g-0 mt-5 introduction-text">
 				<div class="col-8 col-sm-7 col-md-8 col-lg-9">
 					<LandingPageIntro />
-					<p class="d-none d-md-block">
+					<p class="d-none d-md-block mt-3">
 						{@html description}
 					</p>
 				</div>
