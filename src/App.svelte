@@ -1,7 +1,7 @@
 <script>
 	import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 	import '../node_modules/bootstrap-icons/font/bootstrap-icons.css';
-	import HomeScreenNew from './home-screen-new/Home-Screen-New.svelte';
+	import LandingPage from './landing-page/landing-page.svelte';
 	import MyProjectsHeader from './my-projects-header/My-Projects-Header.svelte';
 	import ProjectsList from './my-projects/Projects-List.svelte';
 	import Other from './other/other.svelte';
@@ -10,7 +10,7 @@
 </script>
 
 <div>
-	<HomeScreenNew />
+	<LandingPage />
 
 	<MyProjectsHeader />
 

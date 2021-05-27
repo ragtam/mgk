@@ -2,10 +2,14 @@
 	import { onMount } from 'svelte';
 	import anime from 'animejs/lib/anime.es.js';
 	import { initializeTiltElement, destroyTilt, initializeRellax, destroyRellax } from '../utils';
+	import LandingPageIntro from './Landing-Page-Intro.svelte';
 
 	let isSectionVisible = false;
 	let rellax;
 	let tiltElement;
+
+	const description = `I am a frontend developer focusing mainly on Angular. In my free time I explore other frameworks, like Vue or Svelte and make my
+						first steps in web design. <br /><br/>Member of <a href="https://indepth.dev/" target="_blank">inDepth.dev</a> community.`;
 
 	onMount(() => {
 		const entryAnimation = getEntryAnimation();
@@ -137,17 +141,18 @@
 			</div>
 			<div class="row g-0 mt-5 introduction-text">
 				<div class="col-8 col-sm-7 col-md-8 col-lg-9">
-					<h1 class="h2 font-weight-light d-none d-sm-block">My name is</h1>
-					<p class="display-1 mb-0 d-none d-sm-block">Mateusz</p>
-					<h1 class="h3 font-weight-light d-block d-sm-none">My name is</h1>
-					<h1 class="display-5 mb-0 d-block d-sm-none">Mateusz</h1>
-					<p>
-						I am a frontend developer focusing mainly on Angular but I explore other frameworks too (Vue or Svelte). Making my
-						first steps in web design. Member of <a href="https://indepth.dev/" target="_blank">inDepth.dev</a> community.
+					<LandingPageIntro />
+					<p class="d-none d-md-block">
+						{@html description}
 					</p>
 				</div>
 				<div class="col-4 col-sm-5 col-md-4 col-lg-3 d-flex justify-content-center">
 					<img src="/assets/avatar.jfif" alt="avatar" />
+				</div>
+				<div class="col-12 d-block d-md-none mt-3">
+					<p>
+						{@html description}
+					</p>
 				</div>
 			</div>
 		</div>
