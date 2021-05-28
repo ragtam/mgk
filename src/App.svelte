@@ -29,8 +29,4 @@
 	*::after {
 		box-sizing: border-box;
 	}
-
-	/* .bg-dark {
-		background-color: #2e2e2e;
-	} */
 </style>

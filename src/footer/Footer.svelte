@@ -19,11 +19,15 @@
 					}
 				});
 			},
-			{ threshold: 0.5 }
+			{ threshold: 0.3 }
 		);
 		const element = document.querySelector('.footer');
 		observer.observe(element);
 	});
+
+	function scrollToTop() {
+		window.scrollTo({ top: 0, behavior: 'smooth' });
+	}
 </script>
 
 <div class="footer">
@@ -33,7 +37,7 @@
 		<h6 class="h6 text-muted font-weight-light">Later Firebase took care of hosting.</h6>
 		<h6 class="h6 text-muted font-weight-light">Now you are seeing it in your favourite browser!</h6>
 		<h6 class="h6 text-muted font-weight-light">If you like it, feel free to</h6>
-		<button class="btn btn-dark text-uppercase mt-3"> reach me out</button>
+		<button on:click|stopPropagation|passive={scrollToTop} class="btn btn-dark text-uppercase mt-3"> reach me out</button>
 	</div>
 </div>
 

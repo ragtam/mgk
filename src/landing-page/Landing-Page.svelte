@@ -1,6 +1,6 @@
 <script>
 	import { onMount } from 'svelte';
-	import anime from 'animejs/lib/anime.es.js';
+	import anime from 'animejs';
 	import { initializeTiltElement, destroyTilt, initializeRellax, destroyRellax } from '../utils';
 	import LandingPageIntro from './Landing-Page-Intro.svelte';
 
@@ -15,6 +15,7 @@
 		const entryAnimation = getEntryAnimation();
 		const backgroundOpacityAnimationIn = getBackgroundOpacityAnimationIn();
 		const backgroundOpacityAnimationOut = getBackgroundOpacityAnimationOut();
+		const socialMediaAnimation = getSocialMediaButtonsAnimation();
 
 		const observer = new IntersectionObserver(
 			(entries) => {
@@ -23,6 +24,7 @@
 						backgroundOpacityAnimationIn.play();
 					} else {
 						backgroundOpacityAnimationOut.play();
+						socialMediaAnimation.play();
 					}
 				});
 			},
@@ -96,6 +98,16 @@
 			opacity: [1, 0],
 			duration: 1000,
 			easing: 'linear',
+			autoplay: false,
+		});
+	}
+
+	function getSocialMediaButtonsAnimation() {
+		return anime({
+			targets: '.home-screen .platforms > a',
+			opacity: [0, 1],
+			scale: [3, 1],
+			delay: anime.stagger(100),
 			autoplay: false,
 		});
 	}
