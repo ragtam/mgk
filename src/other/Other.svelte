@@ -32,21 +32,22 @@
 		return anime({
 			autoplay: false,
 			targets: '.other__list-item',
-			translateX: ['-8px', '0'],
+			opacity: ['0', '1'],
 			delay: anime.stagger(100),
 		});
 	}
 
 	function getEntryAnimationObserver(animation) {
 		return new IntersectionObserver(
-			(entries) => {
+			(entries, observer) => {
 				entries.forEach((entry) => {
 					if (entry.isIntersecting) {
 						animation.play();
+						observer.unobserve(entry.target);
 					}
 				});
 			},
-			{ threshold: '0.9' }
+			{ threshold: '0.5' }
 		);
 	}
 </script>

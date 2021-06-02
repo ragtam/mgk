@@ -37,8 +37,8 @@
 		<div
 			class="col-12 col-sm-12 col-md-6 col-xl-4 order-1 order-sm-1 section-left {parallaxClassName}"
 			data-rellax-speed="-3"
-			data-rellax-mobile-speed="0.5"
-			data-rellax-xs-speed="0.5"
+			data-rellax-mobile-speed="0"
+			data-rellax-xs-speed="0"
 			data-rellax-percentage="0.5"
 		>
 			<slot name="top-left" />
@@ -48,8 +48,8 @@
 			<div
 				class="px-4 pr-md-4 px-lg-5 {parallaxClassName}"
 				data-rellax-speed="-10"
-				data-rellax-mobile-speed="3"
-				data-rellax-xs-speed="3"
+				data-rellax-mobile-speed="0"
+				data-rellax-xs-speed="0"
 				data-rellax-percentage="0.5"
 			>
 				<div class="vhs-tape {parallaxClassName + '--tilt'} " {cardCssRef}>
@@ -60,8 +60,8 @@
 		<div
 			class="col-12 col-sm-12 col-md-6 col-xl-4 order-2 order-sm-2 order-md-3 section-right {parallaxClassName}"
 			data-rellax-speed="-3"
-			data-rellax-mobile-speed="0.5"
-			data-rellax-xs-speed="0.5"
+			data-rellax-mobile-speed="0"
+			data-rellax-xs-speed="0"
 			data-rellax-percentage="0.5"
 		>
 			<slot name="right" />
