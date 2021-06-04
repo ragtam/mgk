@@ -134,8 +134,16 @@
 		</MyProjectCard>
 
 		<MyProjectRight slot="right">
-			<p class="text-muted font-weight-bold text-uppercase">| date</p>
-			<p class="text-sm-left text-light">03.2020</p>
+			<div style="width: 100%">
+				<div class="d-flex justify-content-between">
+					<p class="text-muted font-weight-bold text-uppercase">| date</p>
+					<p class="text-sm-left text-light">03.2020</p>
+				</div>
+				<div class="d-flex justify-content-between">
+					<p class="text-muted font-weight-bold text-uppercase">| downloads</p>
+					<p class="text-sm-left text-light">100</p>
+				</div>
+			</div>
 		</MyProjectRight>
 	</MyProject>
 
@@ -178,8 +186,16 @@
 		</MyProjectCard>
 
 		<MyProjectRight slot="right">
-			<p class="text-muted font-weight-bold text-uppercase">| date</p>
-			<p class="text-sm-left">09.2019</p>
+			<div style="width: 100%">
+				<div class="d-flex justify-content-between">
+					<p class="text-muted font-weight-bold text-uppercase">| date</p>
+					<p class="text-sm-left">09.2019</p>
+				</div>
+				<div class="d-flex justify-content-between">
+					<p class="text-muted font-weight-bold text-uppercase">| downloads</p>
+					<p class="text-sm-left">100</p>
+				</div>
+			</div>
 		</MyProjectRight>
 	</MyProject>
 </div>
