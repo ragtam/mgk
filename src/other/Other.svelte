@@ -93,6 +93,8 @@
 	.other__list > div {
 		backdrop-filter: blur(4px);
 		--webkit-backdrop-filter: blur(4px);
+		background-color: rgba(252, 191, 73, 0.7);
+		z-index: 1;
 	}
 
 	.other__list {

@@ -46,8 +46,8 @@
 		<h1 class="display-5 text-center mb-1 mb-sm-5 d-block d-sm-none">Yt-Player-Angular</h1>
 
 		<p class="pt-0 pt-sm-3 text-right">
-			The package is an Angular wrapper for yt-player, YouTube Player API. Lets you embed Youtube video and control it (
-			play/pause/seek and many more ) programatically.
+			This package is an Angular wrapper for YouTube Player API. Lets you embed Youtube video and control it ( play/pause/seek and
+			many more ) programatically.
 		</p>
 		<a
 			href="https://www.npmjs.com/package/yt-player-angular"
