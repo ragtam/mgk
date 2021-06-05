@@ -53,7 +53,7 @@
 </script>
 
 <div class="other">
-	<div class="some-text">
+	<div class="some-text my-5">
 		<div class="row">
 			<div class="col-12">
 				<h1 class="display-4 text-muted font-weight-light text-md-center text-left">
@@ -81,7 +81,6 @@
 	.other {
 		background-color: #fcbf49;
 		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-		min-height: 90vh;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -90,16 +89,13 @@
 		z-index: 1;
 	}
 
-	.other__list > div {
+	.other__list {
+		min-height: 60vh;
+		width: 100%;
 		backdrop-filter: blur(4px);
 		--webkit-backdrop-filter: blur(4px);
 		background-color: rgba(252, 191, 73, 0.7);
 		z-index: 1;
-	}
-
-	.other__list {
-		min-height: 60vh;
-		width: 100%;
 	}
 
 	.some-text {
