@@ -1,5 +1,6 @@
 <script>
 	import { onMount } from 'svelte';
+	import { counterFromZeroToValueAnimation, setUpSectionObserver } from './counter-animations';
 	import { fetchNPMPackageDownloadCountSince } from '../../services/npm-stats';
 
 	import MyProject from '../template/My-Project.svelte';
@@ -8,11 +9,13 @@
 	import MyProjectCard from '../template/slots/My-Project-Card.svelte';
 	import MyProjectRight from '../template/slots/My-Project-Right.svelte';
 
-	let downloadCount = 0;
+	const COUNTER_HTML_ID = '#date-faker-counter';
+	let countAnimation;
 
 	onMount(() => {
 		fetchNPMPackageDownloadCountSince(new Date('2020-02-13'), 'date-faker').then((count) => {
-			downloadCount = count;
+			countAnimation = counterFromZeroToValueAnimation(COUNTER_HTML_ID, count);
+			setUpSectionObserver(COUNTER_HTML_ID, countAnimation);
 		});
 	});
 </script>
@@ -64,7 +67,7 @@
 			</div>
 			<div class="d-flex justify-content-between">
 				<p class="text-muted font-weight-bold text-uppercase">| downloads</p>
-				<p class="text-sm-left text-light">{downloadCount}</p>
+				<p id="date-faker-counter" class="text-sm-left text-light">N/A</p>
 			</div>
 		</div>
 	</MyProjectRight>
