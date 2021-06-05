@@ -7,7 +7,7 @@ export function counterFromZeroToValueAnimation(cssSelector, countToValue) {
         round: 1,
         easing: 'easeOutExpo',
         autoplay: false,
-        duration: countToValue * 0.8
+        duration: 3000
     });
 }
 
