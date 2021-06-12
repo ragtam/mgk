@@ -57,7 +57,7 @@
 </script>
 
 <div class="other">
-	<div class="some-text mt-5">
+	<div class="some-text mt-5 container">
 		<div class="row d-none d-lg-block">
 			<div class="col-12">
 				<h1 class="display-5 text-muted font-weight-light text-center">| conferences | workshops | trainings | contributions</h1>

@@ -72,4 +72,9 @@
 		color: #eae2b7;
 		font-size: 2rem;
 	}
+
+	.bio__frame > .container > .row {
+		margin-right: -16px;
+		margin-left: -16px;
+	}
 </style>
