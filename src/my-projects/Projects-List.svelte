@@ -19,5 +19,6 @@
 	.projects-list {
 		position: relative;
 		z-index: 1;
+		box-shadow: 0px -8px 10px 9px rgb(0 0 0 / 26%);
 	}
 </style>

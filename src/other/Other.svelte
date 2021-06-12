@@ -5,12 +5,16 @@
 
 	const items = [
 		{
+			header: 'Vanilla-tilt.js',
+			subheader: 'contribution: installation manual update',
+		},
+		{
 			header: 'Advanced Angular Architecture',
 			subheader: 'workshop by Manfred Steyer',
 		},
 		{
 			header: 'NG Poland',
-			subheader: 'Conference',
+			subheader: 'conference',
 		},
 		{
 			header: 'Rethinking Asynchronous Programming',
@@ -53,12 +57,26 @@
 </script>
 
 <div class="other">
-	<div class="some-text my-5">
-		<div class="row">
+	<div class="some-text mt-5">
+		<div class="row d-none d-lg-block">
 			<div class="col-12">
-				<h1 class="display-4 text-muted font-weight-light text-md-center text-left">
-					|conferences |workshops |trainings |contributions
-				</h1>
+				<h1 class="display-5 text-muted font-weight-light text-center">| conferences | workshops | trainings | contributions</h1>
+			</div>
+		</div>
+		<div class="d-block d-lg-none">
+			<div class="row">
+				<div class="col-12 col-sm-6">
+					<h1 class="display-5 text-muted font-weight-light text-left">| conferences</h1>
+				</div>
+				<div class="col-12 col-sm-6">
+					<h1 class="display-5 text-muted font-weight-light text-left">| workshops</h1>
+				</div>
+				<div class="col-12 col-sm-6">
+					<h1 class="display-5 text-muted font-weight-light text-left">| trainings</h1>
+				</div>
+				<div class="col-12 col-sm-6">
+					<h1 class="display-5 text-muted font-weight-light text-left">| contributions</h1>
+				</div>
 			</div>
 		</div>
 	</div>
