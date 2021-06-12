@@ -180,10 +180,10 @@
 	.home-screen {
 		height: 100vh;
 		justify-content: center;
-		box-shadow: 8px 7px 10px 9px rgb(0 0 0 / 26%);
+		box-shadow: 0px 8px 10px 9px rgb(0 0 0 / 26%);
 		position: relative;
 		overflow-y: hidden;
-		z-index: 1;
+		z-index: 3;
 	}
 
 	.home-screen--visible {

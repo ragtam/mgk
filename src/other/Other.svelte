@@ -5,12 +5,16 @@
 
 	const items = [
 		{
+			header: 'Vanilla-tilt.js',
+			subheader: 'contribution: installation manual update',
+		},
+		{
 			header: 'Advanced Angular Architecture',
 			subheader: 'workshop by Manfred Steyer',
 		},
 		{
 			header: 'NG Poland',
-			subheader: 'Conference',
+			subheader: 'conference',
 		},
 		{
 			header: 'Rethinking Asynchronous Programming',
@@ -47,18 +51,32 @@
 					}
 				});
 			},
-			{ threshold: '0.5' }
+			{ threshold: 0.4 }
 		);
 	}
 </script>
 
 <div class="other">
-	<div class="some-text">
-		<div class="row">
+	<div class="some-text mt-5 container">
+		<div class="row d-none d-lg-block">
 			<div class="col-12">
-				<h1 class="display-4 text-muted font-weight-light text-md-center text-left">
-					|conferences |workshops |trainings |contributions
-				</h1>
+				<h1 class="display-5 text-muted font-weight-light text-center">| conferences | workshops | trainings | contributions</h1>
+			</div>
+		</div>
+		<div class="d-block d-lg-none">
+			<div class="row">
+				<div class="col-12 col-sm-6">
+					<h1 class="display-5 text-muted font-weight-light text-left">| conferences</h1>
+				</div>
+				<div class="col-12 col-sm-6">
+					<h1 class="display-5 text-muted font-weight-light text-left">| workshops</h1>
+				</div>
+				<div class="col-12 col-sm-6">
+					<h1 class="display-5 text-muted font-weight-light text-left">| trainings</h1>
+				</div>
+				<div class="col-12 col-sm-6">
+					<h1 class="display-5 text-muted font-weight-light text-left">| contributions</h1>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -81,7 +99,6 @@
 	.other {
 		background-color: #fcbf49;
 		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-		min-height: 90vh;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -90,14 +107,13 @@
 		z-index: 1;
 	}
 
-	.other__list > div {
-		backdrop-filter: blur(4px);
-		--webkit-backdrop-filter: blur(4px);
-	}
-
 	.other__list {
 		min-height: 60vh;
 		width: 100%;
+		backdrop-filter: blur(4px);
+		--webkit-backdrop-filter: blur(4px);
+		background-color: rgba(252, 191, 73, 0.7);
+		z-index: 1;
 	}
 
 	.some-text {
