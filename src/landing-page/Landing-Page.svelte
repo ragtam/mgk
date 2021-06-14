@@ -8,7 +8,7 @@
 	let rellax;
 	let tiltElement;
 
-	const description = `I am a frontend developer focusing mainly on Angular. In my free time I explore other frameworks, like Vue or Svelte and make my
+	const description = `I am a frontend developer focusing mainly on Angular. I strive to write clean code backed by unit tests. In my free time I explore other frameworks, like Vue or Svelte and make my
 						first steps in web design. <br /><br/>Member of <a href="https://indepth.dev/" target="_blank">inDepth.dev</a> community.`;
 
 	onMount(() => {
