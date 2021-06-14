@@ -6,7 +6,7 @@
 </script>
 
 <div class="projects-list">
-	<Hackathon />
+	<!-- <Hackathon /> -->
 
 	<ReusableMenuArticle />
 
