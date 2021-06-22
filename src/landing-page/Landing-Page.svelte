@@ -8,8 +8,9 @@
 	let rellax;
 	let tiltElement;
 
-	const description = `I am a frontend developer focusing mainly on Angular. I strive to write clean code backed by unit tests and make my
-						first steps in web design. <br /><br/>Member of <a href="https://indepth.dev/" target="_blank">inDepth.dev</a> community.`;
+	const description = `I am a Front End Developer with .NET background. Focusing mainly on Angular but with experience in Vue and Svelte. 
+						Striving to write well organized, clean code backed by unit tests. NPM packages author and contributor, tech blog post writer. 
+						Part of <a href="https://indepth.dev/" target="_blank">inDepth.dev</a> community. Making first steps in UX design.`;
 
 	onMount(() => {
 		const entryAnimation = getEntryAnimation();
