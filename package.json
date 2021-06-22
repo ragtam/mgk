@@ -30,6 +30,7 @@
     "bootstrap": "^4.1.0",
     "bootstrap-icons": "^1.4.0",
     "dayjs": "^1.10.5",
+    "firebase": "^8.6.7",
     "rellax": "^1.12.1",
     "sirv-cli": "^1.0.0",
     "vanilla-tilt": "^1.7.0"

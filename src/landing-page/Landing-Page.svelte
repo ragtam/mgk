@@ -8,7 +8,7 @@
 	let rellax;
 	let tiltElement;
 
-	const description = `I am a frontend developer focusing mainly on Angular. I strive to write clean code backed by unit tests. In my free time I explore other frameworks, like Vue or Svelte and make my
+	const description = `I am a frontend developer focusing mainly on Angular. I strive to write clean code backed by unit tests and make my
 						first steps in web design. <br /><br/>Member of <a href="https://indepth.dev/" target="_blank">inDepth.dev</a> community.`;
 
 	onMount(() => {
@@ -28,7 +28,7 @@
 					}
 				});
 			},
-			{ threshold: 1 }
+			{ threshold: 0.5 }
 		);
 
 		const target = document.querySelector('.frame__background--transitional');
@@ -178,7 +178,7 @@
 
 <style>
 	.home-screen {
-		height: 100vh;
+		min-height: 100vh;
 		justify-content: center;
 		box-shadow: 0px 8px 10px 9px rgb(0 0 0 / 26%);
 		position: relative;
@@ -239,7 +239,7 @@
 		display: grid;
 		align-content: space-between;
 		width: 80vw;
-		height: 87vh;
+		min-height: 87vh;
 		position: relative;
 		background: rgba(234, 226, 183, 0.1);
 		box-shadow: 3px 3px 5px 6px rgb(0 0 0 / 20%);

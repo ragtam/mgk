@@ -1,4 +1,6 @@
 <script>
+	import { onMount } from 'svelte';
+
 	import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 	import '../node_modules/bootstrap-icons/font/bootstrap-icons.css';
 	import LandingPage from './landing-page/landing-page.svelte';
@@ -7,6 +9,12 @@
 	import Other from './other/other.svelte';
 	import Bio from './bio/Bio.svelte';
 	import Footer from './footer/Footer.svelte';
+
+	import initializeFirebase from './services/firebase';
+
+	onMount(() => {
+		initializeFirebase();
+	});
 </script>
 
 <div>
