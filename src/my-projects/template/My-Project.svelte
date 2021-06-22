@@ -34,13 +34,7 @@
 		<div class="position-absolute background-section">
 			<div {backgroundCssRef} class="col-2 offset-10 col-sm-5 offset-sm-7" />
 		</div>
-		<div
-			class="col-12 col-sm-12 col-md-6 col-xl-4 order-1 order-sm-1 section-left {parallaxClassName}"
-			data-rellax-speed="-3"
-			data-rellax-mobile-speed="0"
-			data-rellax-xs-speed="0"
-			data-rellax-percentage="0.5"
-		>
+		<div class="col-12 col-sm-12 col-md-6 col-xl-4 order-1 order-sm-1 section-left">
 			<slot name="top-left" />
 			<slot name="bottom-left" />
 		</div>
@@ -57,13 +51,7 @@
 				</div>
 			</div>
 		</div>
-		<div
-			class="col-12 col-sm-12 col-md-6 col-xl-4 order-2 order-sm-2 order-md-3 section-right {parallaxClassName}"
-			data-rellax-speed="-3"
-			data-rellax-mobile-speed="0"
-			data-rellax-xs-speed="0"
-			data-rellax-percentage="0.5"
-		>
+		<div class="col-12 col-sm-12 col-md-6 col-xl-4 order-2 order-sm-2 order-md-3 section-right">
 			<slot name="right" />
 			<div class="col-12 col-sm-11 offset-sm-1 order-1 order-md-2 d-flex flex-column align-self-center mt-3 mt-sm-0" />
 		</div>

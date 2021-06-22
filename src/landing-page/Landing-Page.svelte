@@ -221,14 +221,11 @@
 		font-size: 1.5rem;
 	}
 
-	.introduction-text > div > h1:nth-child(1) {
-		margin-bottom: -0.5rem;
-	}
-
 	.introduction-text img {
 		max-width: 100%;
 		height: auto;
 		object-fit: cover;
+		border-radius: 20px;
 	}
 
 	.bg-color {
